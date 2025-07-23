@@ -1,0 +1,143 @@
+/* ==========================================================================
+   글 하단 시리즈 포스트 그리드 스타일
+   ========================================================================== */
+
+.gp-series-posts-container {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid var(--color-border);
+}
+
+.series-posts-title {
+    font-size: 1.8em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--color-text-title);
+}
+
+.series-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.series-post-item {
+    display: block;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--color-background-soft);
+}
+
+.series-post-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.series-post-thumbnail {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.series-post-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.series-post-item:hover .series-post-thumbnail img {
+    transform: scale(1.05);
+}
+
+.series-post-content {
+    padding: 20px;
+}
+
+.series-post-title {
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--color-text-title);
+    margin: 0;
+}
+
+.load-more-series-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#load-more-series-btn {
+    padding: 12px 30px;
+    font-size: 1em;
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#load-more-series-btn:hover {
+    background-color: #2a8a83;
+}
+
+
+/* ==========================================================================
+   글 본문 내 시리즈 목차 박스 스타일 (최종 수정본)
+   ========================================================================== */
+
+/* 1. 시리즈 목록(ul)에 카운터 초기화 */
+.entry-content .seriesbox .serieslist-ul {
+    counter-reset: series-counter;
+    list-style: none !important;
+    padding-left: 0 !important;
+}
+
+/* 2. 각 목록 아이템(li)에 텍스트 잘림 및 카운터 증가 적용 (핵심 수정) */
+.entry-content .seriesbox .serieslist-ul li {
+    counter-increment: series-counter;
+    /* 텍스트가 여러 조각으로 나뉘어 있으므로, 부모인 li에서 직접 제어 */
+    display: flex;
+    align-items: baseline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 3. 링크(a) 태그에서는 불필요한 텍스트 제어 속성 제거 */
+.entry-content .seriesbox .serieslist-ul li a {
+    /* 기존 텍스트 제어 속성들을 li로 옮겼으므로 여기서는 제거합니다. */
+    /* 링크가 줄어들지 않도록 설정 */
+    flex-shrink: 0;
+}
+
+/* 4. ::before 가상 요소를 사용해 번호 자동 표시 */
+.entry-content .seriesbox .serieslist-ul li::before {
+    content: counter(series-counter, decimal-leading-zero) ".";
+    position: static !important;
+    font-family: 'NanumSquareNeoBold', 'Malgun Gothic', sans-serif;
+    font-size: 0.9em;
+    color: #6b7280;
+    min-width: 25px;
+    text-align: center;
+    flex-shrink: 0;
+    margin-right: 25px !important;
+    white-space: nowrap !important;
+    background: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+}
+
+/* 5. 현재 보고 있는 글에는 번호 대신 체크마크 표시 */
+.entry-content .seriesbox .serieslist-ul .serieslist-li-current::before {
+    content: '✔' !important;
+    color: var(--color-primary, #4338ca) !important;
+    font-size: 1.1em;
+}

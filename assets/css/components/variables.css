@@ -1,0 +1,61 @@
+:root {
+    /* Background Colors */
+    --bg-primary: #f8f9fa;       /* Main background - Light Mode */
+    --bg-secondary: #ffffff;     /* Card/content background - Light Mode */
+    --bg-tertiary: #f1f3f5;      /* Muted background - Light Mode */
+
+    --bg-primary-dark: #18191a;    /* Main background - Dark Mode */
+    --bg-secondary-dark: #242526;  /* Card/content background - Dark Mode */
+    --bg-tertiary-dark: #3a3a3a;   /* Muted background - Dark Mode */
+
+    /* Text Colors */
+    --text-primary: #343a40;     /* Main text - Light Mode */
+    --text-secondary: #495057;   /* Secondary text - Light Mode */
+    --text-muted: #000000;       /* Muted text - Light Mode */
+    --text-heading: #111111;     /* Headings - Light Mode */
+    --text-link: #8cbaff;        /* Links - Light Mode */
+
+    --text-primary-dark: #e4e6eb;  /* Main text - Dark Mode */
+    --text-secondary-dark: #b0b3b8;/* Secondary text - Dark Mode */
+    --text-muted-dark: #8a8d91;    /* Muted text - Dark Mode */
+    --text-heading-dark: #ffffff;  /* Headings - Dark Mode */
+    --text-link-dark: #8cbaff;     /* Links - Dark Mode (can be same or different) */
+
+    /* Border Colors */
+    --border-primary: #e9ecef;   /* Main borders */
+    --border-secondary: #dee2e6; /* Secondary borders */
+    --border-meta: #ced4da;      /* Meta info borders */
+
+    /* Accent Colors */
+    --accent-color: #ffc107;     /* Theme accent */
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --facebook-blue: #1877F2;
+
+    /* Badge Colors */
+    --badge-background-color: #cc0000; /* Slightly darker red for better contrast */
+    --badge-text-color: #ffffff;     /* White */
+
+    /* Transition Defaults */
+    --default-transition-duration: 0.3s;
+    --default-transition-timing-function: ease;
+}
+
+/* 폰트 import는 functions.php에서 wp_enqueue_style을 통해 로드됩니다. */
+
+/* ----------------------------------------- / / 1. 디자인 시스템 (변수) /* ----------------------------------------- */
+:root {
+    --container-max-width: 840px;
+    --mobile-padding: 24px;
+    --color-primary: #36A29B;
+    --color-highlight-underline: rgba(54, 162, 155, 0.3);
+    --color-text-title: #1E293B;
+    --color-text-body: #334155;
+    --color-text-blockquote: #5E6C77;
+    --color-background: #FFFFFF;
+    --color-background-soft: #F8FAFC;
+    --color-border: #E2E8F0;
+    --font-main: 'Pretendard', 'NanumSquareNeo', 'Malgun Gothic', sans-serif;
+    --font-title-logo: 'Lexend Deca', sans-serif;
+    --font-extrabold-legacy: 'NanumSquareNeoExtraBold', 'Malgun Gothic', sans-serif;
+}

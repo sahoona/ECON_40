@@ -1,0 +1,11 @@
+/*
+ * WordPress Admin Editor Styles
+ *
+ * This file is intended to style the WordPress block editor (Gutenberg)
+ * to provide a better writing experience.
+ */
+
+/* Add left margin to the main editor wrapper to match the default WP experience */
+.editor-styles-wrapper {
+    padding-left: 200px;
+}

@@ -1,0 +1,110 @@
+/* ==========================================================================
+   4. Header & Navigation (Medium-High Specificity)
+   ========================================================================== */
+
+/* Site header */
+.site-header {
+    border-bottom: 1px solid var(--border-primary);
+    box-shadow: 0 1px 2px rgba(0,0,0,.02);
+    padding: 4px 0;
+    padding-bottom: 5px !important;
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+/* 메인 네비게이션 */
+.main-navigation .main-nav > ul > li {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+}
+
+.main-navigation .main-nav ul li a {
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    transition: color var(--default-transition-duration) var(--default-transition-timing-function), background-color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+/* 드롭다운 메뉴 배경 */
+.main-navigation .main-nav ul ul {
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+}
+
+.main-navigation .main-nav ul li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.main-navigation .main-nav ul ul li a {
+    color: #000000 !important;
+    padding: 12px 20px;
+    font-size: 15px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.main-navigation .main-nav ul ul li:last-child a {
+    border-bottom: none;
+}
+
+.main-navigation .main-nav ul ul li a {
+    transition: color 0.3s ease;
+}
+
+.main-navigation .main-nav ul ul li a:hover {
+    color: #007BFF !important;
+    background-color: transparent !important;
+}
+
+/* 모바일 메뉴 토글 버튼 */
+.menu-toggle, .menu-toggle span, .menu-toggle::before, .menu-toggle::after, .menu-toggle .gp-icon, .menu-toggle .gp-icon svg path {
+    transition: color var(--default-transition-duration) var(--default-transition-timing-function), background-color var(--default-transition-duration) var(--default-transition-timing-function), fill var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+/* Mobile Menu Toggle Background Fix */
+.menu-toggle {
+    background-color: transparent !important; /* 기본 배경 투명 */
+    border: none !important; /* 테두리 제거 */
+    padding: 8px !important; /* 적절한 패딩 유지 */
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+    background-color: rgba(255, 255, 255, 0.1) !important; /* 호버 시 약간의 배경 표시 (선택 사항) */
+}
+
+/* Ensure GeneratePress icon itself is not adding a background */
+.menu-toggle .gp-icon {
+    background-color: transparent !important;
+}
+
+.site-header .main-title a {
+    font-family: var(--font-title-logo);
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #2D3748;
+    text-decoration: none;
+    padding: 12px 16px;
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+    position: relative;
+}
+
+.site-header .main-title a:hover {
+    color: #000000;
+    transform: translateY(-2px);
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.site-header .main-title a:active {
+    transform: translateY(0px);
+    transition-duration: 0.1s;
+}

@@ -1,0 +1,691 @@
+/* =================================================================
+   2. 데스크톱 반응형 스타일 (769px 이상)
+================================================================= */
+@media (min-width: 769px) {
+    li.pll-parent-menu-item {
+        width: auto;
+    }
+    li.pll-parent-menu-item > a,
+    li.pll-parent-menu-item > a:link,
+    li.pll-parent-menu-item > a:visited {
+        justify-content: center !important;
+        padding: 8px 16px !important;
+        border: 1px solid var(--color-border) !important;
+        border-radius: 50px !important;
+    }
+    li.pll-parent-menu-item > a:hover {
+        background-color: var(--color-background-soft) !important;
+        border-color: #D1D5DB !important;
+    }
+    li.pll-parent-menu-item ul.sub-menu {
+        display: block;
+        position: absolute;
+        padding: 6px;
+        top: calc(100% + 8px);
+        left: 50%;
+        width: auto;
+        min-width: 200px;
+        background: var(--color-background);
+        border: 1px solid var(--color-border);
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateX(-50%) translateY(10px);
+    }
+    li.pll-parent-menu-item:hover ul.sub-menu {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateX(-50%) translateY(0);
+    }
+    li.pll-parent-menu-item ul.sub-menu li a {
+        padding: 10px 14px !important;
+        border-radius: 8px !important;
+    }
+    li.pll-parent-menu-item ul.sub-menu li a:hover {
+        background-color: #F3F4F6 !important;
+    }
+
+    /* 데스크톱: 머리말 및 관련 단락의 계층적 들여쓰기 적용 */
+    /* 기본 단락 들여쓰기 (머리말과 무관한 단락) */
+    .entry-content p {
+        padding-left: 1.5em;
+    }
+
+    /* H3 및 그 아래 콘텐츠 들여쓰기 */
+    .entry-content h3,
+    .entry-content h3 ~ p,
+    .entry-content h3 ~ ul,
+    .entry-content h3 ~ ol {
+        padding-left: 1.5em !important;
+    }
+
+    /* H4 및 그 아래 콘텐츠 들여쓰기 (H3보다 한 단계 더) */
+    .entry-content h4,
+    .entry-content h4 ~ p,
+    .entry-content h4 ~ ul,
+    .entry-content h4 ~ ol {
+        padding-left: 3em !important;
+    }
+
+    /* h2 아래에 오는 p, ul, ol 요소는 h2와 동일한 들여쓰기 적용 */
+    .entry-content h2 ~ p,
+    .entry-content h2 ~ ul,
+    .entry-content h2 ~ ol {
+         padding-left: 40px !important;
+    }
+}
+
+
+/* =================================================================
+   3. 모바일 반응형 스타일 (768px 이하)
+================================================================= */
+@media (max-width: 768px) {
+    .main-navigation li.pll-parent-menu-item > a {
+        padding: 15px 20px !important;
+        font-size: 0 !important; /* 텍스트 숨기기 */
+    }
+    .main-navigation li.pll-parent-menu-item > a::before {
+        content: '' !important;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23334155' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3e%3ccircle cx='12' cy='12' r='10'%3e%3c/circle%3e%3cpath d='M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20'%3e%3c/path%3e%3cpath d='M2 12h20'%3e%3c/path%3e%3c/svg%3e");
+        background-repeat: no-repeat !important;
+        background-position: left center;
+        background-size: 20px;
+        width: 20px;
+        height: 20px;
+    }
+    .main-navigation li.pll-parent-menu-item > a::after {
+        content: '' !important;
+        width: 8px;
+        height: 8px;
+        border-style: solid;
+        border-width: 2px 2px 0 0;
+        border-color: var(--color-text-body) var(--color-text-body) transparent transparent;
+        transform: rotate(135deg);
+        background-image: none !important;
+    }
+
+    /* Comprehensive mobile padding reset and application (Turn 35 feedback) */
+    body { /* User request: body background for mobile */
+        background-color: var(--bg-secondary) !important;
+    }
+
+    /* .site-content rule block removed as per cleanup */
+    /* User request: Zero out padding/margin for these intermediate containers */
+    /* This entire block for #primary, main#main, .inside-article, .entry-content is removed as per cleanup */
+
+    /* User request: Specific fix for nested article tag with inline styles */
+    .entry-content > article[style] {
+        padding: 0 !important;
+        margin: 0 !important; /* Also reset margin for this element */
+        box-sizing: border-box !important;
+    }
+
+    body:not(.single) .site-main article.post {
+        margin: 0 0 20px 0 !important; /* 모바일에서 카드 간격 20px로 수정 */
+        border: none !important; /* Ensured active for revert */
+        padding-bottom: 0 !important; /* New addition for this revert */
+        padding-left: 10px !important; /* Added for mobile card padding */
+        padding-right: 10px !important; /* Added for mobile card padding */
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        background: transparent !important;
+        /* Redundant padding declarations removed, single declaration above is kept. */
+        gap: 15px;
+        max-width: 100%;
+        /* position: relative !important; */ /* Not strictly needed if ::after is static */
+    }
+
+    /* Dotted line separator for homepage posts on mobile (initial and AJAX-loaded) */
+    body:not(.single) .site-main article.post:not(:last-child)::after {
+        content: "" !important;
+        display: block !important;
+        width: 80% !important;
+        height: auto !important; /* Can be 0px, border is what's seen */
+        border-bottom: none !important; /* Light gray dotted line */
+        background: none !important; /* Ensure no background color */
+        margin-top: 20px !important; /* Space from card content above */
+        margin-bottom: 20px !important; /* Space before the card's own bottom margin */
+        margin-left: auto !important; /* Center the line */
+        margin-right: auto !important; /* Center the line */
+        visibility: visible !important;
+        opacity: 1 !important;
+        position: static !important; /* Crucial for in-flow behavior */
+        clear: both; /* Just in case */
+    }
+
+    html.dark-mode-active body:not(.single) .site-main article.post:not(:last-child)::after {
+        border-bottom-color: var(--border-primary) !important; /* Dark mode border color */
+    }
+
+    .singular-post-content { /* Mobile adjustments for singular-post-content */
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        /* Keep existing internal padding from its general rule */
+        /* Background will be handled by dark mode rule below if needed */
+    }
+
+    /* 모바일에서 첫 번째 카드 상단 여백 추가 */
+    body .site-main article.post:first-child {
+        margin-top: 20px !important;
+    }
+    /* Adjusted .inside-article for mobile card padding */
+    body:not(.single) .site-main article.post .inside-article {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        gap: 15px;
+    }
+    /* Ensure general .inside-article for single posts retains its mobile gap if needed, but padding is handled by .site-content */
+    body.single .inside-article {
+        padding-left: 0 !important; /* 모바일 좌우 패딩 조정 */
+        padding-right: 0 !important; /* 모바일 좌우 패딩 조정 */
+        padding-top: 20px !important; /* 기존 상하 패딩 유지 */
+        padding-bottom: 20px !important; /* 기존 상하 패딩 유지 */
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        background-color: transparent !important; /* Changed to transparent for mobile */
+        border: none !important; /* Ensure no border on mobile */
+        border-radius: 0 !important;
+        gap: 15px; /* Preserving existing gap */
+    }
+
+    html.dark-mode-active body.single .inside-article {
+        background-color: transparent !important; /* Ensure mobile dark mode is also transparent */
+        color: var(--text-primary) !important; /* Light text for dark mode mobile */
+        /* Horizontal padding/margins are set by the rule above */
+        /* Vertical padding is inherited from the rule above or desktop */
+        /* gap: 15px; is inherited from the rule above */
+    }
+
+    body:not(.single) .entry-header, body:not(.single) .post-image, body:not(.single) .entry-summary, body:not(.single) .read-more-container, body:not(.single) .list-tags-container, body:not(.single) .gp-list-star-rating { padding: 0 !important; }
+    .entry-header { padding-top: 15px !important; }
+    .list-tags-container { padding-bottom: 8px !important; margin-bottom: 15px !important; /* 태그박스 하단 마진 추가 */ }
+    .gp-list-star-rating { padding-bottom: 15px !important; margin-top: 10px !important; /* 별점 상단 마진 추가 */ }
+    /* 모바일에서도 구텐베르크 원본 스타일 유지 */
+    /* article.post .entry-content p:not(:is(blockquote p, .no-ident)) { padding-left: 0 !important; } */
+
+    /* Neutralize paragraph indentation on mobile */
+    article.post .entry-content p,
+    .entry-content p {
+        /* padding-left: 0 !important; */ /* Reverted for global padding strategy */
+        text-indent: 0 !important;
+    }
+    body.single article.post .entry-content p,
+    body.single .entry-content p {
+        /* padding-left: 0 !important; */ /* Reverted for global padding strategy */
+        text-indent: 0 !important;
+    }
+
+    /* Improve text wrapping on mobile */
+    .entry-content p,
+    .entry-content div,
+    .entry-content li {
+        overflow-wrap: break-word !important; /* Alias for word-wrap */
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+        text-wrap: pretty;
+        /* padding-left: 10px !important; */ /* Moved to end of media query */
+        /* padding-right: 10px !important; */ /* Moved to end of media query */
+    }
+    body.single .entry-content p,
+    body.single .entry-content div,
+    body.single .entry-content li {
+        overflow-wrap: break-word !important; /* Alias for word-wrap */
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+        text-wrap: pretty;
+        /* padding-left: 10px !important; */ /* Moved to end of media query */
+        /* padding-right: 10px !important; */ /* Moved to end of media query */
+    }
+
+    /* 모바일에서 본문 전체 좌우 패딩 최소화 */
+    body.single .inside-article {
+        /* padding-left: 0 !important; */ /* padding removed */
+        /* padding-right: 0 !important; */ /* padding removed */
+    }
+
+    /* 모바일에서 홈 화면 요소들 패딩 조정 */
+    body:not(.single) .entry-header,
+    body:not(.single) .post-image,
+    body:not(.single) .entry-summary,
+    body:not(.single) .read-more-container,
+    body:not(.single) .list-tags-container,
+    body:not(.single) .gp-list-star-rating {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    /* 모바일에서 엔트리 콘텐츠 패딩 조정 */
+    body.single .entry-content {
+        /* padding-left: 0 !important; */ /* padding removed */
+        /* padding-right: 0 !important; */ /* padding removed */
+    }
+
+    /* Fix mobile padding for nested containers in .entry-content */
+    body.single .entry-content .wp-block-group,
+    body.single .entry-content .wp-block-cover,
+    body.single .entry-content .wp-block-column, /* Also address columns if they add padding */
+    body.single .entry-content > div /* Target direct generic div wrappers if any */ {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    /* If wp-block-group has specific inner containers that also add padding */
+    body.single .entry-content .wp-block-group > .wp-block-group__inner-container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    #gp-toc-container .gp-toc-title {
+        font-size: 1.1em !important;
+        padding: 10px 12px !important;
+        margin-bottom: 15px !important;
+    }
+
+    #gp-toc-container li {
+        padding: 15px 0 15px 20px !important;
+        font-size: 1em !important;
+        line-height: 1.5 !important;
+    }
+
+    #gp-toc-container ul ul {
+        padding-left: 25px !important;
+        margin-top: 8px !important;
+    }
+
+    #gp-toc-container a {
+        font-size: 1em !important;
+        font-weight: 500 !important;
+    }
+
+    /* 모바일에서 목차 최대 높이 조정 - REMOVED max-height */
+    #gp-toc-container ul {
+        /* max-height: 300px !important; */ /* This line is now removed */
+    }
+    .gp-custom-post-nav .nav-links { flex-direction: column; }
+    .gp-custom-post-nav .nav-previous { border-right: none !important; border-bottom: 1px solid var(--border-primary); }
+    .gp-custom-post-nav img, .gp-custom-post-nav .no-thumb { height: 200px !important; }
+    .floating-buttons-container {
+        right: 15px; /* Changed from left: 50% */
+        bottom: 15px;
+        left: auto; /* Explicitly override left */
+        top: auto; /* Explicitly override top */
+        transform: none; /* Removed translateX(-50%) */
+    }
+    .gp-language-switcher { margin-right: 15px; }
+
+    /* 모바일 메타 정보 박스 크기 조정 */
+    .gp-meta-bar-after-title {
+        padding: 0 10px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .posted-on-wrapper .date-primary,
+    .posted-on-wrapper .date-secondary,
+    .reading-time-meta,
+    .byline {
+        font-size: 0.85em !important;
+        padding: 6px 12px !important;
+        min-height: 32px !important;
+        min-width: 90px !important; /* Restored min-width, smaller for mobile */
+        flex-grow: 0 !important;
+        flex-shrink: 0 !important;
+        flex-basis: auto !important;
+    }
+
+    /* Restore date font size on mobile to match desktop */
+    .posted-on-wrapper .date-primary,
+    .posted-on-wrapper .date-secondary {
+        font-size: 0.9rem !important;
+    }
+
+    /* Adjust reading-time-meta min-width for mobile */
+    .reading-time-meta {
+        min-width: 60px !important;
+    }
+
+    /* Mobile specific override for .posted-on-wrapper to ensure it has enough space */
+    .posted-on-wrapper {
+        min-width: 120px !important; /* Increased min-width for the date wrapper */
+        /* Flex item properties are inherited or re-affirmed if needed */
+        flex-grow: 0 !important;
+        flex-shrink: 0 !important;
+        flex-basis: auto !important;
+    }
+
+    /* 모바일 브레드크럼 개선 */
+    .gp-post-category a {
+        font-size: 0.85em !important;
+        padding: 6px 12px !important;
+        min-height: 32px !important;
+    }
+
+    .gp-post-category span.breadcrumb-separator {
+        font-size: 0.8em !important;
+        padding: 0 6px !important;
+    }
+
+    /* 모바일 브레드크럼 겹침 문제 해결 (우선순위 강화) */
+    body.single .gp-top-meta-bar .gp-post-category {
+        display: flex !important; /* Verified */
+        position: static !important; /* Set */
+        float: none !important; /* Added */
+        clear: both !important; /* Added */
+        transform: none !important; /* Verified */
+        top: auto !important; /* Added */
+        left: auto !important; /* Added */
+        right: auto !important; /* Added */
+        bottom: auto !important; /* Added */
+        width: 100% !important; /* Verified */
+        max-width: 100% !important; /* Added */
+        margin-left: 0 !important; /* Added */
+        margin-right: 0 !important; /* Added */
+        margin-top: 0 !important; /* Added */
+        margin-bottom: 10px !important; /* Verified */
+        padding-left: 0 !important; /* Added */
+        padding-right: 0 !important; /* Added */
+        box-sizing: border-box !important; /* Added */
+        order: 1 !important; /* Verified */
+        justify-content: center !important; /* Verified */
+        align-items: center !important; /* Added for completeness */
+        /* flex-grow: 1; */ /* Verified removed */
+        visibility: visible !important; /* Kept from diagnostic, good for ensuring visibility */
+        opacity: 1 !important; /* Kept from diagnostic, good for ensuring visibility */
+        overflow: visible !important;
+        max-height: none !important;
+        height: auto !important;
+        /* Removed: min-height, z-index, border, diagnostic padding, diagnostic margin */
+    }
+
+    body.single .gp-top-meta-bar .gp-post-category a {
+        font-size: 0.85em !important; /* From existing mobile .gp-post-category a */
+        padding: 6px 12px !important; /* From existing mobile .gp-post-category a */
+        min-height: 32px !important; /* From existing mobile .gp-post-category a */
+        display: inline-flex !important; /* Existing from desktop, good for alignment */
+        visibility: visible !important; /* ADDED */
+        opacity: 1 !important;          /* ADDED */
+        /* Other existing styles like background, color, border should be inherited or fine */
+    }
+
+    body.single .gp-top-meta-bar .gp-post-category span.breadcrumb-separator {
+        font-size: 0.8em !important; /* From existing mobile .gp-post-category span */
+        padding: 0 6px !important; /* From existing mobile .gp-post-category span */
+        display: inline-flex !important; /* From desktop, good for alignment */
+        align-items: center !important;  /* From desktop, good for alignment */
+        min-height: 32px !important; /* Match link height */
+        visibility: visible !important; /* ADDED */
+        opacity: 1 !important;          /* ADDED */
+        /* Other existing styles like background, color should be inherited or fine */
+    }
+
+/* === 최종 모바일 패딩 규칙 (통합 버전) === */
+
+/* 1. 가장 바깥쪽 컨테이너(.site-content)에 최종 패딩을 15px로 지정합니다. */
+.site-content {
+    padding-left: 0 !important; /* Changed */
+    padding-right: 0 !important; /* Changed */
+    padding-top: 20px !important;    /* 상단 여백 - Preserved */
+    padding-bottom: 20px !important; /* 하단 여백 - Preserved */
+    box-sizing: border-box !important;
+}
+
+/* Reduce padding-top for site-content on single posts in mobile */
+body.single .site-content {
+    padding-top: 5px !important; /* Changed from 20px */
+}
+
+html body.single article.post {
+    border-top: none !important;
+    box-shadow: none !important;
+}
+
+/* 2. 그 안의 모든 중간 컨테이너들의 패딩과 마진은 0으로 리셋하여 겹치지 않게 합니다. */
+#primary,
+main#main {
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+}
+
+.entry-content {
+    box-sizing: border-box !important;
+}
+
+/* 3. 본문 내 이미지에 적용되었던, 패딩을 깨뜨리는 음수 마진을 제거합니다. */
+
+    .entry-content {
+        box-sizing: border-box;
+    }
+
+    .entry-content h1,
+    .entry-content h2,
+    .entry-content h3,
+    .entry-content h4,
+    .entry-content h5,
+    .entry-content h6 {
+        /* padding-left: 10px !important; */
+        /* padding-right: 10px !important; */
+        text-align: center !important;
+        box-sizing: border-box; /* Add for robustness */
+    }
+
+    .entry-content p,
+    .entry-content div,
+    .entry-content li {
+        /* padding-left: 10px !important; */
+        /* padding-right: 10px !important; */
+        box-sizing: border-box;
+        text-wrap: pretty;
+        word-break: keep-all !important;
+        line-break: loose !important;
+    }
+
+    body.single .entry-content p,
+    body.single .entry-content div,
+    body.single .entry-content li {
+        /* padding-left: 10px !important; */
+        /* padding-right: 10px !important; */
+        box-sizing: border-box;
+        text-wrap: pretty;
+        word-break: keep-all !important;
+        line-break: loose !important;
+    }
+
+/* === START: Aggressive Mobile Content Padding & Alignment === */
+      .entry-content { /* Ensure entry-content itself allows for padding on children */
+          box-sizing: border-box !important;
+      }
+
+      .entry-content h1,
+      .entry-content h2,
+      .entry-content h3,
+      .entry-content h4,
+      .entry-content h5,
+      .entry-content h6,
+      body.single .entry-content h1, /* Specificity for single posts */
+      body.single .entry-content h2,
+      body.single .entry-content h3,
+      body.single .entry-content h4,
+      body.single .entry-content h5,
+      body.single .entry-content h6 {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+          text-align: center !important;
+          box-sizing: border-box !important;
+          text-wrap: balance;
+      }
+
+      .entry-content p,
+      .entry-content div,
+      .entry-content li,
+      body.single .entry-content p, /* Specificity for single posts */
+      body.single .entry-content div,
+      body.single .entry-content li {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+          box-sizing: border-box !important;
+          text-wrap: pretty;
+          word-break: keep-all !important;
+          line-break: loose !important;
+      }
+/* === END: Aggressive Mobile Content Padding & Alignment === */
+
+    /* Mobile-specific padding for single post titles */
+    body.single .entry-title,
+    body.single .entry-header .entry-title,
+    body.single h1.entry-title {
+        display: block !important;
+        background-color: var(--bg-tertiary) !important;
+        color: var(--text-heading) !important;
+        text-align: center !important;
+        border-radius: 0 !important;
+
+        /* --- Adjusted for new .inside-article padding --- */
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+
+        padding: 20px !important; /* 통일된 20px 패딩 */
+
+        box-sizing: border-box !important;
+    }
+
+    /* Mobile-specific width and margin for featured image */
+    body.single .featured-image {
+        width: 100% !important; /* Fill new padded .inside-article */
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Mobile-specific width and margin for images in content */
+    .entry-content .wp-block-image,
+    .entry-content figure {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    /* 모바일에서 홈 카드 이미지 호버 애니메이션 제거 */
+    body:not(.single-post) .post-image img:hover {
+        transform: none !important;
+    }
+
+    /* 모바일 .inside-article 상단 경계선 제거 재시도 */
+    body.single-post .inside-article,
+    body.single .inside-article,
+    body:not(.single-post) .inside-article {
+        border-top: none !important;
+        box-shadow: none !important; /* 혹시 그림자로 인한 선일 경우 */
+        background-image: none !important; /* 혹시 배경 이미지로 인한 선일 경우 */
+    }
+    /* .entry-header 에도 적용하여 이중 확인 */
+    body.single-post .entry-header,
+    body.single .entry-header {
+        border-top: none !important;
+        box-shadow: none !important;
+        background-image: none !important;
+    }
+    /* 모바일: 모든 들여쓰기 초기화 */
+    .entry-content p,
+    .entry-content ul,
+    .entry-content ol,
+    .entry-content h2,
+    .entry-content h3,
+    .entry-content h4 {
+        padding-left: 0 !important;
+    }
+
+    .entry-content fieldset, .post-content fieldset { flex-direction: column !important; }
+    .entry-content fieldset span.series-nav-left, .entry-content fieldset span.series-nav-right { width: 100% !important; padding: 20px 40px !important; }
+    .entry-content fieldset span.series-nav-right { border-left: none !important; border-top: 1px solid var(--color-border) !important; }
+    .entry-content h2 ~ p, .post-content h2 ~ p, .entry-content h3 ~ p, .post-content h3 ~ p, .entry-content h4 ~ p, .post-content h4 ~ p { padding-left: 0 !important; }
+    .entry-content fieldset, .post-content fieldset { flex-direction: column; }
+    .entry-content fieldset span.series-nav-left, .entry-content fieldset span.series-nav-right { width: 100%; padding: 20px 40px; }
+    .entry-content fieldset span.series-nav-right { border-left: none; border-top: 1px solid var(--color-border); }
+
+    /* Limit entry-summary to 5 lines on mobile */
+    .entry-summary {
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: 9.5em; /* 1.9 (line-height) * 5 (lines) = 9.5em */
+    }
+
+    /* Footer mobile styles */
+    .site-footer-container .footer-heading,
+    .site-footer-container .footer-links ul,
+    .site-footer-container .footer-about .site-name,
+    .site-footer-container .footer-about p {
+        text-align: center !important;
+    }
+
+    .site-footer-container .footer-about,
+    .site-footer-container .footer-links {
+        width: 100% !important;
+    }
+
+    .site-footer-container .footer-about p {
+        padding: 0 !important;
+    }
+
+    .site-footer-container .footer-links ul li {
+        display: block !important;
+    }
+
+    .site-footer-container .footer-heading {
+        width: 100% !important;
+    }
+
+    .site-footer-container .footer-links ul li a {
+        display: block !important;
+    }
+}
+
+@media (max-width: 480px) {
+}
+
+/* --- Global Mobile Border Reset --- */
+@media (max-width: 768px) {
+    article.post, .type-post {
+        border: none !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+    }
+
+    body {
+        background-color: var(--color-background) !important;
+    }
+    .site-content {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    body.single .entry-title,
+    body.single .entry-header .entry-title,
+    body.single h1.entry-title,
+    .entry-content .wp-block-image,
+    .entry-content figure,
+    .featured-image {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100% !important;
+        border-radius: 0 !important;
+    }
+}

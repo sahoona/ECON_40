@@ -1,0 +1,844 @@
+/* Page Title Styles */
+.page-title, .page-title a {
+    transition: color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+/* 3. 홈페이지 카드 목록 스타일 */
+body:not(.single-post) .site-main {
+    display: flex;
+    flex-direction: column;
+    gap: 35px; /* 카드 사이 간격 */
+}
+
+body:not(.single-post) article.post {
+    /* 이제 부모(.site-content)의 너비 940px를 100% 채웁니다. */
+    background-color: transparent !important; /* 카드 자체 배경 투명하게 */
+    border: 1px solid var(--border-primary) !important; /* 테두리 유지 */
+    border-radius: 20px !important; /* 모서리 둥글게 !important 추가 */
+    padding: 0 !important; /* 카드 자체 패딩 제거 */
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 800px !important; /* 카드 최대 너비 800px으로 수정 */
+    margin: 0 auto 35px auto !important; /* 기존 간격 유지 및 중앙 정렬 */
+    overflow: hidden !important; /* 둥근 모서리 유지를 위해 hidden으로 복원 */
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function), transform var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+/* 4. 개별 포스트 본문 스타일 */
+body.single article.post { /* body.single-post 에서 body.single 로 변경하여 일반 페이지도 포함 */
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-primary) !important; /* 경계선 보이도록 !important 추가 */
+    border-radius: 20px;
+    /* padding: 30px 40px !important; */ /* 넓어진 패딩 제거 */
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 2em; /* 상단 여백 추가 */
+    margin-bottom: 2em; /* 하단 여백 추가 */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important; /* 그림자 명시적 설정 및 우선순위 부여 */
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function), box-shadow var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+/* 5. 내부 .inside-article의 스타일 조정 */
+body.single .inside-article {
+    padding: 0 !important; /* article.post 에 패딩이 적용되므로 여기서는 제거 */
+    background: transparent !important;
+    border: none !important;
+    display: block !important;
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+
+body:not(.single) article.post .inside-article {
+    padding: 15px !important;
+    background-color: var(--bg-secondary) !important;
+    border: none !important;
+    border-radius: 0 !important;
+    overflow: hidden !important;
+}
+
+/* ==========================================================================
+   5. Content & Post Layout (High Specificity)
+   ========================================================================== */
+
+/* Content transitions with performance optimization */
+.entry-content,
+.entry-summary {
+    transition: font-size 0.2s ease, color var(--default-transition-duration) var(--default-transition-timing-function);
+    will-change: font-size, color; /* Optimize for font size and color changes */
+}
+
+/* Hide single post elements */
+.single-post .page-header-image-single,
+.single-post .featured-image.page-header-image-single { /* 더 구체적인 선택자 추가 */
+    display: none !important; /* 확실하게 숨김 처리 */
+}
+
+/* Performance optimizations */
+img {
+    height: auto; /* Prevent layout shifts */
+    max-width: 100%;
+}
+
+/* Lazy loading support */
+img[loading="lazy"] {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+img[loading="lazy"].loaded {
+    opacity: 1;
+}
+
+/* Display images in content at their original size */
+
+/* Ensure common image wrappers fill the width of .entry-content */
+.entry-content .wp-block-image,
+.entry-content figure {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;  /* Override default figure horizontal margins */
+    margin-right: 0; /* Override default figure horizontal margins */
+    padding-left: 0; /* Ensure no padding shrinks the available space */
+    padding-right: 0;/* Ensure no padding shrinks the available space */
+    box-sizing: border-box;
+}
+
+/* Styling for posts loaded via infinite scroll on ALL pages */
+.site-main > article.ajax-loaded-card {
+    margin: 0 auto 35px auto; /* Centering and bottom margin */
+    background-color: transparent; /* Article wrapper itself is transparent */
+    border: 1px solid var(--border-primary) !important; /* 홈 카드와 동일한 테두리 적용 */
+    padding: 0 !important; /* 카드 자체 패딩 제거 */
+    border-radius: 20px !important; /* Consistent with home page cards */
+    box-shadow: none !important; /* Consistent with home page cards */
+    overflow: hidden; /* Consistent with home page cards */
+    width: 100% !important; /* Consistent with home page cards */
+    max-width: 800px !important; /* 홈 화면 카드 너비 800px로 수정 */
+    min-width: 0 !important; /* Consistent with home page cards */
+}
+
+body.archive .site-main > article.ajax-loaded-card {
+    max-width: none !important;
+}
+
+body.archive .site-main > article.ajax-loaded-card {
+    max-width: none !important;
+}
+
+body.single .site-main > article.ajax-loaded-card:hover,
+body.single-post .site-main > article.ajax-loaded-card:hover {
+    transform: translateY(-5px); /* Consistent hover effect */
+    box-shadow: none !important; /* Consistent hover effect */
+}
+
+body.single .site-main > article.ajax-loaded-card > div.inside-article,
+body.single-post .site-main > article.ajax-loaded-card > div.inside-article {
+    padding: 25px 25px 25px 25px !important; /* Consistent padding on all sides */
+    margin-bottom: 0 !important; /* Match home page inside-article */
+    background-color: var(--bg-secondary) !important; /* Card content background */
+    border: none !important; /* Match home page inside-article */
+    border-radius: 20px; /* Match home page inside-article */
+    overflow: hidden; /* Match home page inside-article */
+    box-sizing: border-box !important; /* Match home page inside-article */
+    display: flex; /* Added for consistency */
+    flex-direction: column; /* Added for consistency */
+    gap: 25px; /* Added for consistency */
+    min-height: 400px; /* Unified card height */
+}
+
+/* Ensure elements within these newly styled cards also behave as expected */
+/* For example, entry-header, post-image, etc. might need specific context or resets */
+
+body.single .site-main > article.ajax-loaded-card .entry-header,
+body.single-post .site-main > article.ajax-loaded-card .entry-header {
+    padding-top: 25px !important; /* Match home page */
+    /* Reset other properties if they conflict */
+    position: relative; /* Match home page */
+}
+
+/* Specific styling for entry-title within dynamically loaded cards on single pages */
+body.single .site-main > article.ajax-loaded-card .entry-title,
+body.single-post .site-main > article.ajax-loaded-card .entry-title {
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    background-color: var(--bg-tertiary) !important;
+    color: var(--text-heading) !important;
+    padding: 20px 30px !important;
+    border-radius: 12px !important;
+    text-align: center !important;
+    margin-bottom: 1em !important;
+}
+
+/* Hide entry-footer for these cards, similar to home page */
+body.single .site-main > article.ajax-loaded-card footer.entry-meta,
+body.single-post .site-main > article.ajax-loaded-card footer.entry-meta {
+    display: none !important;
+}
+
+/* Styling for images within ajax-loaded-card on SINGLE POST PAGES */
+body.single .site-main > article.ajax-loaded-card .post-image img,
+body.single-post .site-main > article.ajax-loaded-card .post-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* To mimic home page card image behavior */
+    display: block;
+    transition: transform 0.3s ease-in-out; /* Optional: match hover effect if any */
+    /* Ensure no conflicting max-width from generic img rules if it was causing issues */
+    max-width: 100%; /* This should be fine and is good practice */
+}
+
+/* Optional: Hover effect for these images if desired, similar to home page */
+body.single .site-main > article.ajax-loaded-card .post-image img:hover,
+body.single-post .site-main > article.ajax-loaded-card .post-image img:hover {
+    transform: scale(1.03); /* 효과 축소 */
+}
+
+/* Post card hover effect - ONLY for non-single views (homepage, archives) */
+body:not(.single-post) .site-main article.post:hover {
+    transform: translateY(-5px);
+    box-shadow: none !important; /* 카드 호버 그림자 제거 */
+}
+
+/* Remove hover effect from single post pages specifically */
+body.single-post .site-main article.post:hover {
+    transform: none !important;
+    box-shadow: none !important; /* Ensure no shadow on hover either */
+}
+
+/* Remove outline from focused post articles */
+.site-main article.post:focus {
+    outline: none !important;
+}
+
+.inside-article { padding: 25px !important; display: flex; flex-direction: column; gap: 25px; box-sizing: border-box !important; }
+body:not(.single) .inside-article { padding: 25px !important; }
+
+/* Specific resets for inner container on homepage cards */
+body:not(.single) article.post div.inside-article {
+    padding: 15px !important; /* 내부 콘텐츠 패딩 15px로 수정 */
+    margin-bottom: 0 !important;
+    background-color: var(--bg-secondary) !important; /* 내부 컨테이너 배경색 흰색으로 명시 */
+    border: none !important;
+    border-radius: 0 !important; /* 내부 컨테이너에도 동일한 둥근 모서리 적용 */
+    overflow: hidden !important; /* 상위 article.post overflow:hidden과 일관성 유지 */
+    box-sizing: border-box !important;
+    display: flex; /* Ensure flex properties */
+    flex-direction: column; /* Ensure flex properties */
+    gap: 25px; /* Ensure flex properties */
+}
+
+/* 홈 화면 브레드크럼 중앙 정렬 & AJAX loaded posts fix */
+body:not(.single) .entry-header .gp-post-category {
+    /* Existing styles from general .gp-post-category or this specific rule */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 5px !important; /* From .gp-post-category general rule */
+    text-align: center !important; /* From .gp-post-category general rule */
+    width: 100%; /* Already exists */
+    margin-bottom: 15px !important; /* Already exists */
+
+    /* Overrides and explicit settings for AJAX-loaded items */
+    position: static !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: none !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+}
+body:not(.single) .entry-header,
+body:not(.single) .post-image,
+body:not(.single) .post-image a { /* a 태그에도 overflow visible 추가 */
+    overflow: visible !important; /* 이미지 호버 효과를 위해 추가 */
+}
+body:not(.single) .post-image, /* 기존 스타일 유지하며 분리 */
+body:not(.single) .entry-summary,
+body:not(.single) .read-more-container,
+body:not(.single) .list-tags-container,
+body:not(.single) .gp-list-star-rating {
+        /* padding: 0 25px !important; */ /* Removed to allow parent .inside-article to control padding */
+}
+body:not(.single) .post-image {
+    margin-bottom: 15px !important; /* 이미지 하단 마진 추가 */
+}
+body:not(.single) .entry-header { padding-top: 25px !important; }
+body:not(.single) .list-tags-container { padding-bottom: 8px !important; }
+body:not(.single) .gp-list-star-rating { margin-top: 10px; padding-bottom: 15px !important; }
+body:not(.single) .site-main article.post:hover { transform: translateY(-5px); box-shadow: none !important; /* 카드 호버 그림자 제거 */ }
+
+.entry-header, .featured-image, .post-image, .entry-summary, footer.tags-footer, .list-tags-container, .post-footer-sections, .read-more-container { margin: 0 !important; }
+.entry-header, .featured-image, .post-image, .entry-content, .entry-summary, footer.tags-footer, .list-tags-container, .post-footer-sections, .read-more-container { width: 100%; }
+.entry-header { display: flex; flex-direction: column; gap: 15px; align-items: center; }
+
+/* Add position relative for non-single entry headers for positioning context */
+body:not(.single) article.post .entry-header {
+    position: relative;
+}
+
+/* 본문 페이지 브레드크럼 스타일 - 강력한 중앙정렬 */
+/* === DEFINITIVE TOP META BAR ALIGNMENT FIX === */
+/* This rule provides proper spacing for single post pages */
+body.single .gp-top-meta-bar-container,
+.single .gp-top-meta-bar-container {
+    width: 100% !important;
+    margin: 0 auto !important;
+}
+
+body.single .gp-top-meta-bar,
+.single .gp-top-meta-bar {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    min-height: 42px; /* Or original height */
+    position: relative !important;
+    padding: 60px 0 !important; /* 60px top/bottom padding, 0 left/right */
+    box-sizing: border-box !important;
+    /* gap: 0; /* Flex gap not needed when using space-between for outer elements */
+}
+
+/*
+   Reverted .breadcrumb-lang-wrapper to its previous state if it was modified,
+   or ensure it doesn't interfere with flex layout.
+   If .gp-post-category and .gp-language-switcher are direct children of .gp-top-meta-bar,
+   .breadcrumb-lang-wrapper might not be needed or might be styled differently.
+   Assuming it's not a primary layout container for this specific flex setup.
+*/
+
+body.single .gp-top-meta-bar .left-buttons {
+    /* Flex items align left by default, no specific justify-self or grid-column needed */
+    /* Ensure no grid properties are present */
+}
+
+body.single .gp-top-meta-bar .gp-post-category, /* Targets the breadcrumb container */
+.single .gp-top-meta-bar .gp-post-category {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: auto !important; /* Or a specific max-width if defined previously */
+    margin: 0 !important; /* Reset margin */
+    /* display: flex etc. from previous rules for internal alignment are likely still fine */
+    /* Remove grid-item specific properties */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    flex-wrap: wrap !important;
+    gap: 5px !important;
+    flex-direction: row !important;
+}
+
+.entry-title {
+    background-color: transparent !important;
+    padding: 20px 25px !important;
+    border-radius: 15px !important;
+    font-size: 2.0em !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.04em;
+    text-align: center;
+    width: auto;
+}
+h2.entry-title a {
+    color: var(--text-heading) !important;
+    line-height: 1.4 !important;
+    font-size: 0.9em !important;
+    font-weight: 800 !important;
+    display: inline-block; /* Added for reliable transform */
+    transition: transform 0.3s ease-in-out; /* Added for smooth scaling */
+}
+
+.entry-title a:hover {
+    transform: scale(1.03); /* Scale up title on hover */
+}
+/* 제목 회색 배경 최우선 강제 적용 */
+/* General .entry-title styling (transparent background for non-single pages) */
+.entry-title,
+h1.entry-title,
+.post .entry-title, /* Covers .entry-title within .post */
+article .entry-title { /* Covers .entry-title within article */
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    background-color: var(--bg-tertiary) !important; /* Light gray background for ALL titles */
+    color: var(--text-heading) !important;
+    padding: 20px 30px !important; /* Consistent padding */
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 1.5em !important; /* Consistent bottom margin */
+    border-radius: 12px !important; /* Consistent rounded corners */
+    text-align: center !important;
+}
+
+/* Specific styles for single post titles - mostly inherited now, ensure no conflicts */
+body.single .entry-title,
+body.single .entry-header .entry-title,
+body.single h1.entry-title {
+    margin-bottom: 0 !important; /* Single post title might have slightly different bottom margin if needed */
+    /* Other styles are inherited from the general .entry-title rule above */
+}
+
+/* Adjust .entry-title padding and margin on homepage cards for better cohesion */
+body:not(.single) article.post .entry-title {
+    /* Styles are now largely inherited from the general .entry-title rule.
+       If specific overrides are needed for homepage cards, they go here.
+       For example, if margin-bottom needs to be different: */
+    margin-bottom: 1em !important;
+    /* Padding, background, radius, etc., are inherited. */
+}
+
+.featured-image, .post-image { position: relative !important; }
+.featured-image > a, .post-image > a { display: block; position: relative; }
+.featured-image img, .post-image img { width: auto; height: auto; display: block; max-width: none; }
+body:not(.single) .post-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block; /* Already effectively applied, but good to be explicit */
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth scaling */
+    background-color: var(--bg-tertiary);
+}
+
+body:not(.single) .post-image img:hover {
+    transform: scale(1.03); /* Scale up image on hover - 효과 축소 */
+}
+
+body.single .featured-image {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0; /* Overrides potential theme defaults */
+    margin-right: 0; /* Overrides potential theme defaults */
+    padding-left: 0; /* Ensure no padding that shrinks content box */
+    padding-right: 0; /* Ensure no padding that shrinks content box */
+    box-sizing: border-box;
+}
+
+body.single .featured-image img {
+    width: 100%;
+    height: auto;
+    display: block; /* Explicitly ensure */
+    object-fit: unset;
+    max-width: 100%;
+}
+
+/* === 최종 수정 v3: 포스트 메타 및 헤더 간격/디자인 통합 === */
+
+/* 1. 헤더 컨테이너의 간격을 gap으로만 제어하고, 자식들을 왼쪽 정렬합니다. */
+body.single .entry-header {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important; /* Keeps title and meta bar left-aligned within themselves */
+    gap: 15px !important; /* Space between title and meta bar. */
+    margin-bottom: 25px !important; /* Space after meta bar, before image. */
+}
+
+/* 2. 제목과 메타 바의 개별 하단 마진을 제거하여 GAP 중복을 방지합니다. */
+body.single .entry-title,
+body.single h1.entry-title,
+body.single .gp-meta-bar-after-title {
+    margin-bottom: 0 !important; /* This is correct */
+}
+
+/* 3. 메타 정보 바(작성자, 날짜 등)를 우측 정렬합니다. */
+.gp-meta-bar-after-title {
+    display: flex !important;
+    justify-content: flex-end !important; /* Align boxes to the right */
+    flex-wrap: wrap !important; /* Allow wrapping */
+    align-items: flex-start !important; /* Changed from flex-start */
+    gap: 10px !important; /* HORIZONTAL gap between boxes, changed from 8px */
+    width: 100% !important;
+    margin-top: 0 !important; /* Spacing above is handled by .entry-header's gap */
+    min-height: 36px; /* Ensure it has at least the height of one pill */
+    overflow: visible !important; /* Ensure content isn't clipped */
+}
+
+.gp-meta-bar-after-title .posted-on-wrapper,
+.gp-meta-bar-after-title .reading-time-meta,
+.gp-meta-bar-after-title .byline {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* 4. 메타 정보 박스들의 디자인과 크기를 통일하고 텍스트를 중앙 정렬합니다. */
+/* Styling for date-primary and date-secondary (no transition) */
+/* This rule block is now removed as its styles are consolidated into the block around L624 */
+
+/* Styling for other meta boxes (with transition) */
+.posted-on-wrapper, /* Still shares some base flex properties */
+.reading-time-meta,
+.byline {
+    display: flex !important;
+    align-items: center !important; /* Vertical alignment of content within each item */
+    /* justify-content: center !important; */ /* Removed */
+    /* height: 36px !important; */ /* Removed */
+    min-width: 110px !important; /* Default base min-width, overridden for reading-time-meta below */
+    flex-grow: 0 !important;
+    flex-shrink: 0 !important;
+    flex-basis: auto !important;
+    /* padding: 0 12px !important; */ /* Removed */
+    /* background-color: var(--bg-secondary) !important; */ /* Removed */
+    /* border: 1px solid var(--border-meta) !important; */ /* Removed */
+    /* border-radius: 50px !important; */ /* Removed */
+    font-size: 0.9rem !important;
+    line-height: 1 !important;
+}
+
+/* Specific min-width for reading-time-meta */
+.reading-time-meta {
+    min-width: 70px !important;
+}
+
+/* Ensure .byline retains its original min-width if it was part of the group */
+.byline {
+    min-width: 70px !important; /* Adjusted to match .reading-time-meta or be more flexible */
+    text-align: center !important;
+    box-sizing: border-box !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    vertical-align: top !important;
+    margin: 0 !important;
+    position: relative !important; /* Added for tooltip positioning */
+}
+
+.reading-time-meta,
+.byline {
+    justify-content: center !important; /* Horizontally center content */
+    height: 36px !important;
+    padding: 8px 15px !important; /* Standardized padding */
+    background-color: var(--bg-secondary) !important;
+    border: 1px solid var(--border-meta) !important;
+    border-radius: 50px !important;
+    position: relative !important; /* Ensure tooltip positioning context */
+}
+
+/* Specific override for .posted-on-wrapper to ensure it has a larger min-width */
+.posted-on-wrapper {
+    display: block !important; /* Changed from flex */
+    position: relative !important;
+    width: 180px !important;
+    height: 36px !important;
+    border: 1px solid var(--border-meta) !important;
+    border-radius: 50px !important;
+    overflow: hidden !important; /* To ensure children stay contained */
+    background-color: var(--bg-secondary) !important; /* Wrapper is the pill background */
+    /* Removed: flex-direction, align-items, min-width */
+    /* Other base styles like font-size, line-height, etc., are inherited from the modified group rule */
+    /* flex-grow, flex-shrink, flex-basis inherited or fine */
+}
+
+/* === START: Date Toggle Overlay & Animation Styles === */
+.posted-on-wrapper .date-primary,
+.posted-on-wrapper .date-secondary {
+    position: absolute !important;
+    top: 0 !important; /* Confirmed */
+    left: 0 !important; /* Confirmed */
+    width: 100% !important; /* Fill the wrapper */
+    height: 100% !important; /* Fill the wrapper */
+    margin: 0 !important; /* Explicitly added/ensured */
+    padding: 8px 25px !important; /* Increased left/right padding by 10px (15px + 10px) */
+    display: flex !important; /* For centering content within */
+    align-items: center !important; /* Confirmed */
+    justify-content: center !important; /* Confirmed */
+    text-align: center !important;
+    background-color: transparent !important; /* Content layers are transparent; wrapper has bg */
+    border: none !important; /* Removed border */
+    border-radius: 0 !important; /* Removed border-radius */
+    font-size: 0.9rem !important;
+    line-height: 1 !important;
+    color: var(--text-primary);
+    box-sizing: border-box !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    transition: opacity 0.2s ease-in-out !important;
+    backface-visibility: hidden !important;
+}
+
+/* NEW Visibility Rules using Opacity */
+.posted-on-wrapper .date-primary {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+}
+.posted-on-wrapper .date-secondary {
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+.posted-on-wrapper.state-published-visible .date-primary {
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+.posted-on-wrapper.state-published-visible .date-secondary {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    color: var(--text-primary) !important; /* Re-affirming color, transparent bg is inherited */
+    /* Ensure flex centering properties are explicitly set for this active state */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    /* margin-top: 10px !important; /* REMOVED - not needed with absolute positioning */
+}
+
+/* === END: Date Toggle Overlay & Animation Styles === */
+
+
+/* 홈 화면 및 AJAX 요약 텍스트 스타일 */
+.entry-summary {
+    font-family: var(--font-main);
+    font-size: 1.0em;
+    font-weight: 450 !important;
+    letter-spacing: -0.025em;
+    line-height: 1.9;
+    color: var(--text-secondary);
+    word-break: keep-all;
+}
+
+/* 본문 스타일 제거 - 구텐베르크 원본 유지 */
+/* article.post .entry-content p:not(:is(blockquote p, .no-ident)) { padding-left: 1.5em !important; } */
+
+.tags-links a, .list-tags-container a { display: inline-flex !important; align-items: center; background-color: var(--bg-tertiary) !important; color: var(--text-secondary) !important; border: 1px solid var(--border-secondary) !important; padding: 8px 16px !important; border-radius: 50px !important; margin: 0 4px 8px 4px !important; font-size: 0.9rem !important; font-weight: 500; transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease; line-height: 1; text-decoration: none !important; }
+.tags-links a:hover, .list-tags-container a:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); background-color: var(--text-primary) !important; color: var(--white-color) !important; border-color: var(--text-primary) !important; text-decoration: none !important; }
+footer.tags-footer, .list-tags-container {
+    display: block;
+    width: 100%; /* Assuming this was reinstated or kept from an earlier step */
+    background-color: transparent !important;
+    text-align: center !important; /* ADDED BACK */
+    /* margin-left: auto; REMOVED */
+    /* margin-right: auto; REMOVED */
+    /* display: table; REMOVED */
+}
+
+/* 글 본문 (single post) 페이지의 태그 박스 여백 조정 */
+body.single-post footer.tags-footer,
+body.single-post .list-tags-container {
+    margin-top: 2.5em !important; /* 태그 박스 위쪽 여백 확보 */
+    margin-bottom: 2.5em !important; /* 태그 박스와 다음 섹션 사이의 여백 확보 */
+    padding-top: 1em !important; /* 태그 링크들과 컨테이너 상단 경계 사이의 내부 여백 */
+    padding-bottom: 1em !important; /* 태그 링크들과 컨테이너 하단 경계 사이의 내부 여백 */
+}
+
+/* 홈 화면 및 아카이브 페이지의 태그 박스 여백은 기존 유지 또는 최소화 */
+body:not(.single-post) footer.tags-footer,
+body:not(.single-post) .list-tags-container {
+    margin-top: 15px !important; /* 기존 또는 약간의 상단 여백 */
+    margin-bottom: 15px !important; /* 기존 또는 약간의 하단 여백 */
+    padding-top: 0 !important;
+    padding-bottom: 8px !important; /* 기존 홈화면 태그 하단 패딩 복원 */
+}
+
+
+/* Center-align the tag links within their specific .tags-links container */
+footer.tags-footer .tags-links {
+    display: block; /* Or can be omitted if it's a div and this is default */
+    width: -moz-fit-content; /* Firefox compatibility */
+    width: fit-content;   /* Standard property to shrink-wrap content */
+    margin-left: auto;  /* Center the block */
+    margin-right: auto; /* Center the block */
+    text-align: center !important; /* Center the inline/inline-block tags within this block */
+}
+
+.gp-star-rating-container.voted:not(.editing) .edit-rating-btn:hover {
+    font-size: 1.05em !important; /* !important: Ensures specific visual feedback on hover. */
+    color: var(--accent-color) !important; /* !important: Ensures specific visual feedback on hover. */
+    border-color: var(--accent-color) !important; /* !important: Ensures specific visual feedback on hover. */
+    /* transform and box-shadow should be inherited from .rating-action-btn:hover if not overridden */
+}
+
+.entry-content, .post-content, .page-content {
+    max-width: var(--container-max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--mobile-padding);
+    padding-right: var(--mobile-padding);
+    box-sizing: border-box;
+    width: 100%;
+    line-height: 1.8;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+}
+
+.entry-title, .entry-content h1 {
+    font-family: var(--font-main);
+    font-weight: 800;
+    text-align: center;
+    color: var(--color-text-title);
+    padding: 0;
+}
+
+.entry-content p, .post-content p, .page-content p {
+    letter-spacing: -0.025em;
+    line-height: 1.9;
+    padding-left: 0;
+    margin-bottom: 1.5em;
+}
+
+.entry-content h2, .post-content h2 {
+    font-family: var(--font-main);
+    font-size: 1.8em;
+    font-weight: 700;
+    margin: 2em 0 1.2em 0;
+    padding: 18px 25px 14px 40px;
+    position: relative;
+    border: none;
+    background: none;
+    color: var(--color-text-title);
+    border-left: 10px solid var(--color-primary);
+    background-color: rgba(54, 162, 155, 0.05);
+    border-radius: 0 8px 8px 0;
+    border-image: none;
+}
+
+.entry-content h3, .post-content h3 {
+    font-family: var(--font-main);
+    font-size: 1.6em;
+    font-weight: 700;
+    margin: 2em 0 1.5em 0;
+    padding-bottom: 10px;
+    padding-left: 0;
+    border-bottom: 2px solid var(--color-border);
+    color: var(--color-text-title);
+    position: relative;
+    border-image: none;
+}
+
+.entry-content h4, .post-content h4 {
+    font-family: var(--font-main);
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 2em 0 1em 0;
+    color: var(--color-text-title);
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    line-height: 1.5;
+}
+
+.entry-content h4.wp-block-heading::before {
+    content: '■';
+    color: var(--color-primary);
+    font-size: 0.7em; /* 크기 축소 */
+    line-height: 1;
+    font-weight: 400; /* 얇게 변경 */
+}
+
+/* 2. li 태그의 좌측 패딩을 0으로 고정하고, 하단 구분선과 간격을 재정의합니다. */
+.entry-content ul:not(.wp-block-gallery),
+.post-content ul:not(.wp-block-gallery),
+.page-content ul:not(.wp-block-gallery) {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+
+.entry-content ul:not(.wp-block-gallery) li,
+.post-content ul:not(.wp-block-gallery) li,
+.page-content ul:not(.wp-block-gallery) li {
+    padding-left: 1.5em !important;
+    margin-bottom: 1em !important;
+    padding-bottom: 1em !important;
+    border-bottom: 0.5px solid #e0e0e0 !important;
+    color: var(--text-primary);
+    list-style: none !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Ccircle cx='4' cy='4' r='3' fill='%2336a29b'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 5px 0.7em;
+    background-size: 0.4em;
+}
+
+.entry-content ul:not(.wp-block-gallery) li::before {
+    display: none !important;
+}
+
+.entry-content strong, .post-content strong, .entry-content b, .post-content b {
+    font-weight: 600;
+    color: var(--color-text-title);
+    box-shadow: inset 0 -0.45em 0 var(--color-highlight-underline);
+    padding: 0.05em 0.15em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+.entry-content hr:not(.econark-disclaimer-box hr), .post-content hr:not(.econark-disclaimer-box hr) {
+    border: none;
+    height: 1px;
+    background-color: var(--color-border);
+    margin: 2.2em 0;
+}
+
+.entry-content blockquote, .post-content blockquote {
+    margin: 40px 0;
+    padding: 40px;
+    border-left: 5px solid var(--color-primary);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    border-radius: 8px;
+    background: var(--color-background-soft);
+}
+
+.entry-content blockquote p, .post-content blockquote p {
+    color: var(--color-text-blockquote);
+    font-size: 0.9em;
+    font-style: normal;
+    line-height: 1.7;
+}
+
+/* === 블릿 리스트 스타일 초기화 및 재정의 === */
+
+/* 1. 모든 ul 태그의 기본 블릿 모양과 들여쓰기를 제거합니다. */
+.entry-content ul, .post-content ul, .page-content ul {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+
+/* 2. li 태그의 좌측 패딩을 0으로 고정하고, 하단 구분선과 간격을 재정의합니다. */
+.entry-content ul li,
+.post-content ul li,
+.page-content ul li {
+    padding-left: 0 !important;
+    margin-bottom: 1em !important;
+    padding-bottom: 1em !important;
+    border-bottom: 1px solid var(--color-border) !important; /* 테두리 두께를 일관성 있게 조정 */
+}
+
+/* 3. 마지막 li 태그의 하단 구분선을 제거하여 깔끔하게 마무리합니다. */
+.entry-content ul li:last-child,
+.post-content ul li:last-child,
+.page-content ul li:last-child {
+    border-bottom: none !important;
+    margin-bottom: 0; /* 마지막 항목의 하단 마진 제거 */
+    padding-bottom: 0; /* 마지막 항목의 하단 패딩 제거 */
+}
+
+/*
+ * Prevent Cumulative Layout Shift (CLS) on lazy-loaded images by
+ * reserving space with a consistent aspect ratio.
+ */
+.post-image {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background-color: #f0f0f0; /* Light grey placeholder background */
+    position: relative;
+}
+
+.post-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Hide the lazy-load image until it's loaded */
+.post-image img.lazy-load {
+    opacity: 0;
+}
+
+/* Fade in the image once it has loaded */
+.post-image img.loaded {
+    opacity: 1;
+}

@@ -1,0 +1,6 @@
+/* Destination: components/_language-switcher.css */
+@media (max-width: 768px) {
+    .main-navigation li.pll-parent-menu-item>a {
+        font-size: 0 !important;
+    }
+}

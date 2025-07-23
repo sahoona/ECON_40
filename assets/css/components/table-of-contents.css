@@ -1,0 +1,235 @@
+/* Destination: components/_table-of-contents.css */
+#gp-toc-container .gp-toc-list ol li > a {
+    display: inline-block !important;
+    width: auto !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    text-align: right !important;
+    float: none !important;
+    padding-right: 0px !important;
+}
+
+#gp-toc-container .gp-toc-list ol li {
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+    justify-content: flex-end !important;
+    padding: 10px 0 !important;
+    margin: 0 !important;
+    list-style-position: inside !important;
+}
+
+#gp-toc-container .gp-toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#gp-toc-container .gp-toc-list.toc-collapsed {
+    max-height: 400px !important;
+    overflow: hidden !important;
+    position: relative;
+}
+
+#gp-toc-container .gp-toc-list.toc-expanded {
+    max-height: 10000px !important; /* A large value to ensure it expands fully */
+    overflow: visible !important;
+    -webkit-mask-image: none;
+    mask-image: none;
+}
+
+#gp-toc-container .gp-toc-title {
+    font-weight: 600;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0 auto 1.5em auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+#gp-toc-container .gp-toc-toggle {
+    font-size: 0.8em;
+    font-weight: 400;
+    color: var(--text-muted);
+}
+
+#gp-toc-container .toc-h2-item > a {
+    flex: 1 1 50% !important;
+    padding-right: 1em;
+    box-sizing: border-box;
+}
+
+#gp-toc-container .toc-h2-item > ol {
+    flex: 1 1 50% !important;
+    padding-left: 1em;
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+}
+
+#gp-toc-container .toc-h2-item ol li {
+    padding: 0.3em 0;
+}
+
+#gp-toc-container .toc-h2-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 1em 0;
+    border-top: 1px solid var(--border-primary);
+}
+
+#gp-toc-container .toc-h2-item:first-child {
+    border-top: none;
+}
+
+#gp-toc-container > .gp-toc-list > li.toc-heading-level-2 > ol {
+    flex-grow: 1 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding-top: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 35px !important;
+    list-style: none !important;
+    box-sizing: border-box !important;
+}
+
+#gp-toc-container a {
+    text-decoration: none;
+    color: var(--text-secondary);
+}
+
+#gp-toc-container a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+#gp-toc-container {
+    margin: 2.5em auto !important;
+    max-width: 800px !important;
+    width: 100% !important;
+    text-align: left !important;
+}
+
+#gp-toc-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 2.5em auto;
+    background: var(--bg-secondary);
+    border-top: 3px solid var(--border-primary);
+    border-bottom: 3px solid var(--border-primary);
+    padding: 2em;
+    border-radius: 0;
+    position: relative;
+}
+
+.toc-list-hidden {
+    display: none !important;
+}
+
+.gp-toc-show-more-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: -65px;
+}
+
+.gp-toc-glass-button {
+    cursor: pointer;
+    border: 1px solid rgba(230, 230, 230, 0.5);
+    background: rgba(255, 255, 255, 0.5) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    border-radius: 50px;
+    color: #000000;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    text-shadow: none;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+html.dark-mode-active .gp-toc-glass-button {
+    color: var(--text-muted);
+    background: rgba(40, 40, 40, 0.5) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gp-toc-show-more-button,
+.gp-toc-hide-button {
+    flex-direction: column;
+}
+
+.gp-toc-show-more-button .arrow-wrapper,
+.gp-toc-hide-button .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.gp-toc-show-more-button .arrow,
+.gp-toc-hide-button .arrow {
+    display: inline-block;
+    width: 0.4em;
+    height: 0.4em;
+    border-right: 0.1em solid;
+    border-bottom: 0.1em solid;
+}
+
+.gp-toc-show-more-button .arrow.down {
+    transform: rotate(45deg);
+}
+
+.gp-toc-show-more-button .arrow.up,
+.gp-toc-hide-button .arrow.up {
+    transform: rotate(-135deg);
+}
+
+.gp-toc-show-more-button:hover,
+.gp-toc-hide-button:hover {
+    color: var(--accent-color);
+}
+
+#gp-toc-container .gp-toc-list.toc-expanded + .gp-toc-show-more-container .gp-toc-show-more-button {
+    color: #000000;
+}
+
+
+div#gp-toc-container > ol.gp-toc-list > li.toc-heading-level-2 > a {
+    flex: 0 0 50% !important;
+    box-sizing: border-box !important;
+    padding-right: 25px !important;
+    margin: 0 !important;
+    position: relative;
+}
+
+div#gp-toc-container > ol.gp-toc-list > li.toc-heading-level-2 > ol.h3-h6-list {
+    flex: 0 0 50% !important;
+    box-sizing: border-box !important;
+    padding-left: 25px !important;
+    margin: 0 !important;
+    align-self: stretch;
+}
+
+div#gp-toc-container > ol.gp-toc-list > li.toc-heading-level-2:first-child {
+    border-top: none !important;
+}
+
+div#gp-toc-container > ol.gp-toc-list > li.toc-heading-level-2:not(:has(> ol)) > a {
+    width: 100% !important;
+    padding-right: 0 !important;
+}
+
+div#gp-toc-container > ol.gp-toc-list > li.toc-heading-level-2:not(:has(> ol)) {
+    display: block !important;
+}
+
+html.dark-mode-active #gp-toc-container {
+    background-color: #242526 !important;
+    border: 1px solid #3e4042 !important;
+}

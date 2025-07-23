@@ -1,0 +1,4208 @@
+
+html.dark-mode-active .post-thumbnail .new-badge,
+html.dark-mode-active .post-thumbnail::before {
+    font-weight: 700 !important;
+}
+html.dark-mode-active li.pll-parent-menu-item ul.sub-menu li.current-lang a {
+    font-weight: 700 !important;
+}
+html.dark-mode-active body:not(.single) .site-main article.post .entry-title {
+    background-color: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
+}
+html.dark-mode-active .gp-copy-url-btn {
+    background-color: transparent !important; /* 다크모드 배경색 없음 */
+    color: var(--text-primary) !important; /* 다크모드 아이콘 색상 */
+    border: none !important;
+    box-shadow: none !important;
+}
+html.dark-mode-active .gp-copy-url-btn:hover {
+    color: var(--accent-color) !important; /* 다크모드 호버 시 강조 색상 */
+    background-color: transparent !important; /* 배경색 없음 유지 */
+    box-shadow: 0 4px 12px rgba(255,255,255,0.1) !important;
+}
+html.dark-mode-active .gp-copy-url-btn.copied {
+    background-color: #40c057 !important;
+    color: var(--white-color) !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+html.dark-mode-active .posted-on-wrapper .date-secondary .date-label {
+    color: var(--text-muted) !important;
+}
+html.dark-mode-active .posted-on-wrapper .date-secondary {
+    background-color: var(--bg-tertiary) !important;
+    border: 1px solid var(--border-secondary) !important;
+    color: var(--text-secondary) !important;
+    /* Shape and size are inherited, only color/border-color overrides needed for dark mode */
+}
+html.dark-mode-active .posted-on-wrapper.expanded .date-secondary {
+    border-top-color: var(--border-secondary) !important;
+}
+html.dark-mode-active .gp-copy-url-btn {
+    background-color: var(--bg-tertiary) !important;
+    border: none !important; /* Border removed for dark mode */
+}
+html.dark-mode-active .social-share-btn.facebook,
+html.dark-mode-active .social-share-btn.x-btn {
+    border: 1px solid var(--border-secondary) !important;
+    transition: border-color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+html.dark-mode-active .comment-form-comment textarea {
+    background: var(--bg-tertiary) !important;
+    border-color: var(--border-secondary) !important;
+    color: var(--text-primary) !important;
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function), color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+html.dark-mode-active .comment-form-comment textarea:focus {
+    border-color: var(--accent-color) !important;
+}
+html.dark-mode-active .logged-in-as a {
+    color: var(--text-link) !important;
+    transition: color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+html.dark-mode-active #respond {
+    border-top-color: var(--border-primary) !important;
+}
+html.dark-mode-active .manual-ad-container {
+    border-color: transparent;
+}
+html.dark-mode-active .archive-header {
+    background-color: var(--bg-secondary);
+    border-color: var(--border-primary);
+}
+html.dark-mode-active .archive .site-main > article.post {
+    background-color: var(--bg-secondary) !important;
+    border-color: var(--border-primary) !important;
+}
+html.dark-mode-active .archive .site-main > article.post:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+html.dark-mode-active .paging-navigation .nav-links {
+    background-color: var(--bg-secondary);
+    border-color: var(--border-primary);
+}
+html.dark-mode-active .paging-navigation a.page-numbers,
+html.dark-mode-active .paging-navigation span.page-numbers {
+    color: var(--text-secondary);
+}
+html.dark-mode-active .paging-navigation a.page-numbers:hover {
+    background-color: var(--bg-tertiary);
+    color: var(--text-heading);
+}
+html.dark-mode-active .paging-navigation .page-numbers.current {
+    background-color: var(--accent-color);
+    color: var(--bg-primary);
+}
+html.dark-mode-active #adblock-warning-box {
+    background-color: var(--bg-secondary-dark);
+}
+html.dark-mode-active .site-footer {
+    background-color: var(--bg-primary) !important; /* 다크 모드 기본 배경색 */
+    color: var(--text-secondary) !important;      /* 다크 모드 기본 텍스트 색상 */
+    /* border-top: 1px solid var(--border-primary) !important; */ /* 상단 구분선 제거 시도 */
+    margin-top: 25px !important; /* 이전/다음 글 내비게이션과의 간격 확보 */
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function), margin-top var(--default-transition-duration) var(--default-transition-timing-function);
+}
+html.dark-mode-active .site-footer *,
+html.dark-mode-active .site-info,
+html.dark-mode-active .footer-bar,
+html.dark-mode-active #block-21,
+html.dark-mode-active .site-footer-dark,
+html.dark-mode-active .site-footer-dark p {
+    background-color: transparent !important; /* 자식 요소들의 배경은 투명하게 하여 부모 색이 비치도록 함 */
+    color: var(--text-secondary) !important;  /* 텍스트 색상 강제 적용 */
+    /* 크기 일관성을 위해 line-height, padding 등 크기 관련 속성은 라이트 모드 스타일을 따르도록 함 */
+    /* font-weight: 500 !important; */ /* 텍스트 두께는 필요한 경우 개별 요소에서 조정 */
+    transition: color var(--default-transition-duration) var(--default-transition-timing-function), background-color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+html.dark-mode-active .site-footer a {
+    color: var(--text-link) !important; /* 다크 모드용 링크 색상 */
+    transition: color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+html.dark-mode-active .site-footer a:hover {
+    color: var(--text-heading) !important; /* 호버 시 더 밝은 색상으로 변경 */
+}
+html.dark-mode-active .gp-star-rating-container.voted:not(.editing) .edit-rating-btn:hover {
+    color: var(--accent-color) !important; /* !important: Ensures specific visual feedback on hover in dark mode. */
+    border-color: var(--accent-color) !important; /* !important: Ensures specific visual feedback on hover in dark mode. */
+    /* font-size will be inherited from the non-dark mode hover rule above */
+}
+html.dark-mode-active .gp-post-category a {
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-secondary) !important;
+}
+html.dark-mode-active .gp-post-category a:hover {
+    background-color: #4a5a6a !important; /* Slightly lighter than pure black for hover in dark */
+    color: var(--white-color) !important;
+    border-color: #4a5a6a !important;
+}
+html.dark-mode-active .gp-post-category span.breadcrumb-separator {
+    color: var(--text-muted) !important;
+}
+html.dark-mode-active #scrollToTopBtn:hover {
+    background-color: rgba(60, 60, 60, 0.9) !important; /* Slightly lighter dark for hover */
+    opacity: 0.9 !important;
+}
+html.dark-mode-active #scrollToTopBtn:active {
+    background-color: rgba(80, 80, 80, 0.9) !important; /* Lighter dark for active */
+    transform: scale(0.95) !important;
+}
+
+html.dark-mode-active .post-thumbnail .new-badge,
+html.dark-mode-active .post-thumbnail::before {
+    font-weight: 700 !important;
+}
+html.dark-mode-active li.pll-parent-menu-item ul.sub-menu li.current-lang a {
+    font-weight: 700 !important;
+}
+html.dark-mode-active body:not(.single) .site-main article.post .entry-title {
+    background-color: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
+}
+html.dark-mode-active .gp-copy-url-btn {
+    background-color: transparent !important; /* 다크모드 배경색 없음 */
+    color: var(--text-primary) !important; /* 다크모드 아이콘 색상 */
+    border: none !important;
+    box-shadow: none !important;
+}
+html.dark-mode-active .gp-copy-url-btn:hover {
+    color: var(--accent-color) !important; /* 다크모드 호버 시 강조 색상 */
+    background-color: transparent !important; /* 배경색 없음 유지 */
+    box-shadow: 0 4px 12px rgba(255,255,255,0.1) !important;
+}
+html.dark-mode-active .gp-copy-url-btn.copied {
+    background-color: #40c057 !important;
+    color: var(--white-color) !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+html.dark-mode-active .posted-on-wrapper .date-secondary .date-label {
+    color: var(--text-muted) !important;
+}
+html.dark-mode-active .posted-on-wrapper .date-secondary {
+    background-color: var(--bg-tertiary) !important;
+    border: 1px solid var(--border-secondary) !important;
+    color: var(--text-secondary) !important;
+    /* Shape and size are inherited, only color/border-color overrides needed for dark mode */
+}
+html.dark-mode-active .posted-on-wrapper.expanded .date-secondary {
+    border-top-color: var(--border-secondary) !important;
+}
+html.dark-mode-active .gp-copy-url-btn {
+    background-color: var(--bg-tertiary) !important;
+    border: none !important; /* Border removed for dark mode */
+}
+html.dark-mode-active .social-share-btn.facebook,
+html.dark-mode-active .social-share-btn.x-btn {
+    border: 1px solid var(--border-secondary) !important;
+    transition: border-color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+html.dark-mode-active .comment-form-comment textarea {
+    background: var(--bg-tertiary) !important;
+    border-color: var(--border-secondary) !important;
+    color: var(--text-primary) !important;
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function), color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+html.dark-mode-active .comment-form-comment textarea:focus {
+    border-color: var(--accent-color) !important;
+}
+html.dark-mode-active .logged-in-as a {
+    color: var(--text-link) !important;
+    transition: color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+html.dark-mode-active #respond {
+    border-top-color: var(--border-primary) !important;
+}
+html.dark-mode-active .manual-ad-container {
+    border-color: transparent;
+}
+html.dark-mode-active .archive-header {
+    background-color: var(--bg-secondary);
+    border-color: var(--border-primary);
+}
+html.dark-mode-active .archive .site-main > article.post {
+    background-color: var(--bg-secondary) !important;
+    border-color: var(--border-primary) !important;
+}
+html.dark-mode-active .archive .site-main > article.post:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+html.dark-mode-active .paging-navigation .nav-links {
+    background-color: var(--bg-secondary);
+    border-color: var(--border-primary);
+}
+html.dark-mode-active .paging-navigation a.page-numbers,
+html.dark-mode-active .paging-navigation span.page-numbers {
+    color: var(--text-secondary);
+}
+html.dark-mode-active .paging-navigation a.page-numbers:hover {
+    background-color: var(--bg-tertiary);
+    color: var(--text-heading);
+}
+html.dark-mode-active .paging-navigation .page-numbers.current {
+    background-color: var(--accent-color);
+    color: var(--bg-primary);
+}
+html.dark-mode-active #adblock-warning-box {
+    background-color: var(--bg-secondary-dark);
+}
+html.dark-mode-active .site-footer {
+    background-color: var(--bg-primary) !important; /* 다크 모드 기본 배경색 */
+    color: var(--text-secondary) !important;      /* 다크 모드 기본 텍스트 색상 */
+    /* border-top: 1px solid var(--border-primary) !important; */ /* 상단 구분선 제거 시도 */
+    margin-top: 25px !important; /* 이전/다음 글 내비게이션과의 간격 확보 */
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function), margin-top var(--default-transition-duration) var(--default-transition-timing-function);
+}
+html.dark-mode-active .site-footer *,
+html.dark-mode-active .site-info,
+html.dark-mode-active .footer-bar,
+html.dark-mode-active #block-21,
+html.dark-mode-active .site-footer-dark,
+html.dark-mode-active .site-footer-dark p {
+    background-color: transparent !important; /* 자식 요소들의 배경은 투명하게 하여 부모 색이 비치도록 함 */
+    color: var(--text-secondary) !important;  /* 텍스트 색상 강제 적용 */
+    /* 크기 일관성을 위해 line-height, padding 등 크기 관련 속성은 라이트 모드 스타일을 따르도록 함 */
+    /* font-weight: 500 !important; */ /* 텍스트 두께는 필요한 경우 개별 요소에서 조정 */
+    transition: color var(--default-transition-duration) var(--default-transition-timing-function), background-color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+html.dark-mode-active .site-footer a {
+    color: var(--text-link) !important; /* 다크 모드용 링크 색상 */
+    transition: color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+html.dark-mode-active .site-footer a:hover {
+    color: var(--text-heading) !important; /* 호버 시 더 밝은 색상으로 변경 */
+}
+html.dark-mode-active .gp-star-rating-container.voted:not(.editing) .edit-rating-btn:hover {
+    color: var(--accent-color) !important; /* !important: Ensures specific visual feedback on hover in dark mode. */
+    border-color: var(--accent-color) !important; /* !important: Ensures specific visual feedback on hover in dark mode. */
+    /* font-size will be inherited from the non-dark mode hover rule above */
+}
+html.dark-mode-active .gp-post-category a {
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-secondary) !important;
+}
+html.dark-mode-active .gp-post-category a:hover {
+    background-color: #4a5a6a !important; /* Slightly lighter than pure black for hover in dark */
+    color: var(--white-color) !important;
+    border-color: #4a5a6a !important;
+}
+html.dark-mode-active .gp-post-category span.breadcrumb-separator {
+    color: var(--text-muted) !important;
+}
+html.dark-mode-active #scrollToTopBtn:hover {
+    background-color: rgba(60, 60, 60, 0.9) !important; /* Slightly lighter dark for hover */
+    opacity: 0.9 !important;
+}
+html.dark-mode-active #scrollToTopBtn:active {
+    background-color: rgba(80, 80, 80, 0.9) !important; /* Lighter dark for active */
+    transform: scale(0.95) !important;
+}
+html.dark-mode-active .generate-columns-container {
+    background-color: var(--bg-secondary) !important;
+}
+html.dark-mode-active body:not(.single) .site-main article.post { background-color: transparent !important; /* Individual cards will have their own background */ /* Ensure border-radius and overflow are consistent if needed, but they should be inherited from the light mode body:not(.single) .site-main article.post rule */ }
+
+html.dark-mode-active main.site-main#main { /* Added specific rule for main#main */
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+    padding: 0 !important; /* padding은 0으로 유지 또는 필요시 조정 */
+    max-width: 940px !important; /* .site-content와 일치하도록 수정 및 !important 추가 */
+    margin-left: auto !important; /* !important 추가 */
+    margin-right: auto !important; /* !important 추가 */
+    margin-bottom: 25px !important; /* 푸터와의 간격 확보 */
+}
+
+html.dark-mode-active body:not(.single) main.site-main#main {
+    background-color: var(--bg-primary) !important;
+    border: none !important;
+    border-radius: 0 !important;
+    overflow: visible !important; /* Reset overflow, was hidden for single post view */
+    max-width: 940px !important; /* .site-content와 일치하도록 수정 및 !important 추가 */
+    margin-left: auto !important; /* !important 추가 */
+    margin-right: auto !important; /* !important 추가 */
+    margin-bottom: 25px !important; /* 푸터와의 간격 확보 */
+}
+
+/* 다크모드에서 흰색 배경 요소들 강제 수정 */
+html.dark-mode-active .wp-block-columns,
+html.dark-mode-active .wp-block-column,
+html.dark-mode-active .wp-block-group,
+html.dark-mode-active .has-white-background-color {
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-primary) !important;
+}
+
+/* html.dark-mode-active .entry-content div {
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-primary) !important;
+} */
+
+/* Ensure .inside-article has a white background in light mode */
+html:not(.dark-mode) .inside-article {
+    background-color: var(--bg-secondary) !important; /* --bg-secondary is #ffffff */
+}
+
+/* Ensure .entry-content also has a white background in light mode,
+   or transparent if .inside-article is always its direct white parent.
+   Setting to white is safer. */
+html:not(.dark-mode) .entry-content {
+    /* If a default text color was lost from the deleted broad rule,
+       it can be re-applied here more safely: */
+    /* color: var(--text-primary); */
+}
+
+/* Ensure article.post and .site-main in light mode have transparent background
+   if they are not meant to be explicit cards. This helps avoid double backgrounds
+   when an outer container like .site-content already has a background. */
+html:not(.dark-mode) .site-main {
+    /* Only apply general color, background should be inherited or specific */
+    color: #333333 !important;
+    background-color: transparent !important; /* Explicitly make these transparent */
+    /* The selector 'html:not(.dark-mode) article.post' has been removed from this rule. */
+}
+
+html.dark-mode-active .content-area#primary { /* Made selector more specific */
+    background-color: var(--bg-primary) !important; /* Changed from --bg-secondary */
+}
+
+html.dark-mode-active .inside-article {
+    background-color: transparent !important;
+    color: var(--text-primary) !important; /* Ensure text contrast */
+    border: none !important;
+    /* Padding is now handled by more specific rules or inherited */
+}
+
+html.dark-mode-active body.single .inside-article {
+    background-color: transparent !important; /* 내부 컨테이너는 투명하게 */
+    border: none !important; /* 내부 컨테이너 테두리 제거 */
+    border-radius: 0 !important; /* 내부 컨테이너 둥근 모서리 제거 */
+    padding-left: 20px !important; /* 다크모드 데스크탑 .inside-article 좌우 패딩 */
+    padding-right: 20px !important; /* 다크모드 데스크탑 .inside-article 좌우 패딩 */
+    padding-top: 0 !important; /* 상하 패딩은 0 또는 필요한 값으로 조정 */
+    padding-bottom: 0 !important; /* 하단 간격 확보 */
+    color: var(--text-primary) !important;
+            max-width: 940px; /* Ensure this is present */
+            margin: 0 auto;   /* Ensure this is present */
+}
+
+html.dark-mode-active .singular-post-content {
+    background-color: transparent !important; /* Will show parent's bg */
+    color: var(--text-primary) !important; /* Ensure text is light against dark parent */
+    padding: 0 !important;
+    margin: 0 !important; /* Override its own default margin */
+    border: none !important;
+    box-shadow: none !important;
+}
+
+html.dark-mode-active .inside-article > div, /* Targeting direct div children */
+html.dark-mode-active .inside-article p,
+html.dark-mode-active .inside-article li,
+html.dark-mode-active .inside-article h1,
+html.dark-mode-active .inside-article h2,
+html.dark-mode-active .inside-article h3,
+html.dark-mode-active .inside-article h4,
+html.dark-mode-active .inside-article h5,
+html.dark-mode-active .inside-article h6 {
+    background-color: transparent !important;
+    color: var(--text-primary) !important;
+}
+
+body.single .inside-article {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
+    border-radius: 20px;
+    padding: 20px !important; /* 통일된 20px 패딩 */
+    /* overflow: hidden; was removed */
+    max-width: 940px; /* Ensure this is present */
+    margin: 0 auto;   /* Ensure this is present */
+}
+
+/* Specific styling for homepage post cards is handled elsewhere,
+   e.g., .site-main article.post */
+
+/* ==========================================================================
+   FEATURES CSS MERGED - HIGHER PRIORITY
+   ========================================================================== */
+/* This section contains a collection of styles originally from features.css.
+   It includes styles for various components and features.
+   TODO: These rules should be reviewed and integrated into their respective
+   thematic sections (e.g., TOC, Star Ratings, Reactions, Social Share, etc.)
+   for better organization and maintainability. Some !important tags may be present
+   to ensure these styles override parent theme or other defaults. */
+
+/* Progress Bar & Loading States */
+html.dark-mode-active-loading,
+html.dark-mode-active-loading body {
+    background-color: #121212 !important;
+}
+
+#mybar {
+    position: fixed !important; /* !important 추가 */
+    top: 0 !important; /* !important 추가 */
+    left: 0 !important; /* !important 추가 */
+    z-index: 99999 !important; /* z-index 값 증가 및 !important 추가 */
+    width: 0; /* JS에서 제어하므로 유지 */
+    height: 3px !important; /* 높이를 3px로 수정 (기존 5px에서 2px 감소) */
+    background: linear-gradient(90deg, rgba(255,182,3,1) 0%, rgba(255,85,85,1) 100%) !important; /* !important 추가 */
+    transition: width 0.1s ease-out !important; /* !important 추가 */
+}
+
+/* Top Meta Bar Complete Structure */
+.gp-top-meta-bar-container {
+    display: block !important;
+    margin: 0 0 20px 0 !important;
+    padding: 0 !important;
+    margin-top: 30px !important;
+    position: relative !important;
+    top: 10px !important;
+}
+
+/* Adjust vertical position for single posts */
+body.single .gp-top-meta-bar-container {
+    margin: 0 0 15px 0 !important; /* 0 top, 0 right, 15px bottom, 0 left */
+}
+
+.gp-top-meta-bar {
+    display: flex !important;
+    justify-content: flex-start !important; /* Changed from space-between */
+    align-items: center !important;
+    gap: 15px !important;
+    width: 100%;
+    height: 42px !important; /* Changed from min-height */
+    position: static !important; /* To ensure margin-top works as expected, unless it's already a flex/grid container where margin is appropriate */
+    /* Remove old grid properties to avoid conflicts */
+    grid-template-columns: none;
+    margin-top: 5px !important;
+}
+.gp-top-meta-bar .left-buttons {
+    display: flex;
+    gap: 8px;
+    /* z-index: 1; /* Less relevant for grid layout unless overlapping occurs */
+    /* justify-self: start; /* This is now handled by body.single .gp-top-meta-bar .left-buttons */
+}
+/* The rule for .gp-top-meta-bar .gp-post-category (general one) is fine as is, or might be overridden by single post specific one. */
+
+/* The general .breadcrumb-lang-wrapper might not need changes if single post overrides are sufficient. */
+/* Retaining its flex properties for other contexts if any. */
+.breadcrumb-lang-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Default for non-single or if not overridden */
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.gp-top-meta-bar .gp-language-switcher {
+    display: flex;
+    gap: 5px;
+    /* justify-self: end; /* This is now handled by body.single .breadcrumb-lang-wrapper .gp-language-switcher */
+}
+
+body:not(.single) .gp-top-meta-bar-container { display: none; }
+
+
+
+/* ==========================================================================
+   FINAL SOLUTION: Badge Design & Image Performance (CSS-Only)
+   ========================================================================== */
+
+/* 1. NEW & UPDATED 배지 - 접근성을 충족하는 최종 미니멀 디자인 */
+.gp-new-badge,
+.gp-updated-badge,
+.featured-image .gp-new-badge,
+.post-image .gp-new-badge,
+.featured-image .gp-updated-badge,
+.post-image .gp-updated-badge,
+span.gp-new-badge,
+span.gp-updated-badge,
+.post .gp-new-badge,
+.post .gp-updated-badge,
+article .gp-new-badge,
+article .gp-updated-badge {
+    position: absolute !important;
+    top: 18px !important;
+    left: 18px !important;
+    z-index: 10 !important;
+
+    /* [접근성 해결] WCAG AA 표준(4.5:1 이상)을 충족하는 #D93025 색상으로 변경 */
+    background-color: #D93025 !important;
+    color: #FFFFFF !important;
+
+    /* 완벽한 알약 형태와 균형 잡힌 여백 */
+    padding: 5px 12px !important;
+    border-radius: 999px !important;
+
+    /* 현대적이고 가독성 높은 타이포그래피 */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    /* 문제의 원인이 된 속성들 완전 제거 */
+    border: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+
+    /* 렌더링 최적화 */
+    transform: translateZ(0);
+}
+
+/* UPDATED 배지 애니메이션은 유지 */
+.gp-updated-badge,
+.featured-image .gp-updated-badge,
+.post-image .gp-updated-badge,
+span.gp-updated-badge {
+    animation: updated-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes updated-pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.07);
+        opacity: 0.95;
+    }
+}
+
+/* 2. 이미지 로딩 성능 최적화 (JavaScript 없이 CSS만으로 구현) */
+
+/* 이미지 컨테이너: 공간 미리 확보로 CLS(레이아웃 밀림) 방지 */
+.featured-image,
+.post-image {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--bg-tertiary); /* 로딩 중 배경색 */
+    border-radius: 20px;
+}
+
+html.dark-mode-active .featured-image,
+html.dark-mode-active .post-image {
+    background-color: var(--bg-primary);
+}
+
+/* 이미지 태그: 기본 스타일 (JavaScript 불필요) */
+.featured-image img,
+.post-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px !important;
+
+    /* [문제 해결] 이미지 로딩을 방해했던 opacity, animation 속성 완전 제거 */
+    /* 이제 이미지는 브라우저의 기본 동작에 따라 자연스럽게 로딩됩니다. */
+}
+
+/* 다크모드 홈화면 별점 - 노란색 그림자 제거 */
+html.dark-mode-active .gp-list-star-rating .list-stars-foreground {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffd700'%3E%3Cpath d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/%3E%3C/svg%3E") !important;
+    background-repeat: repeat-x !important;
+    background-size: contain !important;
+    filter: none !important; /* 그림자 효과 제거 */
+    box-shadow: none !important;
+    border: none !important;
+    transition: background-image var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+/* 다크모드 홈화면 별점 배경 아이콘 색상 수정 */
+html.dark-mode-active .list-stars-background {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%233a3a3a'%3E%3Cpath d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/%3E%3C/svg%3E");
+    opacity: 0.3; /* 투명도 조정으로 더 은은하게 */
+    transition: background-image var(--default-transition-duration) var(--default-transition-timing-function), opacity var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+body:not(.single) article.post:not(:last-child)::after {
+    display: none !important;
+}
+
+/* 홈 화면 카드 내부 요소들의 하단 경계선 제거 */
+body:not(.single) .inside-article,
+body:not(.single) .gp-list-star-rating,
+body:not(.single) .inside-article > *:last-child {
+    border-bottom: none !important;
+    box-shadow: none !important;
+    margin-bottom: 0 !important;
+}
+
+/* 다크모드 홈화면 별점 컨테이너 - 박스 숨기기 */
+html.dark-mode-active .gp-list-star-rating {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important; /* Consistent with general reset */
+}
+
+html.dark-mode-active .gp-list-star-rating .list-stars-wrapper {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* ALL REMAINING FEATURES CSS MERGED FOR HIGHEST PRIORITY */
+
+/* Reading Progress & Read More Animations */
+@keyframes gp-pulse {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+.read-more-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px !important; /* 태그 박스와의 간격 추가 */
+}
+
+.read-more-container::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: solid #adb5bd;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    animation: gp-pulse 2s infinite;
+    transition: all 0.2s ease-out;
+}
+
+article.post:hover .read-more-container::before {
+    animation-play-state: paused;
+    opacity: 1;
+    transform: rotate(45deg) scale(1.5);
+    border-color: var(--text-primary);
+}
+
+.gp-read-more-btn {
+    padding: 12px 30px;
+    border-radius: 8px; /* Modernized border-radius */
+    border: 1px solid var(--border-secondary); /* Adaptive border for light/dark */
+    background-color: #e9ecef; /* Light gray for light mode */
+    color: var(--text-primary);
+    transition: all 0.2s ease;
+    text-decoration: none !important;
+}
+
+.gp-read-more-btn:hover {
+    background-color: #d8dcdf; /* Slightly darker gray for light mode hover */
+    color: var(--text-heading); /* Darker text for light mode hover */
+    border-color: var(--border-meta); /* Consistent darker border for light mode hover */
+    transform: scale(1.05);
+}
+
+html.dark-mode-active .gp-read-more-btn {
+    /* Base background and text color are handled by var() in the main rule */
+    /* Explicit border for dark mode if var(--border-secondary) wasn't suitable, but it is. */
+    /* So, this block can be kept minimal or removed if no specific overrides are needed for base dark style. */
+    /* For now, ensuring text color remains appropriate if it was somehow overridden by the light-mode specific color */
+    color: var(--text-primary);
+    background-color: var(--bg-secondary); /* Ensuring dark mode background is explicitly from variables */
+}
+
+html.dark-mode-active .gp-read-more-btn:hover {
+    background-color: #3a3b3c; /* Slightly lighter gray for dark mode hover */
+    color: var(--white-color); /* Brighter text for dark mode hover */
+    border-color: var(--border-meta); /* Darker, defined border for dark mode hover */
+    transform: scale(1.05);
+}
+
+/* Post Footer Sections Structure */
+.post-footer-sections {
+    border-top: 1px solid var(--border-primary);
+    background-color: var(--bg-primary);
+    padding: 3.5em 0;
+}
+
+.post-footer-sections > * {
+    padding: 0;
+    margin: 0 auto 3.5em auto; /* Keep this for centering the child block */
+    border-top: none;
+    /* display: flex; REMOVE */
+    /* flex-direction: column; REMOVE */
+    /* align-items: center; REMOVE */
+    gap: 20px; /* Keep or remove if not needed */
+    text-align: center; /* Ensure this is here, helps center inline-block like children */
+}
+
+.post-footer-sections > *:last-child {
+    margin-bottom: 0;
+}
+
+.section-label {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--text-heading);
+    margin: 0 0 5px 0;
+}
+
+/* Star Rating System Complete */
+.gp-star-rating-container {
+    /* display: none; */ /* 홈화면 별 박스 숨김 - 주석 처리하여 복원 */
+    width: 100%;
+    max-width: 420px;
+    background: var(--bg-secondary);
+    padding: 2.5em 2em;
+    border-radius: 20px;
+    border: 1px solid var(--border-primary);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.gp-star-rating-container .stars-wrapper {
+    position: relative;
+    display: inline-flex;
+    cursor: pointer;
+    padding: 0;
+}
+
+.gp-star-rating-container.voted .stars-wrapper:not(.editing) {
+    cursor: default;
+}
+
+.gp-star-rating-container .stars-background,
+.gp-star-rating-container .stars-foreground {
+    display: flex;
+    gap: 12px;
+    white-space: nowrap;
+}
+
+.gp-star-rating-container .stars-foreground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: width 0.2s ease-in-out;
+}
+
+.gp-star-rating-container .star {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    background-color: var(--border-primary);
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/%3E%3C/svg%3E") no-repeat center / contain;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/%3E%3C/svg%3E") no-repeat center / contain;
+    transition: all 0.2s ease;
+}
+
+.gp-star-rating-container .stars-foreground .star {
+    background-color: var(--accent-color);
+}
+
+.gp-star-rating-container .stars-wrapper.editing .star:hover,
+.gp-star-rating-container .stars-wrapper:not(.voted) .star:hover {
+    transform: scale(1.2);
+}
+
+.gp-star-rating-container .rating-text {
+    margin-top: 18px;
+    font-size: 1.6em;
+    font-weight: 500;
+    color: var(--text-heading);
+}
+
+.gp-star-rating-container .rating-text span[itemprop="bestRating"] {
+    font-size: 0.7em;
+    color: var(--text-muted);
+}
+
+.vote-count-display {
+    font-size: 0.9em;
+    color: var(--text-muted);
+    margin-top: 8px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.user-rating-text {
+    font-size: 0.9em;
+    color: var(--text-muted);
+    margin-top: 8px;
+    display: none;
+}
+
+.gp-star-rating-container.voted .user-rating-text {
+    display: block;
+}
+
+.rating-buttons-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.rating-action-btn {
+    font-size: 0.9em;
+    padding: 10px 22px;
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-secondary);
+    color: var(--text-secondary);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.rating-action-btn:hover {
+    transform: translateY(-2px);
+    color: var(--text-primary);
+    border-color: var(--text-primary);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+.rating-action-btn.submit-rating-btn {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    border-color: var(--accent-color);
+    font-weight: 600;
+    display: inline-block;
+}
+
+.gp-star-rating-container.voted:not(.editing) .submit-rating-btn {
+    display: none;
+}
+
+.gp-star-rating-container.voted:not(.editing) .edit-rating-btn {
+    display: inline-block;
+}
+
+.gp-star-rating-container.editing .submit-rating-btn {
+    display: inline-block !important;
+}
+
+.gp-star-rating-container.editing .edit-rating-btn {
+    display: none;
+}
+
+/* Star Rating Animations */
+@keyframes rating-submitted-shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+.gp-star-rating-container.submitted .stars-foreground {
+    animation: rating-submitted-shake 0.8s both;
+}
+
+.gp-star-rating-container.submitted .stars-foreground .star {
+    background-image: linear-gradient(45deg, #ffeb3b, #ffc107);
+}
+
+/* 리액션 버튼 시스템 */
+.reaction-buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+.reaction-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
+    padding: 10px 20px;
+    border-radius: 14px;
+    cursor: pointer;
+    color: var(--text-primary);
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+.reaction-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    border-color: var(--accent-color);
+}
+
+.reaction-btn:hover .reaction-label {
+    color: var(--accent-color);
+}
+
+.reaction-btn .reaction-label {
+    font-weight: 500;
+}
+
+.reaction-btn .reaction-count {
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-left: 4px;
+}
+
+.reaction-btn[data-reaction="like"]:hover {
+    border-color: #ff8787;
+}
+
+.reaction-btn[data-reaction="like"]:hover .reaction-label {
+    color: #fa5252;
+}
+
+.reaction-btn.cooldown {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+@keyframes count-up {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); color: #c02a2a; }
+    100% { transform: scale(1); }
+}
+
+.reaction-count.updated {
+    animation: count-up 0.3s ease-in-out;
+}
+
+/* 소셜 공유 버튼 */
+.share-buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+.social-share-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff !important;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.social-share-btn:hover {
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.social-share-btn.facebook {
+    background-color: #1877F2;
+    font-family: sans-serif;
+}
+
+.social-share-btn.x-btn {
+    background-color: var(--black-color) !important;
+    font-weight: 900 !important; /* 아이콘 두께 증가 */
+}
+
+
+/* Home Screen Star Rating Complete */
+.gp-list-star-rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 15px 20px;
+    margin: -5px 0;
+}
+
+.list-stars-wrapper {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-stars-background, .list-stars-foreground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-repeat: repeat-x;
+    background-size: contain;
+    transition: all 0.3s ease;
+}
+
+.list-stars-background {
+    width: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23f1f3f5'%3E%3Cpath d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/%3E%3C/svg%3E");
+    opacity: 0.3;
+}
+
+.list-stars-foreground {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffc107'%3E%3Cpath d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/%3E%3C/svg%3E");
+    overflow: hidden;
+    /* filter: drop-shadow(0 2px 4px rgba(255, 193, 7, 0.3)); */ /* Removed for cleaner look */
+}
+
+.gp-list-star-rating .rating-info {
+    font-size: 1.1em;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+/* Series Posts Section */
+.gp-series-posts-container {
+    margin-top: 3em;
+    padding: 3em 25px 2em 25px !important;
+    border-top: 1px solid var(--border-primary);
+    box-sizing: border-box !important;
+}
+
+.series-posts-title {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+    font-weight: 600;
+    color: var(--text-heading);
+}
+
+.series-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important; /* 변경됨 */
+    gap: 20px; /* 변경됨 */
+}
+
+.series-post-item {
+    display: flex;
+    gap: 15px;
+    text-decoration: none;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 15px;
+    border: 1px solid var(--border-primary);
+    transition: all .2s ease;
+}
+
+.series-post-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    border-color: var(--accent-color);
+}
+
+.series-post-thumbnail {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.series-post-thumbnail img, .no-thumb-series {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: var(--bg-tertiary);
+}
+
+.no-thumb-series {
+    background-color: var(--bg-tertiary);
+}
+
+.series-post-content {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+}
+
+.series-post-title {
+    font-size: 1.05em;
+    line-height: 1.4;
+    color: var(--text-primary);
+    font-weight: 600;
+    margin: 0 0 5px 0;
+}
+
+.series-post-meta {
+    font-size: 0.85em;
+    color: var(--text-muted);
+    margin-top: auto;
+    /* text-align: center; */ /* 날짜 중앙 정렬 - 제거됨 */
+    /* position: relative; */ /* ::before 가상 요소 기준점 - 제거됨 */
+    /* padding-top: 15px; */ /* 구분선을 위한 공간 확보 - 제거됨 */
+    /* margin-top: 15px; */ /* 제목과의 간격 추가 - 제거됨 */
+}
+
+/*
+.series-post-meta::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background-color: var(--border-primary);
+}
+*/
+
+/* Code Copy Button */
+pre {
+    position: relative;
+}
+
+.copy-code-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-secondary);
+    color: var(--text-primary);
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+pre:hover .copy-code-button {
+    opacity: 1;
+}
+
+/* Reading Time Tooltip */
+.reading-time-meta[data-tooltip-text]:hover::after {
+    content: attr(data-tooltip-text);
+    position: absolute;
+    bottom: 105%; /* Adjusted bottom position */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    white-space: nowrap;
+    z-index: 99999 !important; /* Keep z-index */
+    /* border: 2px solid red !important; */ /* Removed Debug border */
+    display: inline-block !important; /* Ensure it occupies space */
+}
+
+html.dark-mode-active .reading-time-meta[data-tooltip-text]:hover::after {
+    background-color: var(--bg-tertiary) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border-primary) !important;
+}
+
+/* ==========================================================================
+   11. Sidebar & Tools (Floating Buttons are part of this)
+   ========================================================================== */
+/* Styles for floating action buttons (Dark Mode, Scroll to Top, Sidebar Toggle) and the Sidebar itself. */
+
+/* Floating Buttons Container - Positioned bottom-right */
+.floating-buttons-container {
+    position: fixed;
+    right: 20px;
+    bottom: 20px; /* Changed from top: 50% */
+    top: auto; /* Explicitly override top */
+    transform: none; /* Removed translateY(-50%) */
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 하단 앵커 광고와의 충돌 방지 */
+@media (max-width: 768px) {
+  .floating-buttons-container {
+    bottom: 100px !important;
+  }
+}
+
+@media (max-width: 768px) {
+    .floating-buttons-container {
+        right: 10px;
+        gap: 10px;
+    }
+}
+
+/* Sidebar Toggle & Icon */
+#sidebarToggle { position: relative; }
+
+/* Sidebar Structure */
+#gp-sidebar { position: fixed; top: 0; right: -400px; width: 400px; height: 100vh; background: var(--bg-secondary); border-left: 1px solid var(--border-primary); box-shadow: -5px 0 20px rgba(0,0,0,0.1); z-index: 10000; overflow-y: auto; transition: right 0.3s ease-in-out; }
+#gp-sidebar.gp-sidebar-visible { right: 0; }
+.sidebar-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 9999; opacity: 0; visibility: hidden; transition: all 0.3s ease; }
+.sidebar-overlay.active { opacity: 1; visibility: visible; }
+.sidebar-header { display: flex; justify-content: space-between; align-items: center; padding: 20px 25px; border-bottom: 1px solid var(--border-primary); background: var(--bg-primary); }
+.sidebar-header h3 { margin: 0; font-size: 1.2em; font-weight: 600; color: var(--text-heading); }
+.sidebar-close { background: none; border: none; font-size: 24px; color: var(--text-muted); cursor: pointer; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: all 0.2s ease; -webkit-tap-highlight-color: transparent; touch-action: manipulation; user-select: none; }
+.sidebar-close:hover { background: var(--bg-tertiary); color: var(--text-primary); }
+.sidebar-content { padding: 20px; }
+.sidebar-toc-container { margin-bottom: 30px; }
+.sidebar-toc-container #gp-toc-container { margin-bottom: 0; background: transparent; border: none; padding: 0; box-shadow: none; }
+.sidebar-tools h4 { margin: 0 0 15px 0; font-size: 1.1em; font-weight: 600; color: var(--text-heading); border-bottom: 1px solid var(--border-primary); padding-bottom: 10px; }
+.sidebar-tool { display: block; width: 100%; padding: 12px 16px; margin-bottom: 8px; background: var(--bg-primary); border: 1px solid var(--border-secondary); border-radius: 8px; color: var(--text-primary); text-align: center; cursor: pointer; transition: all 0.2s ease; font-size: 0.95em; }
+.sidebar-tool:hover { background: var(--text-primary); color: var(--white-color); transform: translateX(5px); }
+
+/* Floating Button Base Style */
+.floating-btn { width: 48px; height: 48px; background-color: rgba(255, 255, 255, 0.9); backdrop-filter: blur(8px); border: 1px solid var(--border-primary); border-radius: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; }
+.floating-btn:hover { transform: translateY(-2px) scale(1.05); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+.floating-btn:active { transform: translateY(0) scale(0.95); transition-duration: 0.1s; }
+
+#sidebarToggle:hover {
+    background-color: rgba(240, 240, 240, 0.95) !important; /* Desired light hover background */
+}
+
+.floating-btn.clicked { background-color: #40c057 !important; border-color: #37b24d !important; animation: buttonSuccess 0.6s cubic-bezier(0.4, 0, 0.2, 1); }
+
+@keyframes buttonSuccess { 0% { transform: scale(1); box-shadow: 0 4px 12px rgba(0,0,0,0.1); } 50% { transform: scale(1.1); box-shadow: 0 8px 25px rgba(64, 192, 87, 0.4); } 100% { transform: scale(1); box-shadow: 0 4px 12px rgba(64, 192, 87, 0.2); } }
+
+.floating-btn::after { content: ''; position: absolute; top: 50%; left: 50%; width: 0; height: 0; border-radius: 50%; background: rgba(64, 192, 87, 0.3); transform: translate(-50%, -50%); transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease; opacity: 0; pointer-events: none; }
+.floating-btn.ripple::after { width: 60px; height: 60px; opacity: 1; animation: rippleEffect 0.6s ease-out; }
+
+@keyframes rippleEffect { 0% { width: 0; height: 0; opacity: 1; } 100% { width: 60px; height: 60px; opacity: 0; } }
+
+/* Dark Mode & Scroll Icons */
+#darkModeToggle .dark-mode-icon-wrapper { position: relative; width: 22px; height: 22px; overflow: hidden; }
+#darkModeToggle .dark-mode-icon-wrapper::before, #darkModeToggle .dark-mode-icon-wrapper::after { content: ''; position: absolute; width: 100%; height: 100%; background-color: var(--text-primary); transition: all 0.3s ease; }
+#darkModeToggle .dark-mode-icon-wrapper::before { mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'%3E%3Ccircle cx='12' cy='12' r='5'/%3E%3Cpath d='M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42'/%3E%3C/svg%3E"); opacity: 1; }
+#darkModeToggle .dark-mode-icon-wrapper::after { mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'%3E%3Cpath d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z'/%3E%3C/svg%3E"); opacity: 0; }
+#scrollToTopBtn {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23343a40' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 19V5M5 12l7-7 7 7'/%3E%3C/svg%3E");
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1 !important; /* Make it always visible */
+    pointer-events: auto !important; /* Make it always clickable */
+    transition: all 0.3s ease;
+}
+
+/* Complete Dark Mode Variables & Styles */
+/* Dark mode icon transitions */
+html.dark-mode-active #darkModeToggle .dark-mode-icon-wrapper::before {
+    opacity: 0;
+}
+
+html.dark-mode-active #darkModeToggle .dark-mode-icon-wrapper::after {
+    opacity: 1;
+}
+
+/* Sidebar toggle icon animation */
+.sidebar-toggle-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth transition for icon rotation */
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.sidebar-toggle-icon::before,
+.sidebar-toggle-icon::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2.5px;
+    background-color: var(--text-primary);
+    transition: all 0.3s ease;
+    border-radius: 1px;
+}
+
+.sidebar-toggle-icon::before {
+    /* Default icon using SVG mask is handled by #sidebarToggle .sidebar-toggle-icon::before */
+    /* This block might be for hamburger, ensure it doesn't conflict or remove if not needed for new icon */
+}
+
+.sidebar-toggle-icon::after {
+    display: none; /* Hidden by default */
+    /* top: 16px; */ /* Was for hamburger */
+    /* width: 75%; */ /* Was for hamburger */
+}
+
+body.sidebar-open .sidebar-toggle-icon::before {
+    content: ''; /* Ensure content is present */
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2.5px; /* Or your desired thickness */
+    background-color: var(--text-primary);
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) rotate(45deg);
+    box-shadow: none; /* Important to remove hamburger shadow */
+}
+
+body.sidebar-open .sidebar-toggle-icon::after {
+    content: ''; /* Ensure content is present */
+    display: block; /* Make sure it's displayed */
+    position: absolute;
+    width: 100%; /* Was 75% for hamburger, change to 100% for symmetrical X */
+    height: 2.5px; /* Or your desired thickness */
+    background-color: var(--text-primary);
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+/* Floating button click effects */
+.floating-btn.clicked {
+    background-color: #40c057 !important;
+    border-color: #37b24d !important;
+    animation: buttonSuccess 0.6s ease;
+}
+
+.floating-btn.ripple::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(64, 192, 87, 0.3);
+    transform: translate(-50%, -50%);
+    animation: rippleEffect 0.6s ease-out;
+    pointer-events: none;
+}
+
+@keyframes buttonSuccess {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes rippleEffect {
+    0% { width: 0; height: 0; opacity: 1; }
+    100% { width: 60px; height: 60px; opacity: 0; }
+}
+
+/* Sidebar overlay active state */
+.sidebar-overlay.active {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+#gp-sidebar.gp-sidebar-visible {
+    right: 0 !important;
+}
+
+/* ==========================================================================
+   14. Dark Mode Styles
+   ========================================================================== */
+/* Contains all overrides and specific styles for dark mode.
+   It starts with variable definitions and then component-specific overrides. */
+
+/* Complete Dark Mode Variables & Styles */
+html.dark-mode-active {
+    --bg-primary: var(--bg-primary-dark, #18191a);
+    --bg-secondary: var(--bg-secondary-dark, #242526);
+    --bg-tertiary: var(--bg-tertiary-dark, #3a3a3a);
+    --text-primary: var(--text-primary-dark, #e4e6eb);
+    --text-secondary: var(--text-secondary-dark, #b0b3b8);
+    --text-muted: var(--text-muted-dark, #8a8d91);
+    --text-heading: var(--text-heading-dark, #ffffff);
+    /* Border variables는 이미 라이트/다크 공용으로 사용되거나,
+       html.dark-mode-active 규칙 내에서 직접 다른 변수(예: --border-primary-dark)를 참조하도록 설정할 수 있음.
+       현재 CSS에서는 --border-primary 등이 라이트모드 값으로 정의되어 있고, 다크모드에서 이 변수들을 재정의하고 있음.
+       이 방식도 유효함. 여기서는 다른 색상 변수들처럼 다크모드용 변수를 명시적으로 참조하도록 수정.
+    */
+    --border-primary: #3e4042; /* 기존 방식 유지 또는 --border-primary-dark 등으로 변경 */
+    --border-secondary: #4a4c4e;
+    --border-meta: #5a5c5e;
+
+    /* html 태그 자체의 배경색과 글자색은 이미 html.dark-mode-active 규칙 최상단에서 !important로 설정됨 */
+}
+
+/* Ensure body text color is applied in dark mode if not already picked up by html.dark-mode-active body in features.css */
+/* !important on body color is to ensure override of potentially very generic parent theme styles. */
+html.dark-mode-active body {
+     color: var(--text-primary) !important; /* --text-primary는 html.dark-mode-active에서 다크모드 값으로 재정의됨 */
+     background-color: var(--bg-primary) !important; /* --bg-primary는 html.dark-mode-active에서 다크모드 값으로 재정의됨 */
+     transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+/* Dark Mode List Item Styles */
+html.dark-mode-active li {
+    color: var(--text-primary) !important; /* Ensure list item text is light */
+    transition: color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+/* End Dark Mode List Item Styles */
+
+/* Dark Mode p, span, li Styles */
+html.dark-mode-active li { /* This rule is duplicated, but let's add transition here as well */
+    color: var(--text-primary) !important;
+    background-color: transparent !important; /* Ensure li backgrounds are also transparent */
+    transition: color var(--default-transition-duration) var(--default-transition-timing-function), background-color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+html.dark-mode-active p,
+html.dark-mode-active span {
+    background-color: transparent !important;
+    color: var(--text-primary) !important; /* Changed from --text-muted for better readability */
+    transition: color var(--default-transition-duration) var(--default-transition-timing-function), background-color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+/* End Dark Mode p, span, li Styles */
+
+/* Dark Mode Table Styles */
+html.dark-mode-active table,
+html.dark-mode-active th,
+html.dark-mode-active td,
+html.dark-mode-active tr:nth-child(even) td {
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+html.dark-mode-active table {
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-primary) !important; /* Assuming tables might have a global border */
+}
+
+html.dark-mode-active th {
+    background-color: var(--bg-tertiary) !important; /* Darker background for headers */
+    color: var(--text-heading) !important;
+    border-color: var(--border-primary) !important;
+}
+
+html.dark-mode-active td {
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-primary) !important;
+}
+
+/* Dark Mode Table Stripes (if they exist in light mode, this will adapt them) */
+html.dark-mode-active tr:nth-child(even) td {
+    background-color: var(--bg-tertiary) !important; /* Slightly different for stripes */
+}
+/* End Dark Mode Table Styles */
+
+html.dark-mode-active .floating-btn { background-color: rgba(44, 44, 44, 0.9); border-color: var(--border-secondary); transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function), transform var(--default-transition-duration) var(--default-transition-timing-function), box-shadow var(--default-transition-duration) var(--default-transition-timing-function); }
+html.dark-mode-active .floating-btn:hover { background-color: rgba(60, 60, 60, 0.9); transform: translateY(-2px) scale(1.05); box-shadow: 0 8px 20px rgba(255,255,255,0.1); }
+html.dark-mode-active .floating-btn.clicked { background-color: #40c057 !important; border-color: #37b24d !important; }
+html.dark-mode-active .floating-btn::after { background: rgba(64, 192, 87, 0.4); }
+
+html.dark-mode-active #darkModeToggle .dark-mode-icon-wrapper::before,html.dark-mode-active #darkModeToggle .dark-mode-icon-wrapper::after{background-color:var(--text-primary); transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), opacity var(--default-transition-duration) var(--default-transition-timing-function);}
+
+html.dark-mode-active #scrollToTopBtn{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23e0e0e0' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 19V5M5 12l7-7 7 7'/%3E%3C/svg%3E"); transition: background-image var(--default-transition-duration) var(--default-transition-timing-function);}
+html.dark-mode-active .gp-star-rating-container .star{background-color:#444; transition: background-color var(--default-transition-duration) var(--default-transition-timing-function);}
+html.dark-mode-active .gp-star-rating-container .stars-wrapper.editing .star:hover{background-color:#5c512c}
+html.dark-mode-active .gp-post-category a:hover{background-color:#34495e!important;border-color:#34495e!important}
+html.dark-mode-active .tags-links a,html.dark-mode-active .list-tags-container a{background-color:var(--bg-tertiary)!important;border-color:var(--border-secondary)!important;color:var(--white-color)!important; transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function), color var(--default-transition-duration) var(--default-transition-timing-function);}
+html.dark-mode-active .tags-links a:hover,html.dark-mode-active .list-tags-container a:hover{background-color:var(--text-primary)!important;color:var(--white-color)!important;border-color:var(--text-primary)!important}
+html.dark-mode-active #mybar { background: linear-gradient(90deg, #ffc107 0%, #ff5555 100%); }
+/* Removed dark mode TOC container style around old line 3127 for consolidation */
+html.dark-mode-active #gp-toc-container .gp-toc-title { background-color: var(--bg-secondary); color: var(--text-primary); border-color: var(--border-meta); transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function);}
+html.dark-mode-active #gp-toc-container .gp-toc-title .gp-toc-toggle { color: var(--text-muted); transition: color var(--default-transition-duration) var(--default-transition-timing-function);}
+html.dark-mode-active .post-footer-sections { background-color: #18191a; transition: background-color var(--default-transition-duration) var(--default-transition-timing-function); }
+html.dark-mode-active .gp-star-rating-container { background: var(--bg-secondary); border-color: var(--border-primary); transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function);}
+/* Simpler .reaction-btn dark mode rule removed, comprehensive rule below (around line 3186) is kept. */
+html.dark-mode-active .rating-action-btn { background-color: var(--bg-primary); border-color: var(--border-secondary); color: var(--text-secondary); transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function), color var(--default-transition-duration) var(--default-transition-timing-function);}
+html.dark-mode-active .rating-action-btn:hover { color: var(--text-primary); border-color: var(--text-primary); }
+html.dark-mode-active .rating-action-btn.submit-rating-btn { background-color: var(--accent-color); color: var(--white-color); border-color: var(--accent-color); }
+html.dark-mode-active .vote-count-display { color: var(--text-muted); transition: color var(--default-transition-duration) var(--default-transition-timing-function);}
+/* html.dark-mode-active .site-footer, html.dark-mode-active footer { background-color: var(--bg-primary) !important; color: var(--text-secondary) !important; border-top: 1px solid var(--border-primary) !important; } */
+/* html.dark-mode-active .site-footer a, html.dark-mode-active footer a { color: var(--text-link) !important; } */ /* Keeping for now, footer links are specific */
+/* html.dark-mode-active .site-footer a:hover, html.dark-mode-active footer a:hover { color: var(--text-heading) !important; } */ /* Keeping for now */
+
+html.dark-mode-active body:not(.single) .entry-summary p {
+    color: var(--text-secondary) !important;
+    transition: color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+html.dark-mode-active body { background: var(--bg-primary) !important; } /* Changed to primary background */
+html.dark-mode-active .list-stars-background { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%233a3a3a'%3E%3Cpath d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/%3E%3C/svg%3E"); opacity: 0.2; transition: background-image var(--default-transition-duration) var(--default-transition-timing-function), opacity var(--default-transition-duration) var(--default-transition-timing-function); }
+html.dark-mode-active .list-stars-foreground { filter: drop-shadow(0 2px 4px rgba(255, 193, 7, 0.4)); transition: filter var(--default-transition-duration) var(--default-transition-timing-function);}
+html.dark-mode-active .gp-language-switcher a { color: var(--text-secondary); background-color: var(--bg-secondary); border-color: var(--border-secondary); transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function), color var(--default-transition-duration) var(--default-transition-timing-function);}
+html.dark-mode-active .gp-language-switcher a:hover { background-color: #4a5a6a; color: var(--white-color); border-color: #4a5a6a; }
+html.dark-mode-active .gp-language-switcher a.current-lang { background-color: var(--accent-color); color: var(--white-color) !important; border-color: var(--accent-color); }
+html.dark-mode-active .gp-series-posts-container { border-top-color: var(--border-primary); transition: border-color var(--default-transition-duration) var(--default-transition-timing-function);}
+html.dark-mode-active .series-post-item { background: var(--bg-secondary); border-color: var(--border-primary); transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function);}
+html.dark-mode-active .no-thumb-series { background-color: var(--bg-tertiary); transition: background-color var(--default-transition-duration) var(--default-transition-timing-function);}
+html.dark-mode-active .gp-star-rating-container .stars-foreground .star { background-color: #ffd700 !important; transition: background-color var(--default-transition-duration) var(--default-transition-timing-function) !important;}
+html.dark-mode-active .gp-list-star-rating { background-color: transparent !important; background: transparent !important; }
+html.dark-mode-active .gp-list-star-rating .list-stars-wrapper { border: none !important; box-shadow: none !important; overflow: visible !important; }
+html.dark-mode-active .gp-list-star-rating .list-stars-background, html.dark-mode-active .gp-list-star-rating .list-stars-foreground { overflow: visible !important; border-radius: 0 !important; }
+
+/* 홈화면 별박스 모든 테두리와 스타일 완전 제거 */
+.gp-list-star-rating,
+.gp-list-star-rating *,
+.gp-list-star-rating .list-stars-wrapper,
+.gp-list-star-rating .list-stars-background,
+.gp-list-star-rating .list-stars-foreground,
+body .gp-list-star-rating,
+body .gp-list-star-rating *,
+.post .gp-list-star-rating,
+.post .gp-list-star-rating *,
+article .gp-list-star-rating,
+article .gp-list-star-rating * {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    padding: 0 !important; /* Added for comprehensive reset */
+    background-color: transparent !important; /* Added for comprehensive reset */
+    box-sizing: border-box !important;
+}
+
+/* 다크모드에서도 테두리 완전 제거 */
+/* This block is somewhat redundant if the above general block is fully comprehensive,
+   as dark mode specific versions of these are already applied where needed.
+   However, to ensure all listed selectors are covered, we'll ensure padding/background here too. */
+html.dark-mode-active .gp-list-star-rating,
+html.dark-mode-active .gp-list-star-rating *,
+html.dark-mode-active .gp-list-star-rating .list-stars-wrapper,
+html.dark-mode-active .gp-list-star-rating .list-stars-background,
+html.dark-mode-active .gp-list-star-rating .list-stars-foreground {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    padding: 0 !important; /* Ensuring consistency */
+    background-color: transparent !important; /* Ensuring consistency */
+}
+
+/* 별점 컨테이너 자체의 모든 스타일 제거 */
+/* This rule is more specific for .gp-list-star-rating itself and sets margin. It's good. */
+.gp-list-star-rating {
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Sidebar Dark Mode */
+html.dark-mode-active #gp-sidebar { background: var(--bg-secondary); border-left-color: var(--border-primary); box-shadow: -5px 0 20px rgba(0,0,0,0.3); }
+html.dark-mode-active .sidebar-header { background: var(--bg-primary); border-bottom-color: var(--border-primary); }
+html.dark-mode-active .sidebar-header h3 { color: var(--text-heading); }
+html.dark-mode-active .sidebar-close { color: var(--text-muted); }
+html.dark-mode-active .sidebar-close:hover { background: var(--bg-tertiary); color: var(--text-primary); }
+html.dark-mode-active .sidebar-tools h4 { color: var(--text-heading); border-bottom-color: var(--border-primary); }
+html.dark-mode-active .sidebar-tool { background: var(--bg-primary); border-color: var(--border-secondary); color: var(--text-primary); }
+html.dark-mode-active .sidebar-tool:hover { background: var(--text-primary); color: var(--bg-primary); }
+html.dark-mode-active .site-header { background-color: var(--bg-primary) !important; }
+html.dark-mode-active .inside-header { background-color: transparent !important; }
+html.dark-mode-active .main-navigation .main-nav ul li.current-menu-item > a, html.dark-mode-active .main-navigation .main-nav ul li.current-menu-parent > a, html.dark-mode-active .main-navigation .main-nav ul li.current_page_item > a, html.dark-mode-active .main-navigation .main-nav ul li.current_page_parent > a { color: var(--accent-color) !important; }
+html.dark-mode-active .search-item, html.dark-mode-active .search-item a, html.dark-mode-active .nav-search-enabled .main-nav > ul > li.search-item > a { color: var(--text-primary) !important; }
+html.dark-mode-active .search-item:hover, html.dark-mode-active .search-item a:hover { color: var(--text-link) !important; }
+
+/* 다크모드 홈화면 별점 컨테이너 - 박스 숨기기 */
+html.dark-mode-active .gp-list-star-rating {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important; /* Consistent with general reset */
+}
+
+html.dark-mode-active .gp-list-star-rating .list-stars-wrapper {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Dark mode sidebar toggle icon */
+html.dark-mode-active #sidebarToggle .sidebar-toggle-icon::before { /* More specific for the Tools icon */
+    background-color: var(--white-color) !important;
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+html.dark-mode-active .sidebar-toggle-icon::before, /* General hamburger/close icon for main nav */
+html.dark-mode-active .sidebar-toggle-icon::after {
+    background-color: var(--text-primary); /* This should be for the main nav menu toggle, not #sidebarToggle */
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+html.dark-mode-active .sidebar-toggle-icon::before { /* General hamburger/close icon for main nav */
+    box-shadow: 0 6px 0 var(--text-primary), 0 12px 0 var(--text-primary); /* This should be for the main nav menu toggle, not #sidebarToggle */
+    transition: box-shadow var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+/* Dark Mode for Restored Components */
+html.dark-mode-active .post-footer-sections {
+    background-color: var(--bg-primary);
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+html.dark-mode-active .gp-star-rating-container {
+    background: var(--bg-secondary);
+    border-color: var(--border-primary);
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+html.dark-mode-active .reaction-btn {
+    background: var(--bg-secondary);
+    border-color: var(--border-primary);
+    color: var(--text-primary);
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function), color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+html.dark-mode-active .reaction-btn:hover {
+    border-color: var(--accent-color);
+}
+
+html.dark-mode-active .rating-action-btn {
+    background-color: var(--bg-primary);
+    border-color: var(--border-secondary);
+    color: var(--text-secondary);
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function), color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+html.dark-mode-active .rating-action-btn:hover {
+    color: var(--text-primary);
+    border-color: var(--text-primary);
+}
+
+html.dark-mode-active .rating-action-btn.submit-rating-btn {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    border-color: var(--accent-color);
+}
+
+html.dark-mode-active .vote-count-display {
+    color: var(--text-muted);
+    transition: color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+
+html.dark-mode-active .gp-series-posts-container {
+    border-top-color: var(--border-primary);
+    transition: border-color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+html.dark-mode-active .series-post-item {
+    background: var(--bg-secondary);
+    border-color: var(--border-primary);
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+html.dark-mode-active .no-thumb-series {
+    background-color: var(--bg-tertiary);
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+/* 다크모드 브레드크럼 복구 */
+html.dark-mode-active .gp-post-category a {
+    background-color: var(--bg-tertiary) !important; /* 배경색 재지정 */
+    border: 1px solid var(--border-secondary) !important; /* 테두리 재지정 */
+    color: var(--text-primary) !important;
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function), color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+html.dark-mode-active .gp-post-category a:hover {
+    background-color: var(--bg-primary) !important;
+}
+
+/* 다크모드 NEW/UPDATED 배지 복구 */
+html.dark-mode-active .gp-new-badge,
+html.dark-mode-active .gp-updated-badge {
+    background-color: var(--badge-background-color) !important; /* 배경색 재지정 */
+    border: none !important;
+    color: var(--badge-text-color) !important;
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+/* 다크모드 Read More 버튼 복구 */
+html.dark-mode-active .gp-read-more-btn {
+    background-color: var(--bg-tertiary) !important; /* 배경색 재지정 */
+    border: 1px solid var(--border-secondary) !important; /* 테두리 재지정 */
+    color: var(--text-primary) !important;
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function), color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+html.dark-mode-active .gp-read-more-btn:hover {
+    background-color: #4a4c4e !important;
+    border-color: var(--border-primary) !important;
+}
+
+/* 다크모드 날짜/메타 정보 박스 복구 */
+html.dark-mode-active .posted-on-wrapper .date-primary,
+html.dark-mode-active .reading-time-meta,
+html.dark-mode-active .byline {
+    background-color: var(--bg-tertiary) !important;
+    border: 1px solid var(--border-secondary) !important;
+    color: var(--text-primary) !important;
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function), color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+/* 다크모드 포스트 반응 버튼 복구 */
+html.dark-mode-active .reaction-btn { /* This rule is duplicated, ensure the more specific one takes precedence or consolidate */
+    background: var(--bg-tertiary) !important;
+    border: 1px solid var(--border-secondary) !important;
+    color: var(--text-primary) !important;
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function), color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+/* 페이스북, X 버튼은 자체 색상을 유지하므로 별도 규칙이 필요 없습니다. */
+
+html.dark-mode-active .copy-code-button {
+    background: var(--bg-secondary) !important; /* New: #242526 - a bit lighter */
+    border: 1px solid var(--border-primary) !important; /* New: #3e4042 - a slightly more defined border */
+    color: var(--text-primary) !important; /* Remains light text */
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function), color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+html.dark-mode-active .copy-code-button:hover {
+    background: var(--accent-color) !important; /* Accent color should be visible on dark bg */
+    color: var(--white-color) !important;
+    border-color: var(--accent-color) !important;
+}
+
+html.dark-mode-active .gp-star-rating-container .star { /* This rule is duplicated, ensure the more specific one takes precedence or consolidate */
+    background-color: #444;
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+html.dark-mode-active .gp-star-rating-container .stars-wrapper.editing .star:hover {
+    background-color: #5c512c;
+}
+
+html.dark-mode-active .gp-star-rating-container .stars-foreground .star {
+    background-color: #ffd700 !important;
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function) !important;
+}
+
+/* Issue Fix: Override inline styles for specific div in dark mode */
+html.dark-mode-active main article > div[style*="background-color: #f0f8ff"] {
+    background-color: var(--bg-secondary) !important; /* Dark background */
+    color: var(--text-primary) !important; /* Light text */
+    border-left-color: var(--accent-color) !important; /* Adjust border color for visibility */
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+/* General catch-all for article backgrounds in dark mode if not already covered */
+html.dark-mode-active article,
+html.dark-mode-active .article-content { /* Assuming a common class if one exists */
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-primary) !important;
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+/* Ensure child elements within these overridden divs also get appropriate text color */
+html.dark-mode-active main article > div[style*="background-color: #f0f8ff"] *,
+html.dark-mode-active article *,
+html.dark-mode-active .article-content * {
+    color: var(--text-primary) !important;
+    transition: color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+/* Ensure that any direct children <p> tags also have the correct color,
+   as they might have their own specific color rules that need overriding in this context. */
+html.dark-mode-active main article > div[style*="background-color: #f0f8ff"] > p {
+    color: var(--text-primary) !important;
+}
+
+/* Dark Mode Blockquote Styles */
+html.dark-mode-active blockquote {
+    background-color: var(--bg-tertiary) !important; /* 약간 밝은 어두운 배경 */
+    color: var(--text-primary) !important; /* 밝은 텍스트 색상 */
+    border-left-color: var(--accent-color) !important; /* 강조색 또는 적절한 어두운 테두리 색상 */
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+html.dark-mode-active blockquote p {
+    color: var(--text-primary) !important; /* blockquote 내부 p 태그 텍스트 색상 명시 */
+    background-color: transparent !important; /* p 태그 자체의 배경은 투명하게 */
+    transition: color var(--default-transition-duration) var(--default-transition-timing-function), background-color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+html.dark-mode-active .entry-content blockquote {
+    background-color: var(--bg-secondary) !important; /* 콘텐츠 영역 내 blockquote 배경 */
+    border-left: 5px solid var(--accent-color) !important;
+    padding: 20px !important;
+    margin: 1.5em 0 !important;
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+html.dark-mode-active .entry-content blockquote p {
+    color: var(--text-primary) !important;
+    margin-bottom: 0 !important; /* p 태그 하단 마진 제거 (blockquote 패딩으로 처리) */
+    background-color: transparent !important; /* p 태그 자체의 배경은 투명하게 */
+    transition: color var(--default-transition-duration) var(--default-transition-timing-function), background-color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+
+/* Issue Fix: Dark mode for guide cards and their content */
+html.dark-mode-active .guide-card {
+    background-color: var(--bg-secondary) !important; /* Dark background for the card */
+    color: var(--text-primary) !important; /* Default light text for the card */
+    border-color: var(--border-primary) !important; /* Adjust border for dark mode */
+}
+
+html.dark-mode-active .guide-card .card-header {
+    /* Assuming card-header might have its own background, ensure it's compatible */
+    /* If it's meant to be transparent to show guide-card's bg, this is fine. */
+    /* If it had a light specific background, it would need var(--bg-secondary) or similar */
+    border-bottom-color: var(--border-primary) !important;
+}
+
+html.dark-mode-active .guide-card .card-header h3 {
+    color: var(--text-heading) !important; /* Ensure heading text is light */
+    /* Background is already set to transparent by another rule, which is good */
+}
+
+html.dark-mode-active .guide-card .card-body {
+    background-color: transparent !important; /* Ensure card body doesn't have its own conflicting bg */
+    color: var(--text-primary) !important; /* Default light text for card body contents */
+}
+
+/* Override for the specific problematic paragraph and other text elements within card-body */
+html.dark-mode-active .guide-card .card-body p,
+html.dark-mode-active .guide-card .card-body h4,
+html.dark-mode-active .guide-card .card-body li,
+html.dark-mode-active .guide-card .card-body blockquote,
+html.dark-mode-active .guide-card .card-body .card-quote { /* Targeting .card-quote specifically */
+    background-color: var(--bg-tertiary) !important; /* Or another suitable dark mode background */
+    color: var(--text-primary) !important; /* Or another suitable dark mode text color */
+    border-color: var(--border-secondary) !important; /* If it has a border */
+}
+
+/* Ensure links within cards are also styled correctly for dark mode */
+html.dark-mode-active .guide-card a {
+    color: var(--text-link) !important; /* Use the defined link color for dark mode */
+}
+
+html.dark-mode-active .guide-card a:hover {
+    color: var(--accent-color) !important; /* Or a brighter version of text-link */
+}
+
+/* Address the specific list items with checkmarks */
+html.dark-mode-active .guide-card .use-case-list li {
+    color: var(--text-primary) !important;
+}
+
+html.dark-mode-active .guide-card .use-case-list li i.fa-check {
+    color: #28a745 !important; /* Keep checkmark color or choose a light-mode friendly one */
+                               /* Or, if it needs to change: var(--accent-color) !important; */
+}
+
+/* ==========================================================================
+   MISSING COMPONENTS FROM FEATURES.CSS - CRITICAL RESTORATION
+   ========================================================================== */
+/* This section contains styles for components that were identified as missing
+   or broken after the initial merge of features.css. These rules are intended
+   to restore core functionality and appearance for these components.
+   TODO: Similar to the 'FEATURES CSS MERGED' section, these rules should ideally be
+   reviewed and integrated into their respective thematic sections. */
+
+/* 별점 시스템 완전 복구 */
+.post-footer-sections {
+    border-top: 1px solid var(--border-primary);
+    background-color: var(--bg-primary);
+    padding: 3.5em 0;
+}
+.post-footer-sections > * {
+    padding: 0;
+    margin: 0 auto 3.5em auto;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+.post-footer-sections > *:last-child { margin-bottom: 0; }
+.section-label {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--text-heading);
+    margin: 0 0 5px 0;
+}
+
+/* 별점 컨테이너 */
+.gp-star-rating-container {
+    /* display: none; */ /* 홈화면 별 박스 숨김 - 주석 처리하여 복원 */
+    width: 100%;
+    max-width: 420px;
+    background: var(--bg-secondary);
+    padding: 2.5em 2em;
+    border-radius: 20px;
+    border: 1px solid var(--border-primary);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.gp-star-rating-container .stars-wrapper {
+    position: relative;
+    display: inline-flex;
+    cursor: pointer;
+    padding: 0;
+}
+.gp-star-rating-container.voted .stars-wrapper:not(.editing) { cursor: default; }
+.gp-star-rating-container .stars-background,
+.gp-star-rating-container .stars-foreground {
+    display: flex;
+    gap: 12px;
+    white-space: nowrap;
+}
+.gp-star-rating-container .stars-foreground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: width 0.2s ease-in-out;
+}
+.gp-star-rating-container .star {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    background-color: var(--border-primary);
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/%3E%3C/svg%3E") no-repeat center / contain;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/%3E%3C/svg%3E") no-repeat center / contain;
+    transition: all 0.2s ease;
+}
+.gp-star-rating-container .stars-foreground .star { background-color: var(--accent-color); }
+.gp-star-rating-container .stars-wrapper.editing .star:hover,
+.gp-star-rating-container .stars-wrapper:not(.voted) .star:hover {
+    transform: scale(1.2);
+}
+.gp-star-rating-container .rating-text {
+    margin-top: 18px;
+    font-size: 1.6em;
+    font-weight: 500;
+    color: var(--text-heading);
+}
+.gp-star-rating-container .rating-text span[itemprop="bestRating"] {
+    font-size: 0.7em;
+    color: var(--text-muted);
+}
+
+/* 투표자 수 표시 */
+.vote-count-display {
+    font-size: 0.9em;
+    color: var(--text-muted);
+    margin-top: 8px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.user-rating-text {
+    font-size: 0.9em;
+    color: var(--text-muted);
+    margin-top: 8px;
+    display: none;
+}
+.gp-star-rating-container.voted .user-rating-text { display: block; }
+.rating-buttons-container { display: flex; gap: 10px; margin-top: 18px; }
+.rating-action-btn {
+    font-size: 0.9em;
+    padding: 10px 22px;
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-secondary);
+    color: var(--text-secondary);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+.rating-action-btn:hover {
+    transform: translateY(-2px);
+    color: var(--text-primary);
+    border-color: var(--text-primary);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+.rating-action-btn.submit-rating-btn {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    border-color: var(--accent-color);
+    font-weight: 600;
+}
+.gp-star-rating-container:not(.editing) .submit-rating-btn { display: none; }
+.gp-star-rating-container.voted:not(.editing) .edit-rating-btn { display: inline-block; }
+.gp-star-rating-container.editing .submit-rating-btn { display: inline-block !important; }
+.gp-star-rating-container:not(.voted):not(.editing) .rating-buttons-container,
+.gp-star-rating-container.editing .edit-rating-btn { display: none; }
+
+/* 별점 제출 애니메이션 */
+@keyframes rating-submitted-shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+.gp-star-rating-container.submitted .stars-foreground { animation: rating-submitted-shake 0.8s both; }
+.gp-star-rating-container.submitted .stars-foreground .star { background-image: linear-gradient(45deg, #ffeb3b, #ffc107); }
+
+/* 리액션 버튼 시스템 */
+.reaction-buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+.reaction-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
+    padding: 10px 20px;
+    border-radius: 14px;
+    cursor: pointer;
+    color: var(--text-primary);
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+.reaction-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    border-color: var(--accent-color);
+}
+.reaction-btn:hover .reaction-label { color: var(--accent-color); }
+.reaction-btn .reaction-label { font-weight: 500; }
+.reaction-btn .reaction-count {
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-left: 4px;
+}
+.reaction-btn[data-reaction="like"]:hover { border-color: #ff8787; }
+.reaction-btn[data-reaction="like"]:hover .reaction-label { color: #fa5252; }
+.reaction-btn.cooldown { opacity: 0.6; pointer-events: none; }
+@keyframes count-up {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); color: #c02a2a; }
+    100% { transform: scale(1); }
+}
+.reaction-count.updated { animation: count-up 0.3s ease-in-out; }
+
+/* 소셜 공유 버튼 */
+.share-buttons { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+.social-share-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff !important;
+    border: none;
+    transition: all 0.2s ease;
+}
+.social-share-btn:hover {
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.social-share-btn.facebook { background-color: #1877F2; font-family: sans-serif; }
+.social-share-btn.x-btn { background-color: var(--black-color); }
+
+/* 시리즈 포스트 섹션 */
+.gp-series-posts-container {
+    margin-top: 3em;
+    padding: 3em 25px 2em 25px !important;
+    border-top: 1px solid var(--border-primary);
+    box-sizing: border-box !important;
+}
+.series-posts-title {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+    font-weight: 600;
+    color: var(--text-heading);
+}
+.series-posts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+.series-post-item {
+    display: flex;
+    gap: 15px;
+    text-decoration: none;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 15px;
+    border: 1px solid var(--border-primary);
+    transition: all .2s ease;
+}
+.series-post-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    border-color: var(--accent-color);
+}
+.series-post-thumbnail {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.series-post-thumbnail img, .no-thumb-series {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.no-thumb-series { background-color: var(--bg-tertiary); }
+.series-post-content { display: flex; flex-direction: column; }
+.series-post-title {
+    font-size: 1.05em;
+    line-height: 1.4;
+    color: var(--text-primary);
+    font-weight: 600;
+    margin: 0 0 5px 0;
+}
+.series-post-meta {
+    font-size: 0.85em;
+    color: var(--text-muted);
+    margin-top: auto;
+}
+
+/* 읽기 더보기 버튼 애니메이션 */
+@keyframes gp-pulse {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+.read-more-container { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.read-more-container::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: solid #adb5bd;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    animation: gp-pulse 2s infinite;
+    transition: all 0.2s ease-out;
+}
+article.post:hover .read-more-container::before {
+    animation-play-state: paused;
+    opacity: 1;
+    transform: rotate(45deg) scale(1.5);
+    border-color: var(--text-primary);
+}
+.gp-read-more-btn {
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: 1px solid var(--border-meta);
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    transition: all 0.2s ease;
+}
+.gp-read-more-btn:hover {
+    background: var(--text-primary);
+    color: var(--accent-color);
+    border-color: var(--text-primary);
+    transform: scale(1.05);
+}
+
+/* 코드 복사 버튼 */
+pre { position: relative; }
+.copy-code-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-secondary);
+    color: var(--text-primary);
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+pre:hover .copy-code-button { opacity: 1; }
+
+/* 읽기 시간 툴팁 */
+.reading-time-meta[data-tooltip-text]:hover::after {
+    content: attr(data-tooltip-text);
+    position: absolute;
+    bottom: 105%; /* Adjusted bottom position */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    white-space: nowrap;
+    z-index: 99999 !important; /* Keep z-index */
+    /* border: 2px solid red !important; */ /* Removed Debug border */
+    display: inline-block !important; /* Ensure it occupies space */
+}
+
+@media (max-width: 768px) {
+    .gp-series-posts-container {
+        padding: 0 0 1em 0 !important; /* 상하 패딩 유지, 좌우 패딩 제거 */
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        box-sizing: border-box !important;
+        width: 100% !important;
+    }
+    .series-posts-grid {
+        /* grid-template-columns: 1fr; */ /* 부모가 auto-fit이므로 모바일에서는 자동으로 1열이 됨 */
+        gap: 0; /* 카드 간 기본 gap 제거, 각 item에서 margin-bottom으로 처리 */
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .series-post-item {
+        max-width: none !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-bottom: 20px; /* 카드 사이 간격 */
+        border-radius: 0 !important; /* 화면 꽉 채우므로 radius 제거 */
+        box-shadow: none !important; /* 기본 그림자 제거 */
+        border-left: none !important; /* 좌우 테두리 제거 */
+        border-right: none !important; /* 좌우 테두리 제거 */
+        border-top: 1px solid var(--border-primary); /* 카드 상단 구분선 */
+        border-bottom: 1px solid var(--border-primary); /* 카드 하단 구분선 */
+        padding-top: 0; /* 기존 장식선용 패딩 제거 */
+    }
+    .series-post-item::before {
+        display: none; /* 기존 상단 장식선 숨김 */
+    }
+    .series-post-thumbnail {
+        height: auto !important; /* 썸네일 높이 자동 조절 */
+        aspect-ratio: 16 / 9; /* 16:9 비율 유지 */
+        margin-top: 0;
+        border-radius: 0;
+        position: relative; /* 오버레이 및 제목 배치를 위해 추가 */
+    }
+    .series-post-thumbnail::after { /* 썸네일 하단 그래디언트 오버레이 */
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 60%; /* 오버레이 높이 */
+        background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+        z-index: 1;
+    }
+    .series-post-thumbnail img{
+        border-radius: 0;
+        position: relative;
+        z-index: 0; /* 이미지가 오버레이보다 뒤에 오도록 유지 */
+        object-fit: contain; /* 이미지가 잘리지 않도록 contain으로 변경 */
+        width: 100%; /* 명시적으로 너비 100% 설정 */
+        height: 100%; /* 명시적으로 높이 100% 설정 */
+    }
+    .series-post-thumbnail { /* 컨테이너 자체에 배경색 추가 */
+        background-color: var(--bg-tertiary); /* 빈 공간을 채울 배경색 */
+    }
+    .series-post-thumbnail::after { /* 썸네일 하단 그래디언트 오버레이 */
+        display: none; /* 라이트/다크 모드 제목 가독성을 위해 오버레이 제거 */
+    }
+    .series-post-content {
+        padding: 15px; /* 내부 콘텐츠 패딩 추가 */
+        position: static; /* 기본 위치로 변경 */
+        margin-top: 0; /* 썸네일 아래로 위치하도록 수정 */
+        z-index: auto;
+        text-align: left; /* 일반적인 텍스트 정렬 */
+    }
+    .series-post-title {
+        font-size: 1.2em; /* 폰트 크기 조정 */
+        line-height: 1.4;
+        color: var(--text-primary); /* 기본 텍스트 색상 사용 */
+        padding: 0; /* 내부 패딩 제거 (부모 .series-post-content 패딩 사용) */
+        text-shadow: none; /* 텍스트 그림자 제거 */
+        margin-bottom: 0;
+    }
+}
+
+/* ==========================================================================
+   언어 전환 버튼 (Language Switcher)
+   ========================================================================== */
+
+.gp-language-switcher {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.gp-language-switcher a {
+    color: var(--text-secondary);
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-secondary);
+    padding: 6px 12px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.2;
+    min-height: 32px;
+}
+
+.gp-language-switcher a:hover {
+    background-color: #4a5a6a;
+    color: var(--white-color);
+    border-color: #4a5a6a;
+    transform: scale(1.05);
+}
+
+.gp-language-switcher a.current-lang {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    border-color: var(--accent-color);
+    opacity: 0.7;
+    cursor: default;
+}
+
+.disabled-language-item {
+    opacity: 0.5 !important; /* Ensure override */
+    cursor: default !important; /* Ensure override */
+    /* This class is primarily for JS interaction state.
+       Specific visual styling (like color, background for disabled state)
+       should ideally be part of .gp-language-switcher a.current-lang if it's the same element,
+       or a more specific selector if it's a different visual state.
+       The JS currently adds this to .current-lang-item, which might be the same as a.current-lang
+       or a child. If it's a child, these !important might be needed.
+       If it's the same element as a.current-lang, then these properties are already set.
+       Adding !important for safety as per original plan. */
+}
+
+/* New specific style for the single button container */
+.gp-language-switcher.single-toggle-button-style {
+    gap: 0; /* Override gap for single button */
+    /* justify-self: end; /* This should be inherited if this class is on the same element as .gp-language-switcher */
+    /* margin-left: auto; /* This might be needed if justify-self isn't enough or if it's not on the same element */
+}
+
+/* 더 현대적인 언어 토글 드롭다운 버전 */
+#languageToggleBtn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-secondary);
+    padding: 8px 12px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: var(--text-secondary);
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+#languageToggleBtn:hover {
+    background-color: #4a5a6a;
+    color: var(--white-color);
+    border-color: #4a5a6a;
+}
+
+#languageToggleBtn.active {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    border-color: var(--accent-color);
+}
+
+#languageToggleBtn .lang-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-secondary);
+    border-radius: 8px;
+    margin-top: 5px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.2s ease;
+    z-index: 100;
+}
+
+#languageToggleBtn.active .lang-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#languageToggleBtn .lang-dropdown a {
+    display: block;
+    padding: 8px 12px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border-radius: 6px;
+    margin: 2px;
+}
+
+#languageToggleBtn .lang-dropdown a:hover {
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
+}
+
+#languageToggleBtn .lang-dropdown a.current-lang-item {
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none;
+}
+
+/* 과거 버전의 언어 전환 버튼 관련 스타일 제거됨 */
+
+/* ==========================================================================
+   8. Table of Contents (TOC) with Structured Data
+   ========================================================================== */
+/* Styling for the Table of Contents generated by the theme,
+   including container, title, list, items, and links. */
+
+/* === CONSOLIDATED TOC CONTAINER STYLES === */
+/* Base TOC Container Style (Consolidated) */
+#gp-toc-container {
+    width: 90%;
+    max-width: 750px !important; /* Overrides 800px and 100% width versions */
+    margin: 2.5em auto !important; /* Ensures centering */
+    background-color: var(--bg-secondary) !important;
+    border: none !important;
+    box-shadow: none !important; /* Overrides earlier shadow 0 5px 15px rgba(0,0,0,0.07) */
+    border-top: 3px solid var(--border-primary) !important;
+    border-bottom: 3px solid var(--border-primary) !important;
+    padding: 2em 0 0 0 !important; /* Overrides padding: 25px */
+    border-radius: 0 !important; /* Overrides border-radius: 15px */
+    text-align: left !important;
+    opacity: 1;
+    transform: none;
+    max-height: none !important;
+    overflow: visible !important;
+}
+
+/* == Footer Centering Fixes - Appended == */
+
+/* 1. 부모(.site-footer)의 강제 우측 정렬을 무효화합니다. */
+/* text-align:right 상속으로 인해 자식 요소의 margin:auto 중앙 정렬이 작동하지 않는 문제를 해결합니다. */
+.site-footer.footer-bar-active.footer-bar-align-right {
+    text-align: left !important; /* 자식 요소들이 자체 정렬을 할 수 있도록 기본값으로 리셋 */
+}
+
+/* 2. 중간 컨테이너(.site-info)가 부모의 영향을 받지 않고 중앙에 위치하도록 합니다. */
+.site-footer > .site-info {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important; /* 내부 콘텐츠(footer-bar)를 중앙 정렬합니다. */
+}
+
+/* 3. 위젯 블록(aside#block-21)을 중앙에 배치하고 내부 텍스트도 중앙 정렬합니다. */
+/* float 속성이나 다른 정렬 속성의 방해를 받지 않도록 초기화하고 margin:auto로 중앙 정렬합니다. */
+.footer-bar > aside#block-21.widget.inner-padding.widget_block {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important;      /* float 속성 제거 */
+    display: block !important; /* 블록 요소로 변경하여 margin:auto가 전체 너비에서 작동하도록 함 */
+    text-align: center !important; /* 내부 콘텐츠(게시글)를 중앙 정렬합니다. */
+    width: 325.875px !important; /* 사용자가 제공한 고정 너비 적용 */
+}
+
+/* 4. 실제 텍스트를 감싸는 footer.site-footer-dark 블록의 너비를 콘텐츠에 맞게 조절하고 중앙 정렬합니다. */
+/* 이 규칙은 aside#block-21 내부의 요소에 대한 것이므로, aside#block-21 자체의 text-align:center와 함께 작동합니다. */
+#block-21 footer.site-footer-dark {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: fit-content !important; /* 너비를 내부 콘텐츠에 딱 맞춤 */
+    /* 인라인 스타일에 text-align: center; 가 이미 적용되어 있으나,
+       부모인 aside#block-21에서 text-align:center를 이미 처리하므로 중복될 수 있음.
+       하지만 명시적으로 두는 것도 문제는 없음. */
+}
+
+/* 5. 최종적으로 p 태그에 적용된 인라인 margin:0을 덮어쓰고 중앙 정렬을 강제합니다. */
+/* 부모인 footer.site-footer-dark가 fit-content이고 중앙 정렬되어 있으므로,
+   p 태그는 부모 너비 내에서 중앙 정렬됩니다. */
+/* 또한, 라이트/다크 모드 간 수직 정렬 일관성을 위해 line-height와 padding을 명시합니다. */
+#block-21 footer.site-footer-dark p {
+    /* width: 325.875px !important; /* 특정 너비 고정 대신 부모 너비에 따르도록 함 */
+    margin: 0 auto !important;   /* 상하 마진 0, 좌우 마진 auto로 중앙 정렬 */
+    /* line-height: 26.25px !important; /* 이전 변경 사항 되돌리기 */
+    /* padding-top: 0 !important; /* 이전 변경 사항 되돌리기 */
+    /* padding-bottom: 0 !important; /* 이전 변경 사항 되돌리기 */
+    font-weight: 500 !important; /* 텍스트 두께 일관성 유지 */
+}
+
+/* == End Footer Centering Fixes == */
+
+/* Dark Mode for Consolidated TOC Container */
+html.dark-mode-active #gp-toc-container {
+    background-color: var(--bg-secondary) !important; /* Dark mode bg */
+    border-top-color: var(--border-primary) !important; /* Dark mode border color */
+    border-bottom-color: var(--border-primary) !important; /* Dark mode border color */
+    /* border: none !important; and box-shadow: none !important; are inherited from main rule if not overridden */
+}
+
+/* TOC Title (from existing, confirmed) */
+#gp-toc-container .gp-toc-title {
+    font-weight: 600;
+    font-size: 1.05em;
+    margin: 0 auto 1em auto;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+    background-color: var(--bg-copy-button);
+    color: var(--text-heading);
+    border: 1px solid var(--border-secondary);
+    border-radius: 10px;
+    padding: 10px 18px;
+}
+
+#gp-toc-container .gp-toc-title:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+#gp-toc-container .gp-toc-title .gp-toc-toggle {
+    font-size: 0.9em;
+    font-weight: 400;
+    color: var(--text-muted);
+    transition: color 0.2s ease;
+}
+
+#gp-toc-container .gp-toc-title:hover .gp-toc-toggle {
+    color: var(--accent-color);
+}
+
+/* TOC List Hidden State (from existing, confirmed) */
+.toc-list-hidden {
+    display: none !important;
+}
+
+/* Part 1: Base Styles - List and Link Structure */
+#gp-toc-container .gp-toc-list,
+#gp-toc-container .gp-toc-list ol { /* Covers main <ol> and nested <ol> */
+    list-style-type: none !important;
+	list-style: none !important;
+    margin: 0;
+    padding: 0;
+    text-align: left; /* Default for all lists within TOC */
+    width: 100% !important; /* Ensure full width */
+    box-sizing: border-box !important; /* Consistent width calculation */
+}
+
+/* General LI Styles (Part 1 continued) */
+#gp-toc-container li {
+    display: flex !important;
+    align-items: center !important;
+    padding: 10px 0; /* Vertical padding */
+    border-top: 1px solid var(--border-primary);
+    line-height: 1.6; /* from existing */
+    font-size: 0.95em; /* from existing */
+    margin: 0; /* from existing */
+}
+
+/* First child of the main list (Part 1 continued) */
+#gp-toc-container > .gp-toc-list > li:first-child { /* More specific if .gp-toc-list is the direct ol */
+    border-top: none !important; /* Explicitly remove top border for the very first item */
+    padding-top: 0 !important; /* Remove top padding for the first item */
+}
+
+/* Last child of the main list (Part 1 continued) */
+#gp-toc-container > .gp-toc-list > li:last-child {
+    padding-bottom: 10px; /* Keep existing padding if not overriding */
+    /* Consider border-bottom: none; if there's an outer border on #gp-toc-container already */
+}
+
+/* General Link Styles (Part 1 continued) */
+#gp-toc-container a {
+    display: inline-block; /* Allows width/height and proper spacing */
+    text-align: left;    /* Default, H3+ will override */
+    width: auto;         /* Default, H3+ might not need to override if parent li handles width */
+    color: var(--text-secondary);
+    text-decoration: none !important;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+    font-weight: 500; /* from existing */
+    line-height: 1.6; /* from existing */
+}
+
+#gp-toc-container a:hover {
+    color: var(--accent-color);
+    text-decoration: underline !important;
+}
+
+/* All "OLD STRUCTURE" commented-out CSS blocks related to TOC bullets, H2/H3/H4/H5/H6 li/a styling, and wrappers have been removed for cleanup. */
+/* Explanatory comments about current SASS or logic should remain. */
+
+/* TOC List Item Styling for JS-generated TOC */
+
+#gp-toc-container .gp-toc-list,
+#gp-toc-container .gp-toc-list ol { /* Applies to main list and nested H3 lists */
+    padding-left: 0;
+    list-style-type: none;
+    margin-left: 0;
+}
+
+#gp-toc-container .gp-toc-list li {
+    position: relative;
+    padding-left: 25px; /* Space for bullet + initial text indent */
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-size: 0.95em;
+}
+/* Remove top border for ALL H3, H4, H5, H6 items within a nested list under an H2 */
+#gp-toc-container .gp-toc-list > li.toc-heading-level-2 > ol > li.toc-heading-level-3,
+#gp-toc-container .gp-toc-list > li.toc-heading-level-2 > ol > li.toc-heading-level-4,
+#gp-toc-container .gp-toc-list > li.toc-heading-level-2 > ol > li.toc-heading-level-5,
+#gp-toc-container .gp-toc-list > li.toc-heading-level-2 > ol > li.toc-heading-level-6 {
+    border-top: none !important;
+    padding-top: 0;
+    margin-bottom: 8px;
+}
+#gp-toc-container .gp-toc-list ol > li.toc-heading-level-3:first-child {
+     margin-top: -2px; /* Adjust to align with H2 if margin-bottom on H2 <a> is too large */
+}
+
+/* H2 Item Styling (Borders and Bullets) */
+/* Ensure the main H2 LI still has its left padding for its own bullet */
+#gp-toc-container .gp-toc-list > li.toc-heading-level-2 {
+    display: block; /* Default display for li */
+    /* padding-left: 25px; /* For H2 bullet - this is from general li rule */
+    border-top: 1px solid var(--border-primary);
+    padding-top: 10px;
+    border-bottom: none; /* No underline for H2 items */
+    padding-left: 0; /* Override general li padding, a tag will handle it */
+}
+
+#gp-toc-container .gp-toc-list > li.toc-heading-level-2:first-child {
+    border-top: none;
+    padding-top: 0;
+}
+
+/* Ensure the first H2 link itself has consistent display properties */
+#gp-toc-container .gp-toc-list > li.toc-heading-level-2:first-child > a {
+    display: inline-block !important; /* Consistent display with other H2 links */
+    vertical-align: middle !important; /* Consistent vertical alignment */
+}
+
+/* Specific fix for the first H2 item's bullet vertical alignment */
+#gp-toc-container .gp-toc-list > li.toc-heading-level-2:first-child > a::before {
+    top: 42% !important; /* Ensure this is the final value */
+    /* Other inherited properties like position, left, transform, line-height remain as previously simplified */
+}
+
+#gp-toc-container .gp-toc-list > li.toc-heading-level-2 > a {
+    display: inline-block; /* Changed from inline */
+    vertical-align: middle; /* Align the text block vertically */
+    text-align: left; /* Ensure text is left-aligned */
+    padding-top: 0px; /* Adjusted for vertical alignment */
+    position: relative; /* For fine-tuning alignment */
+    padding-left: 30px; /* Space for the bullet */
+    top: 1px; /* Nudge text down slightly */
+    /* margin-right: 5px; /* This was likely for same-line H3, can be removed or adjusted if needed */
+}
+#gp-toc-container .gp-toc-list > li.toc-heading-level-2 > a::before {
+    content: "\2022"; /* Filled bullet • */
+    color: var(--accent-color);
+    font-weight: bold;
+    display: inline-block;
+    position: absolute; /* Relative to the <a> tag */
+    left: 5px; /* Position bullet within the <a> tag's padding */
+    top: 50%; /* Vertically center */
+    transform: translateY(-50%); /* Adjust for exact centering */
+    font-size: 1.4em;
+    line-height: 1; /* Normalize line height for the bullet itself */
+}
+
+
+
+/* Ensure the :first-child H2 LI rules for border/padding are still respected, LI itself is not 0 padding-top */
+/* The general border/padding for H2 LIs remains on the LI, flex children align within that. */
+
+
+/* H3 Sub-list Indentation & Same-Line Styling - TEMPORARILY COMMENTED OUT FOR DEBUGGING H3-H6 STANDARD DISPLAY */
+/*
+#gp-toc-container .gp-toc-list > li.toc-heading-level-2 > ol {
+    display: inline;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+#gp-toc-container .gp-toc-list > li.toc-heading-level-2 > ol > li.toc-heading-level-3 {
+    display: block;
+     margin-left: 20px;
+}
+
+#gp-toc-container .gp-toc-list > li.toc-heading-level-2 > ol > li.toc-heading-level-3:first-child {
+    display: inline;
+    padding-left: 0;
+    margin-left: 0;
+}
+#gp-toc-container .gp-toc-list > li.toc-heading-level-2 > ol > li.toc-heading-level-3:first-child > a::before {
+    display: none !important;
+}
+
+#gp-toc-container .gp-toc-list > li.toc-heading-level-2 > ol > li.toc-heading-level-3:not(:first-child) {
+    display: block;
+}
+
+#gp-toc-container .gp-toc-list li.toc-heading-level-3:not(:first-child) > a::before {
+    content: "\25E6";
+    color: var(--text-secondary);
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 1px;
+    font-size: 1.2em;
+}
+*/
+/* END OF TEMPORARILY COMMENTED OUT "SAME-LINE H2/FIRST H3" STYLES */
+
+/* Standardized Nested List <ol> Styling (H3-H6 lists) */
+/* H3 list - specific increased indent */
+#gp-toc-container .gp-toc-list li.toc-heading-level-2 > ol { /* H3 list */
+    display: block !important;
+    list-style-type: none;
+    margin-top: 8px;
+    padding-left: 30px; /* Increased indent for H3 lists */
+    margin-left: 0;
+}
+
+/* H4, H5, H6 lists - standard indent */
+#gp-toc-container .gp-toc-list li.toc-heading-level-3 > ol, /* H4 list */
+#gp-toc-container .gp-toc-list li.toc-heading-level-4 > ol, /* H5 list */
+#gp-toc-container .gp-toc-list li.toc-heading-level-5 > ol { /* H6 list */
+    display: block !important;
+    list-style-type: none;
+    margin-top: 8px;
+    padding-left: 20px; /* Standard indent for these sub-lists */
+    margin-left: 0;
+}
+
+/* Refined Flexbox for H3-H6 LIs */
+#gp-toc-container .gp-toc-list li.toc-heading-level-3,
+#gp-toc-container .gp-toc-list li.toc-heading-level-4,
+#gp-toc-container .gp-toc-list li.toc-heading-level-5,
+#gp-toc-container .gp-toc-list li.toc-heading-level-6 {
+    display: flex !important; /* Force flex */
+    align-items: center !important; /* Vertically center bullet and text block */
+    padding-left: 0 !important; /* Reset LI's own padding, indentation is by parent OL */
+    position: static !important; /* Was relative/static, ensure static for flex children */
+    text-align: left !important; /* Ensure LI's text alignment context is left */
+    /* Keep existing border-bottom, padding-bottom, margin-bottom from previous step */
+    padding-top: 10px; /* Added */
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-left: 0 !important; /* Ensure any prior margin is reset */
+}
+
+/* TOC: Apply underline ONLY to H3-H6 items that have nested lists */
+#gp-toc-container .gp-toc-list li.toc-heading-level-3:has(ol),
+#gp-toc-container .gp-toc-list li.toc-heading-level-4:has(ol),
+#gp-toc-container .gp-toc-list li.toc-heading-level-5:has(ol),
+#gp-toc-container .gp-toc-list li.toc-heading-level-6:has(ol) {
+    border-bottom: 1px solid var(--border-primary) !important;
+}
+
+/* TOC: Remove underline from standalone H3-H6 items (those without nested lists) */
+#gp-toc-container .gp-toc-list li.toc-heading-level-3:not(:has(ol)),
+#gp-toc-container .gp-toc-list li.toc-heading-level-4:not(:has(ol)),
+#gp-toc-container .gp-toc-list li.toc-heading-level-5:not(:has(ol)),
+#gp-toc-container .gp-toc-list li.toc-heading-level-6:not(:has(ol)) {
+    border-bottom: none !important;
+}
+
+/* Remove bottom border from H3-H6 list items if they are the only child in their list */
+#gp-toc-container .gp-toc-list ol > li:only-child {
+    border-bottom: none !important;
+}
+
+/* Refactor H3-H6 links (a) as flex items */
+#gp-toc-container .gp-toc-list li.toc-heading-level-3 > a,
+#gp-toc-container .gp-toc-list li.toc-heading-level-4 > a,
+#gp-toc-container .gp-toc-list li.toc-heading-level-5 > a,
+#gp-toc-container .gp-toc-list li.toc-heading-level-6 > a {
+    display: inline-block !important; /* Or 'inline'. inline-block is safer for consistent layout. */
+    text-align: left !important; /* Ensure text within link is left-aligned */
+    padding-left: 0 !important; /* No padding, flows after bullet's margin-right */
+    float: none !important;
+    width: auto !important;
+}
+
+/* Refactor H3-H6 bullets (a::before) as flex items */
+#gp-toc-container .gp-toc-list li.toc-heading-level-3 > a::before,
+#gp-toc-container .gp-toc-list li.toc-heading-level-4 > a::before,
+#gp-toc-container .gp-toc-list li.toc-heading-level-5 > a::before,
+#gp-toc-container .gp-toc-list li.toc-heading-level-6 > a::before {
+    /* Specific content, color, font-size for each level's bullet are already defined and should be preserved. */
+    /* Ensure these positioning/flex properties are set: */
+    display: inline-block; /* So it has a box model */
+    position: static !important; /* No longer absolute */
+    /* left, top, transform are removed */
+    margin-right: 0.6em; /* Space between bullet and text (using em for scalability) */
+    line-height: 1; /* Bullet's own line height */
+    flex-shrink: 0; /* Prevent bullet from shrinking */
+}
+
+/* Re-define H3 bullet content here if it was part of the commented block, ensuring it's not lost */
+/* This rule is slightly different from the one commented out, as it applies to ALL H3s now */
+#gp-toc-container .gp-toc-list li.toc-heading-level-3 > a::before {
+    content: "\25E6"; /* Open bullet ◦ */
+    color: var(--text-secondary);
+    /* display: inline-block; Already set in the rule above */
+    /* position: absolute; Already set to static in the rule above */
+    /* left: 0px; Removed */
+    font-size: 1.2em;
+    /* Vertical alignment now handled by align-items on parent LI */
+}
+
+/* Ensure dark mode also has the H3 bullet content */
+html.dark-mode-active #gp-toc-container .gp-toc-list li.toc-heading-level-3 > a::before {
+    color: var(--text-muted);
+}
+
+/* --- END 50/50 Column Layout --- */
+
+
+/* Implied H2 Parent Handling */
+#gp-toc-container .gp-toc-list > li.toc-heading-level-2.implied-h2-parent {
+    border-top: none; /* No border if it's an implied structural element */
+    padding-top: 0;
+    margin-bottom: 0; /* No margin if it's just a container */
+}
+#gp-toc-container .gp-toc-list > li.toc-heading-level-2.implied-h2-parent > a::before {
+    display: none; /* No bullet for the implied H2's (non-existent) link */
+}
+#gp-toc-container .gp-toc-list > li.toc-heading-level-2.implied-h2-parent:empty,
+#gp-toc-container .gp-toc-list > li.toc-heading-level-2.implied-h2-parent:not(:has(ol li)) {
+    display: none;
+}
+
+/* Link Styling (General) */
+#gp-toc-container .gp-toc-list li a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    /* display: inline; /* Already set like this, good for ::before on <a> */
+}
+#gp-toc-container .gp-toc-list li a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+/* Dark Mode */
+/* Redundant H2 bullet color rule removed as it's handled by the general rule */
+/* Specific H3 :not(:first-child) bullet color rule removed, general H3 dark mode rule is sufficient. */
+html.dark-mode-active #gp-toc-container .gp-toc-list li a {
+    color: var(--text-secondary);
+}
+html.dark-mode-active #gp-toc-container .gp-toc-list li a:hover {
+    color: var(--accent-color);
+}
+
+/* Specific layout for H2 and its first H3 child on the same line - TEMPORARILY COMMENTED OUT */
+/*
+#gp-toc-container .gp-toc-list > li.toc-heading-level-2 {
+    display: block;
+}
+#gp-toc-container .gp-toc-list > li.toc-heading-level-2 > a {
+    display: inline;
+    margin-right: 5px;
+}
+#gp-toc-container .gp-toc-list > li.toc-heading-level-2 > ol {
+    display: inline;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+#gp-toc-container .gp-toc-list > li.toc-heading-level-2 > ol > li.toc-heading-level-3 {
+    display: block;
+    margin-left: 20px;
+}
+
+#gp-toc-container .gp-toc-list > li.toc-heading-level-2 > ol > li.toc-heading-level-3:first-child {
+    display: inline;
+    padding-left: 0;
+    margin-left: 0;
+    border-top: none;
+    margin-bottom: 0;
+}
+#gp-toc-container .gp-toc-list > li.toc-heading-level-2 > ol > li.toc-heading-level-3:first-child > a::before {
+    display: none !important;
+}
+
+#gp-toc-container .gp-toc-list > li.toc-heading-level-2 > ol > li.toc-heading-level-3:not(:first-child) {
+    display: block;
+}
+
+#gp-toc-container .gp-toc-list li.toc-heading-level-3:not(:first-child) > a::before {
+    content: "\25E6";
+    color: var(--text-secondary);
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 1px;
+    font-size: 1.2em;
+}
+*/
+/* END OF TEMPORARILY COMMENTED OUT "SAME-LINE H2/FIRST H3" SPECIFIC LAYOUT */
+
+
+/* TOC Styling for H4, H5, H6 levels */
+
+/* Nested list for H4 items (inside an H3 li) */
+#gp-toc-container .gp-toc-list li.toc-heading-level-3 > ol {
+    margin-top: 8px;
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+/* H4 list items */
+#gp-toc-container .gp-toc-list li.toc-heading-level-4 > a::before {
+    content: "\25AA"; /* Small black square ▪ */
+    color: var(--text-secondary);
+    font-size: 0.9em;
+}
+
+/* Nested list for H5 items (inside an H4 li) */
+#gp-toc-container .gp-toc-list li.toc-heading-level-4 > ol {
+    margin-top: 6px;
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+/* H5 list items */
+#gp-toc-container .gp-toc-list li.toc-heading-level-5 > a::before {
+    content: "-";
+    color: var(--text-muted);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Nested list for H6 items (inside an H5 li) */
+#gp-toc-container .gp-toc-list li.toc-heading-level-5 > ol {
+    margin-top: 4px;
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+/* H6 list items */
+#gp-toc-container .gp-toc-list li.toc-heading-level-6 > a::before {
+    content: "\2023"; /* Triangular bullet ‣ */
+    color: var(--text-muted);
+    font-size: 0.9em;
+}
+
+/* Resetting some inherited properties for deeper levels for cleaner look */
+#gp-toc-container .gp-toc-list ol ol li { /* Targets H4+ LIs */
+    border-top: none; /* This is fine as H4+ items get border-bottom from above rule */
+    padding-top: 0; /* This is fine */
+    /* margin-bottom will be overridden by the rule for li.toc-heading-level-4 etc. if it's more specific or comes later */
+    /* For now, the 10px margin-bottom on li.toc-heading-level-X will apply */
+}
+#gp-toc-container .gp-toc-list ol ol ol li { /* Targets H5+ LIs */
+     /* margin-bottom will be overridden */
+    font-size: 0.92em;
+}
+#gp-toc-container .gp-toc-list ol ol ol ol li { /* Targets H6 LIs */
+     /* margin-bottom will be overridden */
+    font-size: 0.9em;
+}
+
+/* Dark Mode for H4-H6 bullets */
+html.dark-mode-active #gp-toc-container .gp-toc-list li.toc-heading-level-4 > a::before {
+    color: var(--text-muted);
+}
+html.dark-mode-active #gp-toc-container .gp-toc-list li.toc-heading-level-5 > a::before {
+    color: var(--text-muted);
+}
+html.dark-mode-active #gp-toc-container .gp-toc-list li.toc-heading-level-6 > a::before {
+    color: var(--text-muted);
+}
+
+/* TOC Styling for H4, H5, H6 levels */
+
+/* Nested list for H4 items (inside an H3 li) */
+#gp-toc-container .gp-toc-list li.toc-heading-level-3 > ol {
+    margin-top: 8px; /* Space between H3 item and its H4 sub-list */
+    padding-left: 20px; /* Indentation for the H4 sub-list */
+    list-style-type: none;
+}
+
+/* H4 list items */
+#gp-toc-container .gp-toc-list li.toc-heading-level-4 > a::before {
+    content: "\25AA"; /* Unicode for a small black square ▪ or use AB for small white square ▫ */
+    color: var(--text-secondary);
+    font-size: 0.9em; /* Adjust bullet size */
+    /* display, position, left, top are inherited */
+}
+
+/* Nested list for H5 items (inside an H4 li) */
+#gp-toc-container .gp-toc-list li.toc-heading-level-4 > ol {
+    margin-top: 6px;
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+/* H5 list items */
+#gp-toc-container .gp-toc-list li.toc-heading-level-5 > a::before {
+    content: "-"; /* Simple dash for H5 */
+    color: var(--text-muted);
+    font-weight: bold;
+    font-size: 1.2em;
+    /* display, position, left, top are inherited */
+}
+
+/* Nested list for H6 items (inside an H5 li) */
+#gp-toc-container .gp-toc-list li.toc-heading-level-5 > ol {
+    margin-top: 4px;
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+/* H6 list items */
+#gp-toc-container .gp-toc-list li.toc-heading-level-6 > a::before {
+    content: "\2023"; /* Unicode for triangular bullet ‣ or just a dot */
+    color: var(--text-muted);
+    font-size: 0.9em;
+    /* display, position, left, top are inherited */
+}
+
+/* General styling for li.toc-heading-level-4, -5, -6 if not covered by generic li rule */
+/* (The generic ' #gp-toc-container .gp-toc-list li ' already sets padding-left: 25px) */
+#gp-toc-container .gp-toc-list li.toc-heading-level-4,
+#gp-toc-container .gp-toc-list li.toc-heading-level-5,
+#gp-toc-container .gp-toc-list li.toc-heading-level-6 {
+    /* border-top: none; /* Remove top border if they inherit one */
+    /* padding-top: 0;  /* Remove top padding if they inherit one */
+    /* margin-bottom: 6px; /* Adjust margin for deeper levels */
+    /* font-size: 0.9em; /* Optionally make deeper levels slightly smaller */
+}
+/* Resetting some inherited properties for deeper levels for cleaner look */
+#gp-toc-container .gp-toc-list ol ol li { /* Targets H4+ LIs */
+    border-top: none;
+    padding-top: 0;
+    margin-bottom: 6px;
+}
+#gp-toc-container .gp-toc-list ol ol ol li { /* Targets H5+ LIs */
+    margin-bottom: 4px;
+    font-size: 0.92em; /* Slightly smaller font for deeper levels */
+}
+#gp-toc-container .gp-toc-list ol ol ol ol li { /* Targets H6 LIs */
+    margin-bottom: 2px;
+    font-size: 0.9em;
+}
+
+
+/* Dark Mode for H4-H6 bullets */
+html.dark-mode-active #gp-toc-container .gp-toc-list li.toc-heading-level-4 > a::before {
+    color: var(--text-muted);
+}
+html.dark-mode-active #gp-toc-container .gp-toc-list li.toc-heading-level-5 > a::before {
+    color: var(--text-muted);
+}
+html.dark-mode-active #gp-toc-container .gp-toc-list li.toc-heading-level-6 > a::before {
+    color: var(--text-muted);
+}
+
+/* Mobile TOC Styles (from existing, confirmed, may need review after desktop is stable) */
+@media (max-width: 768px) {
+    #gp-toc-container {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-top: 15px !important; /* Keep existing vertical margins */
+        margin-bottom: 25px !important; /* Keep existing vertical margins */
+        padding: 15px !important; /* Keep existing mobile padding */
+        border-radius: 8px !important; /* Keep existing mobile radius */
+        box-sizing: border-box !important; /* Add for robustness */
+    }
+
+    #gp-toc-container .gp-toc-title {
+        font-size: 1.1em !important;
+        padding: 10px 12px !important;
+        margin-bottom: 15px !important;
+    }
+
+    /* Mobile general li, H2 li, and H3+ li will inherit desktop structures but with adjusted font-size/padding */
+    #gp-toc-container li {
+        padding: 10px 0 10px 0px !important;
+        font-size: 1em !important; /* Increased font size for mobile */
+        line-height: 1.5 !important;
+        /* Flex properties for H2/H3 alignment should still apply unless specifically overridden here */
+    }
+
+    /* Mobile custom bullets */
+    /* The general li::before for H2 items on mobile - Rule removed and replaced */
+
+    /* Mobile styling for new H3-H6 li::before bullets */
+    div#gp-toc-container ol.gp-toc-list ol > li[class*="toc-heading-level-"]::before {
+        width: 5px !important;
+        height: 5px !important;
+        margin-right: 10px !important;
+    }
+
+    #gp-toc-container .gp-toc-list > li.toc-heading-level-2 > a::before {
+        font-size: 1.2em; /* Adjust bullet size for mobile */
+    }
+
+    /* If H2 items need different padding/flex behavior on mobile */
+    div#gp-toc-container > ol.gp-toc-list > li.toc-heading-level-2 {
+        /* e.g., padding: 8px 0 !important; */
+    }
+    /* If H3+ items need different padding/flex behavior on mobile */
+    div#gp-toc-container ol.gp-toc-list ol > li[class*="toc-heading-level-"] {
+        /* e.g., padding: 8px 0 !important; */
+        /* If H3+ also need to be left-aligned on mobile: */
+        /* justify-content: flex-start !important; */
+    }
+    /* If H3+ links need different text-align on mobile */
+    /* This is now handled by the new mobile rules below */
+
+    #gp-toc-container .gp-toc-list ol { /* Nested list padding for H3+ on mobile */
+        padding-left: 25px !important; /* Slightly more indent for H3+ list on mobile */
+    }
+
+    #gp-toc-container a { /* General link font size for mobile */
+        font-size: 1em !important;
+        /* font-weight: 500 !important; /* Inherited */
+    }
+
+    /* New mobile styles for H3-H6 items */
+    div#gp-toc-container ol.gp-toc-list ol > li[class*="toc-heading-level-"] {
+        justify-content: flex-start !important; /* Align wrapper to the left */
+    }
+
+    div#gp-toc-container ol.gp-toc-list ol > li[class*="toc-heading-level-"] > span.toc-item-content-wrapper {
+        /* justify-content: flex-start; This is handled by parent li now */
+        /* text-align: left !important; /* This would affect the span, not the link directly */
+    }
+    div#gp-toc-container ol.gp-toc-list ol > li[class*="toc-heading-level-"] > span.toc-item-content-wrapper > a {
+        text-align: left !important;
+    }
+}
+
+/* TOC: Remove underline from the last H3-H6 in a section to prevent double lines */
+#gp-toc-container .gp-toc-list > li.toc-heading-level-2 > ol > li.toc-heading-level-3:last-child {
+  border-bottom: none !important;
+}
+
+#gp-toc-container .gp-toc-list li.toc-heading-level-3 > ol > li.toc-heading-level-4:last-child {
+  border-bottom: none !important;
+}
+
+#gp-toc-container .gp-toc-list li.toc-heading-level-4 > ol > li.toc-heading-level-5:last-child {
+  border-bottom: none !important;
+}
+
+#gp-toc-container .gp-toc-list li.toc-heading-level-5 > ol > li.toc-heading-level-6:last-child {
+  border-bottom: none !important;
+}
+
+/* ==========================================================================
+   Code Copy Button
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Code Copy Button
+   ========================================================================== */
+
+pre {
+    position: relative;
+}
+
+.copy-code-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-secondary);
+    color: var(--text-primary);
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+pre:hover .copy-code-button {
+    opacity: 1;
+}
+
+.copy-code-button:hover {
+    background: var(--accent-color);
+    color: var(--white-color);
+    border-color: var(--accent-color);
+}
+
+/* Prevent Top Meta Bar from disappearing on zoom/small viewports and adjust layout */
+@media (max-width: 768px) {
+    /* Ensure the container and its direct child .gp-top-meta-bar have no visual styling that could cause a line */
+    body.single-post .entry-header .gp-top-meta-bar-container,
+    body.single-post .entry-header .gp-top-meta-bar {
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        min-height: 0 !important;
+        height: auto !important;
+        overflow: visible !important;
+    }
+
+    /* Re-apply necessary flex layout for .gp-top-meta-bar if it was overridden by the above */
+    .gp-top-meta-bar { /* Mobile flexbox container */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 8px !important;
+        padding: 5px 0 !important; /* Minimal padding for content spacing */
+        /* Ensure no new borders or backgrounds are introduced here */
+        grid-template-columns: none;
+        justify-items: auto;
+    }
+
+/* Step 1: Make .gp-top-meta-bar static on mobile */
+body.single .gp-top-meta-bar, .single .gp-top-meta-bar {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    position: static;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    gap: 8px !important;
+    padding: 5px 0 !important;
+    /* Removed: min-height, z-index, diagnostic padding */
+}
+
+    /* Ensure .left-buttons (if it's a flex container) centers its content too */
+
+/* Step 3: Add margin-top to .entry-header on mobile */
+body.single .entry-header, .single .entry-header {
+    /* Inherited from desktop: display:flex, flex-direction:column, align-items:flex-start, gap:15px, margin-bottom:25px */
+    margin-top: 0px !important; /* 광고 슬롯과 헤더 사이 간격을 광고 슬롯의 margin-bottom으로 제어 */
+    position: relative;          /* ADDED */
+    z-index: 1;                  /* ADDED */
+}
+
+body.single .gp-top-meta-bar-container {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    position: static !important;
+    margin-top: 0 !important; /* 상단 마진 제거 */
+    margin-bottom: 15px !important; /* 하단 마진 조정 */
+    padding: 5px 0 0 0 !important; /* 내부 패딩 조정 (좌우는 0) */
+    background-color: transparent !important; /* 배경 제거 */
+    border: none !important; /* 테두리 제거 */
+    border-radius: 0 !important; /* 둥근 모서리 제거 */
+    box-shadow: none !important; /* 그림자 제거 */
+    /* Removed: min-height, z-index, border, specific padding: 5px */
+}
+    /* 모바일 URL 복사 버튼 순서 조정 */
+    .gp-top-meta-bar .left-buttons {
+        display: flex;
+        justify-content: center; /* If it contains multiple buttons */
+        order: 2 !important; /* Added */
+        /* justify-self: center !important; /* Removed as parent is flex now */
+    }
+
+    .breadcrumb-lang-wrapper { /* This contains breadcrumbs and language switcher */
+        display: flex !important; /* Ensure it's flex for alignment */
+        flex-direction: column !important; /* Stack breadcrumbs and lang switcher */
+        align-items: center !important; /* Center them horizontally */
+        gap: 8px !important; /* Space between breadcrumbs and lang switcher when stacked */
+        width: 100%; /* Ensure it takes available width if needed */
+        text-align: center; /* Center text within breadcrumbs if they become blocky */
+    }
+
+    /* If the language switcher itself needs adjustment when stacked */
+    .gp-top-meta-bar .gp-language-switcher {
+        justify-content: center !important; /* Center language items if they are in a flex row */
+        align-self: center !important; /* Ensure it centers within the column flow */
+    }
+
+    /* Ensure breadcrumb links wrap and center if they are long */
+    .gp-top-meta-bar .gp-post-category,
+    .gp-top-meta-bar .gp-post-category a {
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* Push language switcher to the right in mobile single post view */
+    body.single .gp-top-meta-bar > .gp-language-switcher {
+        /* margin-left: auto !important; */ /* Verified removed */
+        order: 3 !important; /* Added */
+    }
+
+    /* Hide desktop-only ad slots on mobile if they exist, and show mobile-only */
+    /* AdSense slot CSS removed */
+
+    /* 모바일 뷰에서 파란색 테두리 상자 내부 여백 복원 (선택자 명시도 강화) */
+    body.single .entry-content div[style*="border-left: 5px solid #17a2b8"] {
+        padding: 25px !important;
+    }
+
+    /* 모바일 'Copy link to clipboard' 버튼 크기 조정 */
+
+    /* 다른 .social-share-btn 들도 모바일에서 동일한 크기를 갖도록 보장 */
+    .social-share-btn { /* 일반 소셜 공유 버튼의 모바일 크기 통일 */
+        width: 40px !important;
+        height: 40px !important;
+        min-width: 40px !important; /* min-width 추가 */
+        font-size: 16px !important; /* 폰트 기반 아이콘 크기 조정 */
+    }
+     .social-share-btn .icon { /* SVG 아이콘을 사용하는 경우 내부 아이콘 크기 조정 */
+        width: 18px !important;
+        height: 18px !important;
+    }
+}
+
+/* ==========================================================================
+   사이드바 스타일 완전 복구
+   ========================================================================== */
+
+#gp-sidebar {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100vh;
+    background: var(--bg-primary);
+    border-left: 1px solid var(--border-primary);
+    z-index: 1000;
+    transition: right 0.3s ease;
+    box-shadow: -5px 0 20px rgba(0,0,0,0.1);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+#gp-sidebar.gp-sidebar-visible {
+    right: 0;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-primary);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.sidebar-header h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: var(--text-heading);
+    font-weight: 600;
+}
+
+.sidebar-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-close:hover {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+}
+
+.sidebar-content {
+    padding: 20px;
+}
+
+.sidebar-toc-container {
+    margin-bottom: 30px;
+}
+
+.sidebar-tools {
+    border-top: 1px solid var(--border-primary);
+    padding-top: 20px;
+}
+
+.sidebar-tools h4 {
+    margin: 0 0 15px 0;
+    font-size: 1em;
+    color: var(--text-heading);
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-secondary);
+}
+
+.sidebar-tool {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-secondary);
+    color: var(--text-primary);
+    text-align: left;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.9em;
+}
+
+.sidebar-tool:hover {
+    background: var(--text-primary);
+    color: var(--bg-primary);
+    transform: translateX(5px);
+}
+
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.sidebar-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
+/* ==========================================================================
+   시리즈 박스 및 면책 조항 박스 스타일
+   ========================================================================== */
+
+/* 시리즈 박스 (일반 정보) */
+.seriesbox {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-primary);
+    padding: 1.5em;
+    margin: 1.5em 0;
+    border-radius: 8px;
+}
+
+html.dark-mode-active .seriesbox {
+    background-color: var(--bg-secondary); /* 다크모드에서는 콘텐츠 배경과 동일하게 */
+    color: var(--text-primary);
+    border-color: var(--border-primary);
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+/* 면책 조항 박스 (주의 환기) */
+.econark-disclaimer-box {
+    background-color: #fffbe6; /* 밝은 노란색 계열 (라이트 모드) */
+    color: #5c3c00; /* 어두운 갈색 계열 텍스트 (라이트 모드) */
+    border: 1px solid #ffe58f; /* 노란색 계열 테두리 (라이트 모드) */
+    padding: 1.5em;
+    margin: 1.5em 0;
+    border-radius: 8px;
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+html.dark-mode-active .econark-disclaimer-box {
+    background-color: var(--bg-tertiary); /* 다크모드에서는 약간 다른 어두운 배경 */
+    color: var(--text-primary);
+    border-color: var(--border-secondary);
+    /* Transition is inherited from .econark-disclaimer-box if not overridden */
+}
+
+/* ==========================================================================
+   Load More Button Styles (Home & Series)
+   ========================================================================== */
+.load-more-container,
+.load-more-series-container { /* 시리즈 더보기 버튼 컨테이너 추가 */
+    text-align: center;
+    margin: 30px 0;
+    position: relative; /* z-index 적용을 위해 */
+    z-index: 10; /* 다른 요소 위에 오도록 */
+}
+
+.gp-load-more-btn,
+.gp-load-more-series-btn { /* 시리즈 더보기 버튼 클래스 추가 */
+    display: inline-block;
+    padding: 15px 35px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #d62828;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1; /* 버튼 내부 효과를 위해 */
+}
+
+.gp-load-more-btn::before,
+.gp-load-more-series-btn::before { /* 시리즈 더보기 버튼에도 적용 */
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease, height 0.4s ease;
+    z-index: -1;
+}
+
+.gp-load-more-btn:hover::before,
+.gp-load-more-series-btn:hover::before { /* 시리즈 더보기 버튼에도 적용 */
+    width: 250%;
+    height: 250%;
+}
+
+.gp-load-more-btn:hover,
+.gp-load-more-series-btn:hover { /* 시리즈 더보기 버튼에도 적용 */
+    background-image: linear-gradient(135deg, #f77f00 0%, #d62828 100%);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.gp-load-more-btn:active,
+.gp-load-more-series-btn:active { /* 시리즈 더보기 버튼에도 적용 */
+    transform: translateY(-1px) scale(1.02);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* 비활성화 시 스타일 */
+.gp-load-more-btn:disabled,
+.gp-load-more-series-btn:disabled { /* 시리즈 더보기 버튼에도 적용 */
+    background-image: none;
+    background-color: var(--text-muted);
+    color: rgba(255, 255, 255, 0.7);
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+.gp-load-more-btn:disabled::before,
+.gp-load-more-series-btn:disabled::before { /* 시리즈 더보기 버튼에도 적용 */
+    display: none;
+}
+
+/* 다크 모드 스타일 */
+html.dark-mode-active .gp-load-more-btn,
+html.dark-mode-active .gp-load-more-series-btn { /* 시리즈 더보기 버튼에도 적용 */
+    background-image: linear-gradient(135deg, #ff6b6b 0%, #ffb899 100%);
+    color: var(--bg-primary-dark);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+html.dark-mode-active .gp-load-more-btn:hover,
+html.dark-mode-active .gp-load-more-series-btn:hover { /* 시리즈 더보기 버튼에도 적용 */
+    background-image: linear-gradient(135deg, #ffb899 0%, #ff6b6b 100%);
+    color: var(--bg-secondary-dark);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+html.dark-mode-active .gp-load-more-btn:disabled,
+html.dark-mode-active .gp-load-more-series-btn:disabled { /* 시리즈 더보기 버튼에도 적용 */
+    background-image: none;
+    background-color: var(--text-muted-dark);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#no-more-posts-message { /* 홈 화면 "더 이상 게시물 없음" 메시지 */
+    color: var(--text-muted);
+    margin-top: 25px;
+    font-style: italic;
+    font-size: 0.95em;
+}
+
+html.dark-mode-active #no-more-posts-message {
+    color: var(--text-muted-dark);
+}
+
+/* 시리즈 "더 이상 게시물 없음" 메시지 (필요시 추가) */
+/*
+.gp-series-posts-container .no-more-series-message {
+    color: var(--text-muted);
+    margin-top: 25px;
+    font-style: italic;
+    font-size: 0.95em;
+    text-align: center;
+}
+html.dark-mode-active .gp-series-posts-container .no-more-series-message {
+    color: var(--text-muted-dark);
+}
+*/
+
+/* REMOVED "FORCE REMOVE BORDER" Block as per subtask instructions. */
+
+/* ==========================================================================
+   소셜 공유 버튼 시스템
+   ========================================================================== */
+
+/* 소셜 공유 컨테이너 */
+.social-share-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 2em 0;
+    padding: 1.5em;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.social-share-label {
+    font-size: 0.9em;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-right: 8px;
+}
+
+/* 개별 소셜 공유 버튼 */
+.social-share-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-share-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+}
+
+.social-share-btn:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+.social-share-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* 각 소셜 미디어별 색상 */
+.social-share-btn.facebook { background-color: #1877f2; }
+.social-share-btn.twitter { background-color: #1da1f2; }
+.social-share-btn.linkedin { background-color: #0077b5; }
+.social-share-btn.pinterest { background-color: #e60023; }
+.social-share-btn.reddit { background-color: #ff4500; }
+.social-share-btn.telegram { background-color: #0088cc; }
+.social-share-btn.whatsapp { background-color: #25d366; }
+.social-share-btn.email { background-color: #34495e; }
+
+/* 소셜 아이콘 SVG */
+.social-share-btn .icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+/* 인라인 소셜 공유 (포스트 내) */
+.inline-social-share {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 1em 0;
+}
+
+.inline-social-share .social-share-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+}
+
+.inline-social-share .social-share-label {
+    font-size: 0.85em;
+    margin-right: 6px;
+}
+
+/* 플로팅 소셜 공유 (사이드바용) */
+.floating-social-share {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 100;
+}
+
+.floating-social-share .social-share-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+}
+
+/* 모바일에서 플로팅 소셜 공유 숨김 */
+@media (max-width: 768px) {
+    .floating-social-share {
+        display: none;
+    }
+
+    .social-share-container {
+        flex-wrap: wrap;
+        padding: 1em;
+    }
+
+    .social-share-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+/* 다크모드 소셜 공유 */
+html.dark-mode-active .social-share-container {
+    background: var(--bg-secondary);
+    border-color: var(--border-primary);
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+html.dark-mode-active .social-share-label {
+    color: var(--text-secondary);
+    transition: color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+
+/* ==========================================================================
+   Contents & Tools 아이콘 개선 (다기능 느낌)
+   ========================================================================== */
+
+/* 사이드바 토글 버튼을 도구 아이콘으로 변경 */
+#sidebarToggle .sidebar-toggle-icon {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sidebarToggle .sidebar-toggle-icon::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--text-muted);
+    transition: all 0.2s ease;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z'/%3E%3C/svg%3E") no-repeat center / contain;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z'/%3E%3C/svg%3E") no-repeat center / contain;
+}
+
+/* 사이드바 헤더 아이콘 추가 */
+.sidebar-header h3::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: var(--accent-color);
+    margin-right: 8px;
+    vertical-align: middle;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z'/%3E%3C/svg%3E") no-repeat center / contain;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z'/%3E%3C/svg%3E") no-repeat center / contain;
+}
+
+
+
+
+
+/* ==========================================================================
+   시리즈 포스트 및 글 레이아웃 정리
+   ========================================================================== */
+
+/* 시리즈 포스트 컨테이너 - 2중 컨테이너 제거 */
+.gp-series-posts-container {
+    margin: 3em 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.series-posts-title {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--text-heading);
+    margin-bottom: 2em;
+    text-align: center;
+    position: relative;
+    padding-bottom: 1em;
+}
+
+.series-posts-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--accent-color);
+    border-radius: 2px;
+}
+
+/* 시리즈 포스트 그리드 - 너비 조정 및 톤앤매너 적용 */
+.series-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important; /* MODIFIED */
+    gap: 1.5em;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.series-post-item {
+    display: block;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    border: 1px solid var(--border-primary);
+    overflow: visible; /* ::before 요소가 보일 수 있도록 변경 */
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    max-width: 320px;
+    margin: 0 auto;
+    position: relative; /* 가상 요소 기준점 */
+    padding-top: 30px; /* 장식선 위 간격 15px + 장식선 두께 3px + 장식선 아래 간격 12px = 30px */
+}
+
+.series-post-item::before {
+    content: "";
+    position: absolute;
+    top: 15px; /* 카드 내부 상단으로부터 15px 아래 위치 */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 3px;
+    background-color: var(--border-secondary);
+    border-radius: 1.5px;
+}
+
+.series-post-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    border-color: var(--accent-color);
+    background: var(--bg-tertiary);
+}
+
+.series-post-thumbnail {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 12px; /* 장식선(top:15px, height:3px) 아래로 12px 간격 (15+3+12 = 30) */
+}
+
+.series-post-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.series-post-item:hover .series-post-thumbnail img {
+    transform: scale(1.05);
+}
+
+.no-thumb-series {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-hover));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.no-thumb-series::before {
+    content: '📄';
+}
+
+.series-post-content {
+    padding: 1.5em;
+}
+
+.series-post-title {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--text-heading);
+    margin: 0 0 0.5em 0;
+    line-height: 1.4;
+}
+
+.series-post-meta {
+    font-size: 0.9em;
+    color: var(--text-muted);
+}
+
+/* 모바일 시리즈 포스트 최적화 */
+@media (max-width: 768px) {
+    .series-posts-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1em;
+    }
+
+    .gp-series-posts-container {
+        padding: 0;
+        margin: 2em 0;
+    }
+
+    .series-post-thumbnail {
+        height: 150px;
+    }
+}
+
+/* 다크모드 시리즈 포스트 */
+html.dark-mode-active .gp-series-posts-container {
+    background: transparent;
+    border: none;
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+html.dark-mode-active .series-post-item {
+    background: var(--bg-primary);
+    border-color: var(--border-primary);
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function), border-color var(--default-transition-duration) var(--default-transition-timing-function), box-shadow var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+html.dark-mode-active .series-post-item:hover {
+    border-color: var(--accent-color);
+    box-shadow: 0 10px 25px rgba(255,255,255,0.1);
+}
+
+html.dark-mode-active .no-thumb-series {
+    background: var(--bg-tertiary);
+    transition: background-color var(--default-transition-duration) var(--default-transition-timing-function);
+}
+
+/* Homepage footer visibility fix - REMOVED to show footer */
+/*
+body.home .site-footer {
+    display: none !important;
+}
+*/
+
+/* End of custom styles. The NEW/UPDATED badge styles formerly here were redundant
+   and have been removed as they are defined earlier in the stylesheet (around line 1270 and in :root variables). */
+
+
+/* 보조 날짜 기본 숨김 */
+.posted-on-wrapper .date-secondary {
+    display: none;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid var(--border-primary);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+/* 클릭시 보조 날짜 표시 */
+.posted-on-wrapper.expanded .date-secondary {
+    display: block;
+    opacity: 1;
+}
+
+/* 클릭 가능한 wrapper 스타일 - REMOVED to prevent layout shift */
+/*
+.posted-on-wrapper[title]:hover {
+    background-color: var(--bg-secondary);
+    border-radius: 5px;
+    padding: 5px;
+    margin: -5px;
+}
+*/
+
+/* 날짜 레이블 스타일 */
+.date-label {
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-right: 5px;
+}
+
+.date-secondary .date-label {
+    color: var(--accent-color);
+}
+
+/* Attempt to fix "Bottom Gray Bar Not Disappearing" issue */
+/*
+.site-footer {
+    display: none !important;
+}
+*/
+
+/* Ensure site-footer spans full width - Allow theme default padding */
+.site-footer.grid-container {
+    max-width: none !important;
+    /* padding-left: 0 !important; */ /* REMOVED */
+    /* padding-right: 0 !important; */ /* REMOVED */
+}
+
+/* Ensure .inside-site-info.grid-container spans full width and aligns content for centering */
+.inside-site-info.grid-container {
+    max-width: none !important;
+    width: 100% !important;
+    /* padding-left: 0 !important; */ /* REMOVED */
+    /* padding-right: 0 !important; */ /* REMOVED */
+    text-align: center !important; /* Center its inline-block children like .footer-bar */
+}
+
+/* Center the content of the footer bar */
+.footer-bar {
+    display: inline-block !important; /* Allow text-align:center on parent to work */
+    width: auto !important; /* Allow it to shrink to content or be set by children */
+    text-align: center !important; /* Center its own children like aside#block-21 */
+    /* 기존 스타일에서 width: 100% 제거 */
+}
+
+/* Explicitly center aside#block-21 and give it a fixed width */
+.footer-bar > aside#block-21.widget.inner-padding.widget_block {
+    width: 325.875px !important; /* As per original user requirement */
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important;
+    display: block !important; /* Or inline-block if preferred and parent centers it */
+    text-align: center !important; /* Center its content (the p tag) */
+}
+
+/* Center the .site-footer-dark block itself */
+/* This element is within #block-21 > .footer-bar */
+/* The inline style for .site-footer-dark already has text-align: center for its content */
+/*
+.site-footer-dark {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: fit-content !important;
+}
+*/
+
+/* Show footer on single posts (and other non-homepage contexts if body classes allow). */
+/* Hide on homepage (and other pages matching body:not(.single-post) or a specific homepage class if provided) */
+/*
+body.single-post .site-footer {
+    display: block !important;
+}
+*/
+
+/* Center the paragraph within .site-footer-dark */
+/* This p has a fixed width (325.875px) and text-align: center from inline styles */
+/* The following rule was not specific enough to override inline margin: 0; */
+/*
+.site-footer-dark p {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+*/
+
+/* The rule above is now commented out as it's replaced by the more specific one below. */
+
+/* Highly specific selector to override inline margin on the p tag within .site-footer-dark */
+/* and ensure its fixed width is maintained for margin:auto to work. */
+/*
+#block-21 footer.site-footer-dark p {
+    width: 325.875px !important;
+    margin: 0 auto !important;
+}
+*/
+
+/* 모바일 환경에서 .inside-article 및 상위 요소의 상단 관련 스타일 강력 제거 */
+@media (max-width: 768px) {
+    body.single-post .site-content,
+    body.single-post main.site-main,
+    body.single-post article.post,
+    body.single-post .inside-article,
+    body.single-post .entry-header {
+        border-top: none !important;
+        box-shadow: none !important;
+        background: transparent !important; /* 배경도 투명하게 하여 혹시 모를 배경 이미지 제거 */
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+        background-image: none !important;
+    }
+
+    /* 가상 요소로 인한 선 제거 시도 */
+    body.single-post .site-content::before, body.single-post .site-content::after,
+    body.single-post main.site-main::before, body.single-post main.site-main::after,
+    body.single-post article.post::before, body.single-post article.post::after,
+    body.single-post .inside-article::before, body.single-post .inside-article::after,
+    body.single-post .entry-header::before, body.single-post .entry-header::after {
+        display: none !important;
+        content: "" !important;
+    }
+}
+
+/* Fix for guide card h3 background to ensure parent gradient shows through */
+.guide-card .card-header h3 {
+    background-color: transparent !important;
+    background: none !important;
+}
+
+/* User request: Force specific card-body children to inherit color */
+.card-body h4,
+.card-body p,
+.card-body blockquote,
+.card-body li {
+    color: inherit !important;
+}
+
+/* User request: Remove border from post cards on homepage/archives */
+/* body:not(.single) .site-main article.post { */
+    /* border: none !important; */ /* This was also preventing the border from showing */
+/* } */
+
+/* Breadcrumb centering and styling for single post pages */
+.single .gp-post-category {
+    text-align: center !important;
+    margin: 20px auto !important;
+    padding: 15px 20px !important;
+    max-width: 800px !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+} /* Closing a previous @media query, ensure this is correct */
+
+/* URL Share Button Style Override */
+
+/* Social Share Button Unification */
+.gp-custom-copy-bottom-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #7f8c8d; /* A neutral gray color */
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.gp-custom-copy-bottom-btn::before {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-color: var(--white-color);
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'/><path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.72-1.71'/><%3C/svg%3E") no-repeat center / contain;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'/><path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.72-1.71'/><%3C/svg%3E") no-repeat center / contain;
+}
+
+.gp-custom-copy-bottom-btn:hover {
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    background-color: #95a5a6;
+}

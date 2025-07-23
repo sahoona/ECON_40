@@ -1,0 +1,267 @@
+li.pll-parent-menu-item>a,
+li.pll-parent-menu-item>a:link,
+li.pll-parent-menu-item>a:visited {
+    font-size: 1em !important;
+    font-weight: 600 !important;
+}
+li.pll-parent-menu-item>a {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+}
+li.pll-parent-menu-item ul.sub-menu li a {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+li.pll-parent-menu-item ul.sub-menu li a::before {
+    font-size: 16px;
+    font-weight: 500;
+}
+li.pll-parent-menu-item ul.sub-menu li.current-lang a::before {
+    font-weight: 600;
+}
+li.pll-parent-menu-item {
+    position: relative;
+    width: auto;
+}
+li.pll-parent-menu-item > a,
+li.pll-parent-menu-item > a:link,
+li.pll-parent-menu-item > a:visited {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 12px !important;
+    padding: 12px 20px !important;
+    font-size: 1em !important;
+    font-weight: 600 !important;
+    color: #333333 !important;
+    background: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+    transition: all 0.2s ease-in-out !important;
+}
+li.pll-parent-menu-item > a > img,
+li.pll-parent-menu-item .dropdown-menu-toggle {
+    display: none !important;
+}
+li.pll-parent-menu-item > a::before {
+    content: '' !important;
+    order: 0;
+    display: block !important;
+    width: 20px !important;
+    height: 20px !important;
+    min-width: 20px;
+    background-image: linear-gradient(45deg, #5D7A99, #3C8F8F) !important;
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3e%3ccircle cx='12' cy='12' r='10'%3e%3c/circle%3e%3cpath d='M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20'%3e%3c/path%3e%3cpath d='M2 12h20'%3e%3c/path%3e%3c/svg%3e") !important;
+    mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3e%3ccircle cx='12' cy='12' r='10'%3e%3c/circle%3e%3cpath d='M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20'%3e%3c/path%3e%3cpath d='M2 12h20'%3e%3c/path%3e%3c/svg%3e") !important;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    transition: all 0.2s ease-in-out !important;
+}
+li.pll-parent-menu-item > a {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: #374151 !important;
+}
+li.pll-parent-menu-item > a:hover {
+    color: #111827 !important;
+    background-color: #F9FAFB !important;
+}
+li.pll-parent-menu-item > a:hover::before {
+    background-image: none !important;
+    background-color: #1F2937 !important;
+}
+li.pll-parent-menu-item ul.sub-menu {
+    display: none;
+    position: static;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: none;
+    border: none;
+    box-shadow: none;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: none;
+}
+li.pll-parent-menu-item.sfHover ul.sub-menu,
+li.pll-parent-menu-item.toggled-on ul.sub-menu {
+    display: block !important;
+}
+li.pll-parent-menu-item ul.sub-menu li {
+    margin: 0;
+    padding: 0;
+}
+li.pll-parent-menu-item ul.sub-menu li a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 10px 14px 10px 45px !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    color: #374151 !important;
+    white-space: nowrap !important;
+    text-decoration: none !important;
+    border-radius: 0 !important;
+    transition: background-color 0.2s ease, color 0.2s ease !important;
+}
+li.pll-parent-menu-item ul.sub-menu li a img {
+    display: none !important;
+}
+li.pll-parent-menu-item ul.sub-menu li a:hover {
+    background-color: #F3F4F6 !important;
+    color: #111827 !important;
+}
+li.pll-parent-menu-item ul.sub-menu li a::before {
+    font-size: 16px;
+    font-weight: 500;
+    color: #374151;
+}
+li.pll-parent-menu-item ul.sub-menu li a:hover::before {
+    color: #111827;
+}
+li.pll-parent-menu-item ul.sub-menu li.lang-item-ko a::before { content: '한국어'; }
+li.pll-parent-menu-item ul.sub-menu li.lang-item-en a::before { content: 'English'; }
+/* 현재 선택된 언어 스타일 */
+li.pll-parent-menu-item ul.sub-menu li.current-lang a::before {
+    font-weight: 600;
+    color: #111827;
+}
+li.pll-parent-menu-item ul.sub-menu li.current-lang a::after {
+    content: '' !important;
+    display: block !important;
+    width: 18px !important;
+    height: 18px !important;
+    background-color: #111827 !important;
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='20 6 9 17 4 12'%3e%3c/polyline%3e%3c/svg%3e") !important;
+    mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='20 6 9 17 4 12'%3e%3c/polyline%3e%3c/svg%3e") !important;
+}
+
+/* ==========================================================================
+   10. Language Switcher (Multilingual SEO)
+   ========================================================================== */
+/* Styles for the NEW button-based language switcher dropdown. */
+
+.gp-language-switcher { /* ID: #gp-language-switcher */
+    position: relative;
+    display: inline-block;
+    /* margin-left: auto; /* Removed, rely on grid placement in .gp-top-meta-bar */
+    align-self: center; /* Vertically center if in a flex container */
+}
+
+button#gp-lang-switcher-button, /* Specific ID for the button */
+.gp-language-button { /* General class for styling if ID is too specific */
+    font-family: inherit; /* Inherit from body */
+    font-size: 0.85em; /* Slightly smaller for compactness */
+    font-weight: 500;
+    color: var(--text-secondary);
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-secondary);
+    padding: 7px 10px; /* Adjusted padding */
+    border-radius: 12px; /* Consistent with other small buttons */
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    line-height: 1.2;
+}
+
+button#gp-lang-switcher-button:hover,
+.gp-language-button:hover,
+.gp-language-switcher.active button#gp-lang-switcher-button,
+.gp-language-switcher.active .gp-language-button {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    border-color: var(--accent-color);
+    transform: translateY(-1px); /* Subtle lift */
+}
+
+button#gp-lang-switcher-button .dropdown-icon {
+    display: inline-block;
+    width: 1em; /* Relative to font size */
+    height: 1em; /* Relative to font size */
+    background-color: currentColor; /* Icon color matches button text color */
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M4.5 6.5l3.5 3 3.5-3' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    margin-left: 6px; /* Space between button text (e.g., KR) and icon */
+    transition: transform 0.25s ease-in-out;
+    vertical-align: text-bottom; /* Better alignment with text */
+}
+
+.gp-language-switcher.active button#gp-lang-switcher-button .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+ul#gp-lang-switcher-list, /* Specific ID for the list */
+.language-list { /* General class for styling */
+    /* display: none; This is handled by the [hidden] attribute via JS */
+    position: absolute;
+    top: calc(100% + 6px); /* Position below the button with a small gap */
+    right: 0; /* Align to the right edge of the .gp-language-switcher container */
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-primary);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08); /* Softer shadow */
+    z-index: 1001; /* Ensure it's above other content, like breadcrumbs or nearby elements */
+    min-width: 100px; /* Minimum width, can expand based on content */
+    list-style: none;
+    padding: 6px; /* Inner padding for the list items */
+    margin: 0;
+    overflow: hidden; /* Ensures items with border-radius look good */
+}
+
+/* Styling for when the list is shown by JS (removing 'hidden' attribute) */
+ul#gp-lang-switcher-list:not([hidden]) {
+    display: block; /* Or flex if items need flex properties */
+}
+
+ul#gp-lang-switcher-list li.lang-item {
+    margin: 0; /* Reset margin for list items */
+}
+
+ul#gp-lang-switcher-list li a.lang-link,
+ul#gp-lang-switcher-list li span.lang-text {
+    display: block; /* Make them block elements to fill the li */
+    padding: 8px 10px; /* Padding for each item */
+    font-size: 0.85em;
+    font-weight: 500;
+    color: var(--text-primary);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.15s ease, color 0.15s ease;
+    border: none !important;
+    background-color: transparent;
+    white-space: nowrap; /* Prevent text wrapping */
+    text-align: left; /* Ensure text is left-aligned */
+}
+
+ul#gp-lang-switcher-list li a.lang-link:hover,
+ul#gp-lang-switcher-list li a.lang-link:focus {
+    background-color: var(--bg-tertiary);
+    color: var(--accent-color);
+}
+
+ul#gp-lang-switcher-list li.current-lang span.lang-text {
+    background-color: #007bff !important;
+    color: white !important;
+    font-weight: 600;
+    cursor: default; /* Indicate it's not clickable */
+    border: none !important; /* Ensure no border if one was inherited */
+    padding: 8px 10px !important; /* Ensure padding is consistent if overridden */
+    border-radius: 8px !important; /* Ensure consistent rounding */
+}
+
+body.single .gp-top-meta-bar .gp-language-switcher { /* Targets the language switcher's main container */
+    /* Flex items align right due to space-between on parent, no specific justify-self or grid-column needed */
+    /* Ensure no grid properties are present */
+    margin-left: auto;
+}
